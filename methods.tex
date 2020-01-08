@@ -1,0 +1,32 @@
+\section{methods}
+
+\subsection{participants}
+% E1 - 124Ss; E9 77Ss
+Given the exploratory nature of the study, two separate datasets were analyzed. The two datasets were collected from two separate experiments, referred to as exploratory and confirmatory. The participants for both datasets consisted of college students (Exploratory N = 124; Confirmatory N = 77) from a large Midwestern university who participated in exchange for class credit. Participants who took part in the exploratory experiment did not participate in the confirmatory experiment. 
+
+\subsection{materials and procedure}
+Each participant viewed ## scene images (see Figure x) while carrying out a search, memorization, or rating task. The same materials were used in both experiments with a minor variation in the procedures. In the confirmatory experiment, participants were directed as to where search targets might appear in the image (e.g., on flat surfaces). No such instructions were provided in the exploratory experiment. For the search task, participants were instructed to find a 'Z' or 'N' embedded in the image. If the letter was found, the participants were instructed to press a button which terminated the trial. For the memorization task, participants were instructed to memorize the image for a test that will take place when the task is completed. Memory was tested by asking participants to select which of two images they had seen during the task. For the rating task, participants were asked to think about how they would rate the image on a scale from 1 (very unpleasant) to 7 (very pleasant). The participants were prompted for their rating immediately after viewing the image. In both experiments, trials were presented in one mixed block, and three separate task blocks. For the mixed block, the trial types were randomly intermixed within the block. For the three separate task blocks, each block consisted entirely of one of the three tasks (search, memorize, rate).
+
+\insert{fig_x} %example scene images
+
+\subsection{apparatus}
+While the participants viewed the scene images, their eye movements were recorded using an SR Research EyeLink II eye tracker, with a sampling rate of 1000Hz. On some of the search trials, a probe was presented on the screen at six seconds. To equate the data from all three conditions, only the first six seconds of each trial was analyzed. Trials that were missing ## data points were excluded before analysis. For both datasets, the trials were pooled across participants. After removing bad trials, the exploratory dataset consisted of 12,177 trials, and the confirmatory dataset consisted of 9,301 trials.
+
+\subsection{datasets}
+The trial data for both experiments were converted into plot images. The x and y coordinates and pupil size were used to plot each sample collected by the eye tracker on a scatterplot diagram (e.g., see Figure X). The coordinates were used to plot the location of the dot, and pupil size was used to determine the size of the dot. The plots were sized to match the dimensions of the computer monitor used to collect the data (1024 x 768 pixels), then were shrunk to (240 x 180 pixels) in an effort to limit the size of the data files.
+
+\insert{fig_x} %average image for each condition
+
+In order to systematically assess the predictive value of the data provided by each of the four image dimensions (x-coordinates, y-coordinates, pupil size, dot color), plots were made with each of the dimensions removed. Plots were also made only using x-coordinate data, y-coordinate data, and pupil size data (see Figure X). For each of these separate sets of plots, a raw timeline dataset of the corresponding image dimensions (i.e., x-coordinate only, y-coordinate only, pupil size only) was also developed (see Table X).
+
+\insert{fix_x} %average plots of x-coord-, y-coord-, pupil size- only
+\insert{table_x} %list of datasets
+
+\subsection{classification}
+CNN models were used to classify the trials into categories of search, memorize, or rate. Each model was run over 10 iterations.
+
+_Exploratory classification._ A bunch of models were developed... the best one seemed to be....
+
+\insert{table_x} %breakdown of the different models
+
+_Confirmatory classification._ The best model from the models above was used..

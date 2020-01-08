@@ -1,0 +1,79 @@
+\documentclass[
+    a4paper,
+    man,
+    british
+]{apa6}
+
+\usepackage[british]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{epstopdf}
+\usepackage{csquotes}
+\usepackage[hidelinks]{hyperref}
+\usepackage[
+    style=apa,
+    backend=biber,
+    sortcites=true,
+    sorting=nyt,
+%    isbn=false,
+%    url=false,
+%    doi=false,
+%    eprint=false,
+    hyperref=false,
+    backref=false,
+%    firstinits=false,
+]{biblatex}
+
+\DeclareLanguageMapping{british}{british-apa}
+
+% maps apacite commands to biblatex commands
+\let \citeNP \cite
+\let \citeA \textcite
+\let \cite \parencite
+
+%%%
+% Apa Bib - enable reprint according to apa
+%%%
+
+\input{enable_reprint}
+
+\bibliography{bibliography}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{Deep learning and eye tracking...}
+\shorttitle{Deepeye}
+% \author{Zachary J. Cole}
+% \affiliation{University of Nebraska-Lincoln}
+\fourauthors{Zachary J. Cole}{Karl M. Kuntzelman}{Michael D. Dodd}{Matthew R. Johnson}
+\affiliation{University of Nebraska-Lincoln}
+
+\keywords{deep learning, eye tracking, convolutional neural network, cognitive state, endogenous attention}
+
+\authornote{Contact: 238 Burnett Hall, Lincoln, NE 68588-0308}
+
+\begin{document}
+
+\maketitle
+
+\input{introduction}
+
+\input{methods}
+
+\input{results}
+
+\input{discussion}
+
+\input{conclusion}
+
+% \printbibliography
+
+% \input{table_1}
+
+% \input{fig_1}
+
+% \appendix
+
+% \input{appendix}
+
+\end{document}
