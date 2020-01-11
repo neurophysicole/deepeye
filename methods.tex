@@ -18,12 +18,13 @@ The trial data for both experiments were converted into plot images. The x and y
 \insert{fig_x} %average image for each condition
 
 To systematically assess the predictive value of the data provided by each of the four image dimensions (x-coordinates, y-coordinates, pupil size, dot color), plots were made with each of the dimensions removed. Plots were also made only using x-coordinate data, y-coordinate data, and pupil size data (see Figure X). For each of these separate sets of plots, a raw timeline dataset of the corresponding image dimensions (i.e., x-coordinate only, y-coordinate only, pupil size only) was also developed (see Table X).
+% when we isolated variables, did we still include time? CHECK
 
 \insert{fix_x} %average plots of x-coord-, y-coord-, pupil size- only
 \insert{table_x} %list of datasets
 
 \subsection{classification}
-Deep CNNs were used to classify the trials into categories of search, memorize, or rate. Each model split the data into 70\% training, 15\% validation, and 15\% testing. Each network was run through 10 iterations of the data.
+Deep CNNs were used to classify the trials into categories of search, memorize, or rate. Each model split the data into 70\% training, 15\% validation, and 15\% testing. Each network was run through 10 iterations of the data. The same decoding models were run on the raw timeline data, and the image data.
 
 % ~20 different versions changing kernel size, stride rate, number of filters, number of convolutional layers.. highest performing model was 03b
 
@@ -31,9 +32,7 @@ Deep CNNs were used to classify the trials into categories of search, memorize, 
 % compiled using categorical crossentropy
 % How many parameters in the network? 524288 I think - for e9?
 
-_Exploratory classification._ The exploratory model consisted of 12 layers, and ## parameters. To determine the most effective approach, the specific parameters of the model were adjusted and tested on the exploratory dataset. Adjustments consisted of changing the kernel size, stride rate, and the number of filters. In total, 16 models were tested (see Table x). The model that resulted in the highest accuracy is shown in Figure x. The same models were used to decode the raw timeline data and the images.
+The exploratory models consisted of #-# convolutional layers, #-# fully connected layers, and #-# other layers. To maximize the accuracy of the exploratory model, numerous variations on model parameters were adjusted and tested using the exploratory dataset. Adjustments consisted of changing the kernel size, stride rate, and the number of filters. In total, 16 models were tested (see Table x). The same models were used to decode the raw timeline data and the images. The model that resulted in the highest accuracy is shown in Figure x. This model consisted of two convolutional layers, and one fully connected layer (see Figure x). This final model was tested on the confirmatory dataset.
 
 \insert{table_x} %breakdown of the different models
 \insert{fig_x} %breakdown of the model we actually used
-
-_Confirmatory classification._ The best model from the models above was used..

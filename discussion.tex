@@ -1,3 +1,17 @@
 \section{discussion}
 
-Talk about the results. Reverse accordian style c.f., introduction.
+% all classifications came out better than chance.
+% the pattern of results was the same between the two tasks..good for the model (not overfitting)
+
+% the raw data were better than the image data, probably because of increased resolution of the data
+% in some cases, this can confuse the classifier, but overlapping data seems to provide some important info to the classifier
+
+% this also came out in the important variables feeding into the classifier.
+% for the raw timeline data, individual x and y coordinate variables do not provide as strong results as the full output, but pupil size data doesn't seem to make a difference
+% for the image data, x or y coordinate data performs just as well as full data, but pupil size doesn't
+
+% x coordinate data seems to be most important.. but kinda sketchy there <-- look at more closely
+% if we roll with this, could say that the nature of the scene images probably makes horizontal information more important
+
+% actual image information wasn't accounted for here, because we were just interested in seeing if the computer could pick out patterns in the data
+% future iterations could use information to improve relative input from top-down and bottom-up input sources
