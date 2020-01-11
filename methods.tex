@@ -31,8 +31,9 @@ Deep CNNs were used to classify the trials into categories of search, memorize, 
 % compiled using categorical crossentropy
 % How many parameters in the network? 524288 I think - for e9?
 
-_Exploratory classification._ A bunch of models were developed... the best one seemed to be.....
+_Exploratory classification._ The exploratory model consisted of 12 layers, and ## parameters. To determine the most effective approach, the specific parameters of the model were adjusted and tested on the exploratory dataset. Adjustments consisted of changing the kernel size, stride rate, and the number of filters. In total, 16 models were tested (see Table x). The model that resulted in the highest accuracy is shown in Figure x. The same models were used to decode the raw timeline data and the images.
 
 \insert{table_x} %breakdown of the different models
+\insert{fig_x} %breakdown of the model we actually used
 
 _Confirmatory classification._ The best model from the models above was used..
