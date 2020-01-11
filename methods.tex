@@ -23,7 +23,13 @@ To systematically assess the predictive value of the data provided by each of th
 \insert{table_x} %list of datasets
 
 \subsection{classification}
-Deep CNNs were used to classify the trials into categories of search, memorize, or rate. Each model split the data into 70\% training, 20\% testing, 10\% validation. Each network was run through 10 iterations of the data. 
+Deep CNNs were used to classify the trials into categories of search, memorize, or rate. Each model split the data into 70\% training, 15\% validation, and 15\% testing. Each network was run through 10 iterations of the data.
+
+% ~20 different versions changing kernel size, stride rate, number of filters, number of convolutional layers.. highest performing model was 03b
+
+% 1) reshape to 180x240; 2) convolution: 5 filters, 20x20, 2x2; 3) LeakyReLU, alpha = 0.1; 4) BatchNormalization; 5) convolution: 3 filters, 10x10, stride 3x3; 6) LeakyReLU, alpha = 0.1; 7) BatchNormalization; 8) Flatten; 9) Dense, 6 units; 10) Dropout, alpha = 0.1; 11) BatchNormalization; 12) Dense-softmax, 3 units
+% compiled using categorical crossentropy
+% How many parameters in the network? 524288 I think - for e9?
 
 _Exploratory classification._ A bunch of models were developed... the best one seemed to be.....
 
