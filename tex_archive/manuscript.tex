@@ -1,10 +1,10 @@
 \documentclass[
     a4paper,
     man,
-    british
+    american
 ]{apa6}
 
-\usepackage[british]{babel}
+\usepackage[american]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{epstopdf}
 \usepackage{csquotes}
@@ -23,7 +23,7 @@
 %    firstinits=false,
 ]{biblatex}
 
-\DeclareLanguageMapping{british}{british-apa}
+\DeclareLanguageMapping{american}{american-apa}
 
 % maps apacite commands to biblatex commands
 \let \citeNP \cite
@@ -34,7 +34,7 @@
 % Apa Bib - enable reprint according to apa
 %%%
 
-\input{enable_reprint}
+% \input{enable_reprint}
 
 \bibliography{bibliography}
 
@@ -46,13 +46,20 @@
 % \author{Zachary J. Cole}
 % \affiliation{University of Nebraska-Lincoln}
 \fourauthors{Zachary J. Cole}{Karl M. Kuntzelman}{Michael D. Dodd}{Matthew R. Johnson}
-\affiliation{University of Nebraska-Lincoln}
+\fouraffiliations{University of Nebraska-Lincoln}{University of Nebraska-Lincoln}{University of Nebraska-Lincoln}{University of Nebraska-Lincoln}
 
 \keywords{deep learning, eye tracking, convolutional neural network, cognitive state, endogenous attention}
 
 \authornote{Contact: 238 Burnett Hall, Lincoln, NE 68588-0308}
 
+% \abstract
+% \input{abstract}
+
 \begin{document}
+
+% \begin{abstract}
+%     \input{asbtract}
+% \end{abstract}
 
 \maketitle
 
@@ -67,10 +74,6 @@
 \input{conclusion}
 
 % \printbibliography
-
-% \input{table_1}
-
-% \input{fig_1}
 
 % \appendix
 

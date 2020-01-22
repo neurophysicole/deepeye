@@ -1,0 +1,89 @@
+---
+title             : "Deep learning and eye tracking"
+shorttitle        : "DeepEye"
+
+author: 
+  - name          : "Zachary J. Cole"
+    affiliation   : "1"
+    corresponding : yes    # Define only one corresponding author
+    address       : "238 Burnett Hall, Lincoln, NE 68588-0308"
+    
+    email         : "z@neurophysicole.com"
+  - name          : "Karl M. Kuntzelman"
+    affiliation   : "1"
+  - name          : "Michael D. Dodd"
+    affiliation   : "1"
+  - name          : "Matthew M. Johnson"
+    affiliation   : "1"
+
+affiliation:
+  - id            : "1"
+    institution   : "University of Nebraska-Lincoln"
+
+
+authornote: |
+  Add complete departmental affiliations for each author here. Each new line herein must be indented, like this line.
+
+  Enter author note here.
+
+abstract: |
+  Abstract stuff....
+  <!-- https://tinyurl.com/ybremelq -->
+  
+keywords          : "deep learning, eye tracking, convolutional neural network, cognitive state, endogenous attention"
+wordcount         : "X"
+
+# bibliography      : ["r-references.bib"]
+
+floatsintext      : no
+figurelist        : no
+tablelist         : no
+footnotelist      : no
+linenumbers       : yes
+mask              : no
+draft             : no
+
+documentclass     : "apa6"
+classoption       : "man"
+output            : papaja::apa6_pdf
+---
+
+```{r setup, include = FALSE}
+library("papaja")
+```
+
+```{r analysis-preferences}
+# Seed for random number generation
+set.seed(42)
+knitr::opts_chunk$set(cache.extra = knitr::rand_seed)
+```
+
+<!-- <!-- Intro --> -->
+<!-- ```{r child = "deepeye_intro.md"} -->
+<!-- ``` -->
+
+<!-- Methods -->
+```{r child = "deepeye_methods.md"}
+```
+
+<!-- <!-- Results --> -->
+<!-- ```{r child = "deepeye_results.md"} -->
+<!-- ``` -->
+
+<!-- <!-- Discussion --> -->
+<!-- ```{r child = "deepeye_discussion.md"} -->
+<!-- ``` -->
+
+<!-- \newpage -->
+
+<!-- <!-- References --> -->
+<!-- ```{r create_r-references} -->
+<!-- r_refs(file = "deepeye-references.bib") -->
+<!-- ``` -->
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+<div id="refs" custom-style="Bibliography"></div>
+\endgroup
