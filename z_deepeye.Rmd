@@ -33,7 +33,7 @@ abstract: |
 keywords          : "deep learning, eye tracking, convolutional neural network, cognitive state, endogenous attention"
 wordcount         : "X "
 
-# bibliography      : ["r-references.bib"]
+bibliography      : ["references/blackbox_manuscript.bib"]
 
 floatsintext      : no
 figurelist        : no
@@ -45,7 +45,7 @@ draft             : no
 
 documentclass     : "apa6"
 classoption       : "man"
-output            : papaja::apa6_pdf
+output            : papaja::apa6_pdf #apa6_docx
 ---
 
 ```{r setup, include = FALSE}
@@ -79,10 +79,12 @@ knitr::opts_chunk$set(cache.extra = knitr::rand_seed)
 ```
 
 \newpage
-
+---
+nocite:           : @Yarbus1967Eye
+---
 <!-- References -->
 ```{r create_r-references}
-r_refs(file = "deepeye-references.bib")
+r_refs(file = "references/blackbox_manuscript.bib")
 ```
 
 \begingroup

@@ -1,0 +1,45 @@
+body {
+  background: url(/ui/app/images/bg.png) #f4f1ed fixed repeat top left;
+}
+
+.jrnl-bg-default, body[data-sitename="iovs"] .jrnl-feature--cover-box .jf-cover, body[data-sitename="jov"] .jrnl-feature--cover-box .jf-cover, body[data-sitename="tvst"] .jrnl-feature--cover-box .jf-cover, body[data-sitename="umb"] .jrnl-summary-iovs .js-cover, body[data-sitename="umb"] .jrnl-summary-jov .js-cover, body[data-sitename="umb"] .jrnl-summary-tvst .js-cover {
+  background: no-repeat 0 0;
+}
+
+.cover-umb-lg, body[data-sitename="umb"] .jrnl-summary-iovs .js-cover, body[data-sitename="umb"] .jrnl-summary-jov .js-cover, body[data-sitename="umb"] .jrnl-summary-tvst .js-cover {
+  background-size: 116px 154px;
+  height: 154px;
+  width: 116px;
+}
+
+.cover-feature-lg, body[data-sitename="iovs"] .jrnl-feature--cover-box .jf-cover, body[data-sitename="jov"] .jrnl-feature--cover-box .jf-cover, body[data-sitename="tvst"] .jrnl-feature--cover-box .jf-cover {
+  background-size: 175px 233px;
+  height: 233px;
+  width: 175px;
+}
+
+body[data-sitename="iovs"] .jrnl-feature--cover-box .jf-cover {
+  background-image: url("../../../../Images/fallbackCovers/iovs.png");
+}
+
+body[data-sitename="jov"] .jrnl-feature--cover-box .jf-cover {
+  background-image: url("../../../../Images/fallbackCovers/jov.png");
+}
+
+body[data-sitename="tvst"] .jrnl-feature--cover-box .jf-cover {
+  background-image: url("../../../../Images/fallbackCovers/tvst.png");
+}
+
+body[data-sitename="umb"] .jrnl-summary-iovs .js-cover {
+  background-image: url("../../../../Images/fallbackCovers/iovs.png");
+}
+body[data-sitename="umb"] .jrnl-summary-jov .js-cover {
+  background-image: url("../../../../Images/fallbackCovers/jov.png");
+}
+body[data-sitename="umb"] .jrnl-summary-tvst .js-cover {
+  background-image: url("../../../../Images/fallbackCovers/tvst.png");
+}
+
+section.master-main.preview-mode {
+  background: url("/UI/app/images/preview-background.png");
+}

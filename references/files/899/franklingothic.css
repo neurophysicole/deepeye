@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'franklin_gothic';
+  src: url("franklingothic/FranklinGothic-Book-webfont.eot");
+  src: url("franklingothic/FranklinGothic-Book-webfont.eot?#iefix") format("embedded-opentype"), url("franklingothic/FranklinGothic-Book-webfont.woff") format("woff"), url("franklingothic/FranklinGothic-Book-webfont.ttf") format("truetype"), url("franklingothic/FranklinGothic-Book-webfont.svg#franklin_gothic_fsbook") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'franklin_gothic';
+  src: url("franklingothic/FranklinGothic-BookIt-webfont.eot");
+  src: url("franklingothic/FranklinGothic-BookIt-webfont.eot?#iefix") format("embedded-opentype"), url("franklingothic/FranklinGothic-BookIt-webfont.woff") format("woff"), url("franklingothic/FranklinGothic-BookIt-webfont.ttf") format("truetype"), url("franklingothic/FranklinGothic-BookIt-webfont.svg#franklin_gothic_fsbook_italic") format("svg");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'franklin_gothic';
+  src: url("franklingothic/FranklinGothic-Med-webfont.eot");
+  src: url("franklingothic/FranklinGothic-Med-webfont.eot?#iefix") format("embedded-opentype"), url("franklingothic/FranklinGothic-Med-webfont.woff") format("woff"), url("franklingothic/FranklinGothic-Med-webfont.ttf") format("truetype"), url("franklingothic/FranklinGothic-Med-webfont.svg#franklin_gothic_fsmedium") format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'franklin_gothic';
+  src: url("franklingothic/FranklinGothic-MedIt-webfont.eot");
+  src: url("franklingothic/FranklinGothic-MedIt-webfont.eot?#iefix") format("embedded-opentype"), url("franklingothic/FranklinGothic-MedIt-webfont.woff") format("woff"), url("franklingothic/FranklinGothic-MedIt-webfont.ttf") format("truetype"), url("franklingothic/FranklinGothic-MedIt-webfont.svg#franklin_gothic_fsMdIt") format("svg");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'franklin_gothic';
+  src: url("franklingothic/FranklinGothic-Demi-webfont.eot");
+  src: url("franklingothic/FranklinGothic-Demi-webfont.eot?#iefix") format("embedded-opentype"), url("franklingothic/FranklinGothic-Demi-webfont.woff") format("woff"), url("franklingothic/FranklinGothic-Demi-webfont.ttf") format("truetype"), url("franklingothic/FranklinGothic-Demi-webfont.svg#franklin_gothic_fsdemi") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'franklin_gothic';
+  src: url("franklingothic/FranklinGothic-Cd-webfont.eot");
+  src: url("franklingothic/FranklinGothic-Cd-webfont.eot?#iefix") format("embedded-opentype"), url("franklingothic/FranklinGothic-Cd-webfont.woff") format("woff"), url("franklingothic/FranklinGothic-Cd-webfont.ttf") format("truetype"), url("franklingothic/FranklinGothic-Cd-webfont.svg#franklin_gothic_fscondensed") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'franklin_gothic';
+  src: url("franklingothic/FranklinGothic-MedCd-webfont.eot");
+  src: url("franklingothic/FranklinGothic-MedCd-webfont.eot?#iefix") format("embedded-opentype"), url("franklingothic/FranklinGothic-MedCd-webfont.woff") format("woff"), url("franklingothic/FranklinGothic-MedCd-webfont.ttf") format("truetype"), url("franklingothic/FranklinGothic-MedCd-webfont.svg#franklin_gothic_fsMdCn") format("svg");
+  font-weight: 900;
+  font-style: normal;
+}
