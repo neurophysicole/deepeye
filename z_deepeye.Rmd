@@ -13,7 +13,7 @@ author:
     affiliation   : "1"
   - name          : "Michael D. Dodd"
     affiliation   : "1"
-  - name          : "Matthew M. Johnson"
+  - name          : "Matthew R. Johnson"
     affiliation   : "1"
 
 affiliation:
