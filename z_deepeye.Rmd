@@ -1,5 +1,5 @@
 ---
-title             : "Convolutional neural networks can decode eye movement data: A black box alternative for solving the inverse Yarbus problem"
+title             : "Convolutional neural networks can decode eye movement data: A black box approach to predicting task from eye movements"
 shorttitle        : "Deep learning and eye tracking"
 
 author: 
@@ -21,10 +21,7 @@ affiliation:
     institution   : "University of Nebraska-Lincoln"
 
 
-authornote: |
-  Add complete departmental affiliations for each author here. Each new line herein must be indented, like this line.
-
-  Enter author note here.
+authornote: ""
 
 abstract: |
   We learned so deeply we incepted the inferred cogntive processes that underlie the inferred eye movement features.
@@ -33,9 +30,11 @@ abstract: |
 keywords          : "deep learning, eye tracking, convolutional neural network, cognitive state, endogenous attention"
 wordcount         : "X "
 
-bibliography      : ["references/blackbox_manuscript.bib"]
+bibliography      : ["references/blackbox_manuscript/blackbox_manuscript.bib"]
 
-floatsintext      : no
+figsintext        : yes
+# tablesintext      : yes
+floatsintext      : yes
 figurelist        : no
 tablelist         : no
 footnotelist      : no
@@ -43,9 +42,14 @@ linenumbers       : yes
 mask              : no
 draft             : no
 
+header-includes:
+   - \usepackage{multirow}
+   - \usepackage{graphicx}
+   
 documentclass     : "apa6"
 classoption       : "man"
-output            : papaja::apa6_pdf #apa6_docx
+output            : papaja::apa6_pdf
+fig_caption       : yes
 ---
 
 ```{r setup, include = FALSE}
@@ -74,17 +78,13 @@ knitr::opts_chunk$set(cache.extra = knitr::rand_seed)
 ```{r child = "04_discussion_deepeye.md"}
 ```
 
-<!-- Conclusion -->
-```{r child = "05_conclusion_deepeye.md"}
-```
-
 \newpage
 ---
-nocite:           : @Yarbus1967Eye
+nocite:           : @yarbusEyeMovementsVision1967
 ---
 <!-- References -->
 ```{r create_r-references}
-r_refs(file = "references/blackbox_manuscript.bib")
+r_refs(file = "references/blackbox_manuscript_r.bib")
 ```
 
 \begingroup
