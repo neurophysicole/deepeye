@@ -19,21 +19,20 @@ author:
 affiliation:
   - id            : "1"
     institution   : "University of Nebraska-Lincoln"
+    
+authornote        : >
+  This work was supported by NSF/EPSCoR grant #1632849 and NIH grant GM130461 awarded to MRJ and colleagues.
 
+abstract          : >
+  Previous attempts to classify task from eye movement data have relied on model architectures designed to emulate theoretically defined cognitive processes, and/or data that has been processed into aggregate (e.g., fixations, saccades) or statistical (e.g., fixation density) features. _Black box_ convolutional neural networks (CNNs) are a model architecture capable of identifying relevant features in raw and minimally processed data and images, but difficulty interpreting the mechanisms underlying these model architectures have contributed to challenges in generalizing lab-trained CNNs to applied contexts. In the current study, a CNN classifier was used to classify task from two eye movement datasets (Exploratory and Confirmatory) in which participants searched, memorized, or rated indoor and outdoor scene images. The Exploratory dataset was used to tune the hyperparameters of the model, and the resulting model architecture was re-trained, validated, and tested on the Confirmatory dataset. The data were formatted into raw timeline data (i.e., x-coordinate, y-coordinate, pupil size) and minimally processed images. To further understand the relative informational value of the raw components of the eye movement data, the timeline and image datasets were broken down into subsets with one or more of the components of the data systematically removed. Average classification accuracies were compared between datasets and subsets. Classification of the timeline data consistently outperformed the image data. The Memorize condition was most often confused with the Search and Rate conditions. Pupil size was the least uniquely informative eye movement component when compared with the x- and y-coordinates. The overall pattern of results for the Exploratory dataset was replicated in the Confirmatory dataset, indicating the potential generalizability of this black box approach.
+#should be 200 words (approximately)
 
-authornote: ""
-
-abstract: |
-  We learned so deeply we incepted the inferred cogntive processes that underlie the inferred eye movement features.
-  <!-- https://tinyurl.com/ybremelq -->
-  
 keywords          : "deep learning, eye tracking, convolutional neural network, cognitive state, endogenous attention"
-wordcount         : "X "
+wordcount         : "6222" #5580 (text body) + 642 (references)
 
-bibliography      : ["references/blackbox_manuscript/blackbox_manuscript.bib"]
+bibliography      : ["references/blackbox_manuscript.bib"]
 
 figsintext        : yes
-# tablesintext      : yes
 floatsintext      : yes
 figurelist        : no
 tablelist         : no
@@ -42,12 +41,14 @@ linenumbers       : yes
 mask              : no
 draft             : no
 
+mainfont          : Helvetica
+
 header-includes:
    - \usepackage{multirow}
    - \usepackage{graphicx}
    
 documentclass     : "apa6"
-classoption       : "man"
+classoption       : "doc"
 output            : papaja::apa6_pdf
 fig_caption       : yes
 ---
@@ -79,9 +80,6 @@ knitr::opts_chunk$set(cache.extra = knitr::rand_seed)
 ```
 
 \newpage
----
-nocite:           : @yarbusEyeMovementsVision1967
----
 <!-- References -->
 ```{r create_r-references}
 r_refs(file = "references/blackbox_manuscript_r.bib")

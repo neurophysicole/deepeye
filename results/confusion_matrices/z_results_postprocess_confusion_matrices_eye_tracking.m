@@ -320,7 +320,9 @@ for data = 1:length(results)
     
     %x axis
     if any(strcmp(x_axis, figure_title))
-        xticks([1 2 3]); xticklabels({'Search', 'Memorize', 'Rate'});
+        % shortening the labels (need to make a legend for the figure)
+        % -- Z DRAFT2 -- xticks([1 2 3]); xticklabels({'Search', 'Memorize', 'Rate'});
+        xticks([1 2 3]); xticklabels({'S', 'M', 'R'});
     else
         set(gca, 'xtick', []);
         set(gca, 'xticklabel', []);
@@ -328,25 +330,30 @@ for data = 1:length(results)
     
     % y_axis
     if any(strcmp(y_axis, figure_title))  
-        yticks([1 2 3]); yticklabels({'Search', 'Memorize', 'Rate'});
+        % -- Z DRAFT2 -- yticks([1 2 3]); yticklabels({'Search', 'Memorize', 'Rate'});
+        yticks([1 2 3]); yticklabels({'S', 'M', 'R'});
     else
         set(gca, 'ytick', []);
         set(gca, 'yticklabel', []);
     end
     
-    ax = gca; ax.FontSize = 10; ax.FontName = 'Helvetica'; %ax.FontWeight = 'bold';
+    ax = gca; ax.FontSize = 16; ax.FontName = 'Helvetica'; %ax.FontWeight = 'bold';
     
     new_title = figure_title{1}(1:3); %had to do this to get the filenames and fig title how I wanted them
-    title(new_title, 'FontSize', 12, 'FontName', 'Helvetica', 'FontWeight', 'normal', 'Color', 'black');
+    % -- Z DRAFT2 -- making the font size larger..
+    % title(new_title, 'FontSize', 12, 'FontName', 'Helvetica', 'FontWeight', 'normal', 'Color', 'black');
+    title(new_title, 'FontSize', 16, 'FontName', 'Helvetica', 'FontWeight', 'normal', 'Color', 'black');
     
     %x axis
     if any(strcmp(x_axis, figure_title))
-        xlabel('Predicted', 'FontSize', 12, 'Color', 'black');
+        % -- Z DRAFT2 -- xlabel('Predicted', 'FontSize', 12, 'Color', 'black');
+        xlabel('Predicted', 'FontSize', 16, 'Color', 'black');
     end
     
     % y_axis
     if any(strcmp(y_axis, figure_title))  
-        ylabel('Actual', 'FontSize', 12, 'Color', 'black');
+        % -- Z DRAFT2 -- ylabel('Actual', 'FontSize', 12, 'Color', 'black');
+        ylabel('Actual', 'FontSize', 16, 'Color', 'black');
     end
 
     disp(confusion_matrix); %old fonts were al Trebuchet MS
@@ -357,7 +364,7 @@ for data = 1:length(results)
             x = i - .2;
             ids = text(x,j,str);
             ids.FontName = 'Helvetica';
-            ids.FontSize = 12;
+            ids.FontSize = 16;
 %             ids.FontWeight = 'bold';
             ids.Color = 'white';
         end
