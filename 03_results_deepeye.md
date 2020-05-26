@@ -9,7 +9,7 @@ knitr::include_graphics(path = "results/r_code/timeline_subset_chance.pdf")
 ```
 
 <!-- Timeline Confusion Matrices -->
-```{r timeline-conf-matrices, fig.cap = "The confusion matrices represent the average classification accuracies for each condition of the timeline data. The vertical axis of the confusion matrices represents the actual condition for trial. The horizontle axis of the confusion matrices represents the condition that was predicted by the model.", echo = FALSE}
+```{r timeline-conf-matrices, fig.cap = "The confusion matrices represent the average classification accuracies for each condition of the timeline data (S = Search, M = Memorize, R = Rate). The vertical axis of the confusion matrices represents the actual condition for trial. The horizontle axis of the confusion matrices represents the condition that was predicted by the model.", echo = FALSE}
 knitr::include_graphics(path = "figures/timeline_conf_matrices.pdf")
 ```
 
@@ -41,7 +41,7 @@ There was also a difference in classification accuracies for the X$\varnothing\v
 \subsubsection{Confirmatory.}
 Classification accuracies for the Confirmatory XYP timeline dataset were well above chance (_M_ = .537, _SD_ = 0.036, _t_$_{(9)}$ = 17.849, _p_ < .001). Classification accuracies for the data subsets were also better than chance (see Figure \@ref(fig:timeline-parcellation-chance)). Overall, there was high similarity in the pattern of results for the Exploratory and Confirmatory datasets (see Figure \@ref(fig:timeline-parcellation-chance)). Furthermore, the general trend showing that pupil size was the least informative eye tracking data component was replicated in the Confirmatory dataset (see Table \@ref(tab:timeline-parcellation-comparisons)). Also in concordance with the Exploratory timeline dataset, the confusion matrices for these data revealed that the Memorize task was most often confused with the Search and Rate tasks (see Figure \@ref(fig:timeline-conf-matrices)).
 
-To test the generalizability of the model to other eye tracking data, classification accuracies for the XYP Exploratory and Confirmatory timeline datasets were compared. The Shapiro-Wilk test for normality indicated that the Exploratory (_W_ = 0.937, _p_ = .524) and Confirmatory (_W_ = 0.884, _p_ = .145) datasets were normally distributed, but Levene's test indicated that the variances were not equal, _F_$_{(1, 18)}$ = 8.783, _p_ = .008. Welch's unequal variances _t_-test did not show a difference between the two datasets, _t_$_{(13.045)}$ = 0.907, _p_ = .381, Cohen's _d_ = 0.406. These findings inidcate that the deep learning model decoded the Exploratory and Confirmatory timeline datasets equally well, but the Confirmatory dataset classifications were less precise (as indicated by the increase in standard deviation).<!-- likely the product of a lot fewer data points -->
+To test the generalizability of the model to other eye tracking data, classification accuracies for the XYP Exploratory and Confirmatory timeline datasets were compared. The Shapiro-Wilk test for normality indicated that the Exploratory (_W_ = 0.937, _p_ = .524) and Confirmatory (_W_ = 0.884, _p_ = .145) datasets were normally distributed, but Levene's test indicated that the variances were not equal, _F_$_{(1, 18)}$ = 8.783, _p_ = .008. Welch's unequal variances _t_-test did not show a difference between the two datasets, _t_$_{(13.045)}$ = 0.907, _p_ = .381, Cohen's _d_ = 0.406. These findings indicate that the deep learning model decoded the Exploratory and Confirmatory timeline datasets equally well, but the Confirmatory dataset classifications were less precise (as indicated by the increase in standard deviation).<!-- likely the product of a lot fewer data points -->
 
 \subsection{Plot Image Classification}
 \subsubsection{Exploratory.}
@@ -52,8 +52,8 @@ Classification accuracies for the XYP plot image data were better than chance (_
 knitr::include_graphics(path = "results/r_code/img_subset_chance.pdf")
 ```
 
-<!-- Image Confidence Matrices -->
-```{r img-conf-matrices, fig.cap = "The confusion matrices represent the average classification accuracies for each condition of the image data. The vertical axis of the confusion matrices represents the actual condition for the trial. The horizontle axis of the confusion matrices represents the condition that was predicted by the model.", echo = FALSE}
+<!-- Image Confusion Matrices -->
+```{r img-conf-matrices, fig.cap = "The confusion matrices represent the average classification accuracies for each condition of the image data (S = Search, M = Memorize, R = Rate). The vertical axis of the confusion matrices represents the actual condition for the trial. The horizontle axis of the confusion matrices represents the condition that was predicted by the model.", echo = FALSE}
 knitr::include_graphics(path = "figures/img_conf_matrices.pdf")
 ```
 

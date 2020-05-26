@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.9.28)  25 MAY 2020 02:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.9.28)  26 MAY 2020 02:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1058,20 +1058,38 @@ Package pdftex.def Info: figures/img_conf_matrices.pdf  used on input line 293.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [13 <./results/r_code/img_subset_chance.pdf>] [14 <./figures/img_conf_matrices.
-pdf>] [15] [16] [17] [18]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 420.
-[19]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 420.
+pdf>] [15] [16] [17] [18] [19]
+<supplementary_analysis/supp_subset_chance.pdf, id=312, 317.185pt x 302.12875pt
+>
+File: supplementary_analysis/supp_subset_chance.pdf Graphic file (type pdf)
+<use supplementary_analysis/supp_subset_chance.pdf>
+Package pdftex.def Info: supplementary_analysis/supp_subset_chance.pdf  used on
+ input line 456.
+(pdftex.def)             Requested size: 317.1842pt x 302.128pt.
+<supplementary_analysis/confusion_matrices/supp_conf_matrices.pdf, id=316, 1022
+.82124pt x 651.43375pt>
+File: supplementary_analysis/confusion_matrices/supp_conf_matrices.pdf Graphic 
+file (type pdf)
+<use supplementary_analysis/confusion_matrices/supp_conf_matrices.pdf>
+Package pdftex.def Info: supplementary_analysis/confusion_matrices/supp_conf_ma
+trices.pdf  used on input line 491.
+(pdftex.def)             Requested size: 433.6086pt x 276.16484pt.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 501.
+[20
+
+] [21 <./supplementary_analysis/supp_subset_chance.pdf>] [22 <./supplementary_a
+nalysis/confusion_matrices/supp_conf_matrices.pdf>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 501.
 (./z_deepeye.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 420.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 420.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 501.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 501.
  ) 
 Here is how much of TeX's memory you used:
- 16667 strings out of 492609
- 247803 string characters out of 6129048
- 386669 words of memory out of 5000000
- 20092 multiletter control sequences out of 15000+600000
- 89534 words of font info for 146 fonts, out of 8000000 for 9000
+ 16690 strings out of 492609
+ 248536 string characters out of 6129048
+ 387447 words of memory out of 5000000
+ 20106 multiletter control sequences out of 15000+600000
+ 89617 words of font info for 147 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,11n,47p,3192b,473s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/lo
@@ -1087,10 +1105,10 @@ st/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2019/texmf-dist/fonts/typ
 e1/public/lm/lmri10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/
 lm/lmss8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/sy
 mbols/msbm10.pfb>
-Output written on z_deepeye.pdf (19 pages, 4522471 bytes).
+Output written on z_deepeye.pdf (22 pages, 5183552 bytes).
 PDF statistics:
- 417 PDF objects out of 1000 (max. 8388607)
- 335 compressed objects within 4 object streams
- 71 named destinations out of 1000 (max. 500000)
- 12452 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 472 PDF objects out of 1000 (max. 8388607)
+ 375 compressed objects within 4 object streams
+ 78 named destinations out of 1000 (max. 500000)
+ 12462 words of extra memory for PDF output out of 14400 (max. 10000000)
 

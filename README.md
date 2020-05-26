@@ -6,9 +6,6 @@ I setup this document so the main file is R Markdown, then the other files are M
 
 ## TO DOs
 
-- Need to finish up SR supplemental analysis.
-  - Writeup appendix.
-
 ## NOTES
 
 - Follow-up with foveated stimuli features

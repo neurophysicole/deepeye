@@ -28,7 +28,7 @@ abstract          : >
 #should be 200 words (approximately)
 
 keywords          : "deep learning, eye tracking, convolutional neural network, cognitive state, endogenous attention"
-wordcount         : "6222" #5580 (text body) + 642 (references)
+wordcount         : "6305" #5663 (text body -- probably including Appendix) + 642 (references)
 
 bibliography      : ["references/blackbox_manuscript.bib"]
 
@@ -47,6 +47,8 @@ header-includes:
    - \usepackage{multirow}
    - \usepackage{graphicx}
    
+appendix          : "supp_analysis.Rmd"
+
 documentclass     : "apa6"
 classoption       : "doc"
 output            : papaja::apa6_pdf
