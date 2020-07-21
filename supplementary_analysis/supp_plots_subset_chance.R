@@ -39,6 +39,8 @@ colors      <- scale_fill_brewer(palette = 'Set1') #set the color scheme
 placement   <- scale_y_continuous(expand = c(0,0)) #put bars on x-axis
 hz_line     <- geom_hline(yintercept = (chance), linetype = 'dashed') #horizontal line indicating chance performance
 hz_line_lab <- geom_text(aes(0, chance, label = ' Chance', hjust = 'left', vjust = -1, fontface = 'plain', family = 'Helvetica')) #Chance line label
+bar_labs    <- geom_text(aes(label = m.data, vjust = 4, fontface = 'plain', family = 'Helvetica'), position = position_dodge(width = 0.9), size = 2.5) #add means to the figure
 theme       <- theme_apa(legend.pos = 'top', legend.font.size = '12')
 
-plot + lims + plot_labs + bars + error_bars + colors + placement + hz_line + hz_line_lab + theme
+zplot       <- plot + lims + plot_labs + bars + error_bars + colors + placement + hz_line + hz_line_lab + bar_labs + theme
+zplot
