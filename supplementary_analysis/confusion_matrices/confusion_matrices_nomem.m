@@ -4,7 +4,7 @@ function confusion_matrices_nomem
 nits = 10;
 
 % establish paths
-path                = '/Volumes/eeg_data_analysis/04_mike_eye_tracking/messin_around/z/no_mem_trials/';
+path                = '/Volumes/eeg_data_analysis/04_mike_eye_tracking/messin_around/z/deepeye/supp_analysis/';
 e1_nomem_path       = 'e1_timeline/results/z_kk_6s_timeline_e1_NOMEM';
 e1_norate_path      = 'e1_timeline/norate_results/z_kk_6s_timeline_e1_NORATE';
 e1_nosearch_path    = 'e1_timeline/nosearch_results/z_kk_6s_timeline_e1_NOSEARCH';
@@ -67,7 +67,7 @@ for data = 1:length(names)
         'SM0_1', 'SM0_9' 
         };
 
-    axis square; colormap(flipud(winter(10)));
+    axis square; colormap(flipud(winter(7)));
 
     % setup the labels
     omr = {

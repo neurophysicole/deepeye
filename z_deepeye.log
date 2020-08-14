@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.9.28)  4 AUG 2020 20:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.9.28)  13 AUG 2020 20:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -902,71 +902,66 @@ Underfull \vbox (badness 3872) has occurred while \output is active []
 Underfull \vbox (badness 4752) has occurred while \output is active []
 
 [8] [9] [10]
-<figures/cond_imgs.png, id=65, 991.705pt x 280.04625pt>
+<figures/cond_imgs.png, id=66, 991.705pt x 280.04625pt>
 File: figures/cond_imgs.png Graphic file (type png)
 <use figures/cond_imgs.png>
-Package pdftex.def Info: figures/cond_imgs.png  used on input line 203.
+Package pdftex.def Info: figures/cond_imgs.png  used on input line 205.
 (pdftex.def)             Requested size: 469.74828pt x 132.65157pt.
+
+Underfull \vbox (badness 4752) has occurred while \output is active []
+
 [11 <./figures/cond_imgs.png>]
-<figures/subset_imgs.png, id=77, 1033.8625pt x 627.34375pt>
+<figures/subset_imgs.png, id=76, 1033.8625pt x 627.34375pt>
 File: figures/subset_imgs.png Graphic file (type png)
 <use figures/subset_imgs.png>
-Package pdftex.def Info: figures/subset_imgs.png  used on input line 213.
+Package pdftex.def Info: figures/subset_imgs.png  used on input line 215.
 (pdftex.def)             Requested size: 469.76138pt x 285.04938pt.
-[12 <./figures/subset_imgs.png>]
-<figures/models.png, id=87, 728.7225pt x 1525.7pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[12 <./figures/subset_imgs.png>] [13]
+<figures/models.png, id=93, 728.7225pt x 1525.7pt>
 File: figures/models.png Graphic file (type png)
 <use figures/models.png>
-Package pdftex.def Info: figures/models.png  used on input line 227.
+Package pdftex.def Info: figures/models.png  used on input line 229.
 (pdftex.def)             Requested size: 310.6648pt x 650.42767pt.
 
-LaTeX Warning: Float too large for page by 28.99765pt on input line 229.
+LaTeX Warning: Float too large for page by 28.99765pt on input line 231.
 
-
-Underfull \vbox (badness 2452) has occurred while \output is active []
-
-[13] [14 <./figures/models.png>]
-<results/r_code/timeline_subset_chance.pdf, id=102, 400.49625pt x 318.18875pt>
+[14] [15 <./figures/models.png>]
+<results/r_code/timeline_subset_chance.pdf, id=111, 400.49625pt x 318.18875pt>
 File: results/r_code/timeline_subset_chance.pdf Graphic file (type pdf)
 <use results/r_code/timeline_subset_chance.pdf>
 Package pdftex.def Info: results/r_code/timeline_subset_chance.pdf  used on inp
-ut line 245.
+ut line 247.
 (pdftex.def)             Requested size: 400.49527pt x 318.18796pt.
-<figures/timeline_conf_matrices.pdf, id=103, 1330.9725pt x 858.20625pt>
+<figures/timeline_conf_matrices.pdf, id=112, 1330.9725pt x 858.20625pt>
 File: figures/timeline_conf_matrices.pdf Graphic file (type pdf)
 <use figures/timeline_conf_matrices.pdf>
 Package pdftex.def Info: figures/timeline_conf_matrices.pdf  used on input line
- 251.
+ 253.
 (pdftex.def)             Requested size: 469.74667pt x 302.89096pt.
-[15]
+[16 <./results/r_code/timeline_subset_chance.pdf>] [17 <./figures/timeline_conf
+_matrices.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \vbox (badness 1454) has occurred while \output is active []
-
-[16 <./results/r_code/timeline_subset_chance.pdf>]
-Underfull \vbox (badness 4981) has occurred while \output is active []
-
-[17 <./figures/timeline_conf_matrices.pdf>]
-<results/r_code/img_subset_chance.pdf, id=181, 400.49625pt x 318.18875pt>
+[18]
+<results/r_code/img_subset_chance.pdf, id=186, 400.49625pt x 318.18875pt>
 File: results/r_code/img_subset_chance.pdf Graphic file (type pdf)
 <use results/r_code/img_subset_chance.pdf>
 Package pdftex.def Info: results/r_code/img_subset_chance.pdf  used on input li
-ne 291.
+ne 293.
 (pdftex.def)             Requested size: 400.49527pt x 318.18796pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 292.
-<figures/img_conf_matrices.pdf, id=182, 1330.9725pt x 857.2025pt>
+(Font)              <5> on input line 294.
+<figures/img_conf_matrices.pdf, id=187, 1330.9725pt x 857.2025pt>
 File: figures/img_conf_matrices.pdf Graphic file (type pdf)
 <use figures/img_conf_matrices.pdf>
-Package pdftex.def Info: figures/img_conf_matrices.pdf  used on input line 297.
+Package pdftex.def Info: figures/img_conf_matrices.pdf  used on input line 299.
 
 (pdftex.def)             Requested size: 469.74667pt x 302.5367pt.
-[18] [19 <./results/r_code/img_subset_chance.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[20 <./figures/img_conf_matrices.pdf>] [21]
+[19 <./results/r_code/img_subset_chance.pdf>] [20 <./figures/img_conf_matrices.
+pdf>] [21]
 Underfull \vbox (badness 4752) has occurred while \output is active []
 
 [22]
@@ -975,58 +970,70 @@ Underfull \vbox (badness 4752) has occurred while \output is active []
 [23]
 Underfull \vbox (badness 4752) has occurred while \output is active []
 
-[24] [25] [26] [27] [28] [29]
-<supplementary_analysis/supp_subset_chance.pdf, id=346, 400.49625pt x 318.18875
-pt>
-File: supplementary_analysis/supp_subset_chance.pdf Graphic file (type pdf)
-<use supplementary_analysis/supp_subset_chance.pdf>
-Package pdftex.def Info: supplementary_analysis/supp_subset_chance.pdf  used on
- input line 468.
-(pdftex.def)             Requested size: 400.49527pt x 318.18796pt.
-[30
-
-
-]
-<supplementary_analysis/confusion_matrices/supp_conf_matrices.pdf, id=358, 1022
-.82124pt x 651.43375pt>
+[24] [25] [26] [27] [28] [29] [30]
+<supplementary_analysis/recalc_orig_accs/recalc_bar_graph.png, id=353, 433.62pt
+ x 274.02374pt>
+File: supplementary_analysis/recalc_orig_accs/recalc_bar_graph.png Graphic file
+ (type png)
+<use supplementary_analysis/recalc_orig_accs/recalc_bar_graph.png>
+Package pdftex.def Info: supplementary_analysis/recalc_orig_accs/recalc_bar_gra
+ph.png  used on input line 468.
+(pdftex.def)             Requested size: 433.63878pt x 274.03561pt.
+<supplementary_analysis/confusion_matrices/supp_conf_matrices.pdf, id=354, 1022
+.82124pt x 650.43pt>
 File: supplementary_analysis/confusion_matrices/supp_conf_matrices.pdf Graphic 
 file (type pdf)
 <use supplementary_analysis/confusion_matrices/supp_conf_matrices.pdf>
 Package pdftex.def Info: supplementary_analysis/confusion_matrices/supp_conf_ma
-trices.pdf  used on input line 503.
-(pdftex.def)             Requested size: 469.75435pt x 299.18604pt.
-AED endfloat: Processing end Figures and Tables [31 <./supplementary_analysis/s
-upp_subset_chance.pdf>] [32 <./supplementary_analysis/confusion_matrices/supp_c
-onf_matrices.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 513.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 513.
+trices.pdf  used on input line 495.
+(pdftex.def)             Requested size: 469.75435pt x 298.72504pt.
+[31
+
+
+] [32 <./supplementary_analysis/recalc_orig_accs/recalc_bar_graph.png>]
+<supplementary_analysis/recalc_orig_accs/confusion_matrices/recalc_conf_matrice
+s.pdf, id=373, 1023.825pt x 650.43pt>
+File: supplementary_analysis/recalc_orig_accs/confusion_matrices/recalc_conf_ma
+trices.pdf Graphic file (type pdf)
+<use supplementary_analysis/recalc_orig_accs/confusion_matrices/recalc_conf_mat
+rices.pdf>
+Package pdftex.def Info: supplementary_analysis/recalc_orig_accs/confusion_matr
+ices/recalc_conf_matrices.pdf  used on input line 539.
+(pdftex.def)             Requested size: 469.74667pt x 298.42729pt.
+AED endfloat: Processing end Figures and Tables [33 <./supplementary_analysis/c
+onfusion_matrices/supp_conf_matrices.pdf>] [34 <./supplementary_analysis/recalc
+_orig_accs/confusion_matrices/recalc_conf_matrices.pdf>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 549.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 549.
 (./z_deepeye.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 513.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 513.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 549.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 549.
  ) 
 Here is how much of TeX's memory you used:
- 16840 strings out of 492609
- 250651 string characters out of 6129048
- 396617 words of memory out of 5000000
- 20297 multiletter control sequences out of 15000+600000
- 63001 words of font info for 92 fonts, out of 8000000 for 9000
+ 16846 strings out of 492609
+ 251129 string characters out of 6129048
+ 397096 words of memory out of 5000000
+ 20302 multiletter control sequences out of 15000+600000
+ 62872 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,11n,47p,2781b,504s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,11n,47p,2781b,508s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/lo
 cal/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/20
-19/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/texlive/2019/texmf-dist/
-fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type
-1/public/lm/lmmi12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/l
-m/lmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb
-></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local
-/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2
-019/texmf-dist/fonts/type1/public/lm/lmri8.pfb></usr/local/texlive/2019/texmf-d
-ist/fonts/type1/public/lm/lmss8.pfb></usr/local/texlive/2019/texmf-dist/fonts/t
-ype1/public/amsfonts/symbols/msbm10.pfb>
-Output written on z_deepeye.pdf (32 pages, 5122037 bytes).
+19/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/texmf-dist/
+fonts/enc/dvips/lm/lm-mathsy.enc}</usr/local/texlive/2019/texmf-dist/fonts/type
+1/public/lm/lmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/l
+m/lmmi12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi8.pf
+b></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/loc
+al/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2
+019/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2019/texmf-
+dist/fonts/type1/public/lm/lmri8.pfb></usr/local/texlive/2019/texmf-dist/fonts/
+type1/public/lm/lmss8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/publi
+c/lm/lmsy8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/
+symbols/msbm10.pfb>
+Output written on z_deepeye.pdf (34 pages, 8045761 bytes).
 PDF statistics:
- 512 PDF objects out of 1000 (max. 8388607)
- 406 compressed objects within 5 object streams
- 92 named destinations out of 1000 (max. 500000)
- 6334 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 588 PDF objects out of 1000 (max. 8388607)
+ 450 compressed objects within 5 object streams
+ 95 named destinations out of 1000 (max. 500000)
+ 6339 words of extra memory for PDF output out of 10000 (max. 10000000)
 
