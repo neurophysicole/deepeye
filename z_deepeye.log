@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.9.28)  13 AUG 2020 20:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.9.28)  28 AUG 2020 01:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -716,30 +716,30 @@ Package csquotes Info: Redefining alias 'default' -> 'english'.
 (./z_deepeye.aux)
 \openout1 = `z_deepeye.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 145.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 145.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 146.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 146.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 145.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 146.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -815,7 +815,7 @@ Package caption Info: longtable package is loaded.
 Package: ltcaption 2018/08/26 v1.4a longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \microtypecontext on input line 145.
+LaTeX Info: Redefining \microtypecontext on input line 146.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using protrusion set `basicmath'.
@@ -830,7 +830,7 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 (RS)
 )
 \AtBeginShipoutBox=\box41
-Package hyperref Info: Link coloring OFF on input line 145.
+Package hyperref Info: Link coloring OFF on input line 146.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/12 v2.45 Cross-referencing by name of section
 (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -838,47 +838,47 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count158
 )
-LaTeX Info: Redefining \ref on input line 145.
-LaTeX Info: Redefining \pageref on input line 145.
-LaTeX Info: Redefining \nameref on input line 145.
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 147.
+LaTeX Info: Redefining \ref on input line 146.
+LaTeX Info: Redefining \pageref on input line 146.
+LaTeX Info: Redefining \nameref on input line 146.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 148.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 147.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 148.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 147.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 148.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 147
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 148
 .
 (/usr/local/texlive/2019/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 147
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 148
 .
 (/usr/local/texlive/2019/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 147.
+(Font)              <12> on input line 148.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 147.
+(Font)              <8> on input line 148.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 147.
-LaTeX Font Info:    Try loading font information for U+msa on input line 147.
+(Font)              <6> on input line 148.
+LaTeX Font Info:    Try loading font information for U+msa on input line 148.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 147.
+LaTeX Font Info:    Try loading font information for U+msb on input line 148.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/microtype/mt-msb.cfg
@@ -888,135 +888,107 @@ File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
 ) [1{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ] [2] [3] [4] [5]
-Overfull \hbox (59.23741pt too wide) in paragraph at lines 162--176
+Overfull \hbox (59.23741pt too wide) in paragraph at lines 165--179
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[6]
-Underfull \vbox (badness 3872) has occurred while \output is active []
-
-[7]
-Underfull \vbox (badness 4752) has occurred while \output is active []
-
-[8] [9] [10]
-<figures/cond_imgs.png, id=66, 991.705pt x 280.04625pt>
-File: figures/cond_imgs.png Graphic file (type png)
-<use figures/cond_imgs.png>
-Package pdftex.def Info: figures/cond_imgs.png  used on input line 205.
-(pdftex.def)             Requested size: 469.74828pt x 132.65157pt.
-
-Underfull \vbox (badness 4752) has occurred while \output is active []
-
-[11 <./figures/cond_imgs.png>]
-<figures/subset_imgs.png, id=76, 1033.8625pt x 627.34375pt>
-File: figures/subset_imgs.png Graphic file (type png)
-<use figures/subset_imgs.png>
-Package pdftex.def Info: figures/subset_imgs.png  used on input line 215.
+[6] [7] [8] [9] [10]
+<figures/cond_imgs.pdf, id=64, 993.7125pt x 281.05pt>
+File: figures/cond_imgs.pdf Graphic file (type pdf)
+<use figures/cond_imgs.pdf>
+Package pdftex.def Info: figures/cond_imgs.pdf  used on input line 210.
+(pdftex.def)             Requested size: 469.75908pt x 132.86115pt.
+[11]
+<figures/subset_imgs.pdf, id=74, 1033.8625pt x 627.34375pt>
+File: figures/subset_imgs.pdf Graphic file (type pdf)
+<use figures/subset_imgs.pdf>
+Package pdftex.def Info: figures/subset_imgs.pdf  used on input line 220.
 (pdftex.def)             Requested size: 469.76138pt x 285.04938pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[12 <./figures/subset_imgs.png>] [13]
-<figures/models.png, id=93, 728.7225pt x 1525.7pt>
-File: figures/models.png Graphic file (type png)
-<use figures/models.png>
-Package pdftex.def Info: figures/models.png  used on input line 229.
+[12 <./figures/cond_imgs.pdf>] [13 <./figures/subset_imgs.pdf>]
+<figures/models.pdf, id=147, 728.7225pt x 1525.7pt>
+File: figures/models.pdf Graphic file (type pdf)
+<use figures/models.pdf>
+Package pdftex.def Info: figures/models.pdf  used on input line 234.
 (pdftex.def)             Requested size: 310.6648pt x 650.42767pt.
 
-LaTeX Warning: Float too large for page by 28.99765pt on input line 231.
+LaTeX Warning: Float too large for page by 28.99765pt on input line 236.
 
-[14] [15 <./figures/models.png>]
-<results/r_code/timeline_subset_chance.pdf, id=111, 400.49625pt x 318.18875pt>
-File: results/r_code/timeline_subset_chance.pdf Graphic file (type pdf)
-<use results/r_code/timeline_subset_chance.pdf>
-Package pdftex.def Info: results/r_code/timeline_subset_chance.pdf  used on inp
-ut line 247.
-(pdftex.def)             Requested size: 400.49527pt x 318.18796pt.
-<figures/timeline_conf_matrices.pdf, id=112, 1330.9725pt x 858.20625pt>
+[14] [15 <./figures/models.pdf>]
+<figures/r_code/timeline_subset_chance.pdf, id=557, 469.755pt x 346.29375pt>
+File: figures/r_code/timeline_subset_chance.pdf Graphic file (type pdf)
+<use figures/r_code/timeline_subset_chance.pdf>
+Package pdftex.def Info: figures/r_code/timeline_subset_chance.pdf  used on inp
+ut line 252.
+(pdftex.def)             Requested size: 469.75386pt x 346.2929pt.
+<figures/timeline_conf_matrices.pdf, id=558, 1330.9725pt x 858.20625pt>
 File: figures/timeline_conf_matrices.pdf Graphic file (type pdf)
 <use figures/timeline_conf_matrices.pdf>
 Package pdftex.def Info: figures/timeline_conf_matrices.pdf  used on input line
- 253.
+ 258.
 (pdftex.def)             Requested size: 469.74667pt x 302.89096pt.
-[16 <./results/r_code/timeline_subset_chance.pdf>] [17 <./figures/timeline_conf
-_matrices.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[18]
-<results/r_code/img_subset_chance.pdf, id=186, 400.49625pt x 318.18875pt>
-File: results/r_code/img_subset_chance.pdf Graphic file (type pdf)
-<use results/r_code/img_subset_chance.pdf>
-Package pdftex.def Info: results/r_code/img_subset_chance.pdf  used on input li
-ne 293.
-(pdftex.def)             Requested size: 400.49527pt x 318.18796pt.
+[16 <./figures/r_code/timeline_subset_chance.pdf>] [17 <./figures/timeline_conf
+_matrices.pdf>] [18]
+<figures/r_code/img_subset_chance.pdf, id=631, 469.755pt x 346.29375pt>
+File: figures/r_code/img_subset_chance.pdf Graphic file (type pdf)
+<use figures/r_code/img_subset_chance.pdf>
+Package pdftex.def Info: figures/r_code/img_subset_chance.pdf  used on input li
+ne 298.
+(pdftex.def)             Requested size: 469.75386pt x 346.2929pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 294.
-<figures/img_conf_matrices.pdf, id=187, 1330.9725pt x 857.2025pt>
+(Font)              <5> on input line 299.
+<figures/img_conf_matrices.pdf, id=632, 1330.9725pt x 857.2025pt>
 File: figures/img_conf_matrices.pdf Graphic file (type pdf)
 <use figures/img_conf_matrices.pdf>
-Package pdftex.def Info: figures/img_conf_matrices.pdf  used on input line 299.
+Package pdftex.def Info: figures/img_conf_matrices.pdf  used on input line 304.
 
 (pdftex.def)             Requested size: 469.74667pt x 302.5367pt.
-[19 <./results/r_code/img_subset_chance.pdf>] [20 <./figures/img_conf_matrices.
-pdf>] [21]
-Underfull \vbox (badness 4752) has occurred while \output is active []
-
-[22]
-Underfull \vbox (badness 4752) has occurred while \output is active []
-
-[23]
-Underfull \vbox (badness 4752) has occurred while \output is active []
-
-[24] [25] [26] [27] [28] [29] [30]
-<supplementary_analysis/recalc_orig_accs/recalc_bar_graph.png, id=353, 433.62pt
- x 274.02374pt>
-File: supplementary_analysis/recalc_orig_accs/recalc_bar_graph.png Graphic file
- (type png)
-<use supplementary_analysis/recalc_orig_accs/recalc_bar_graph.png>
-Package pdftex.def Info: supplementary_analysis/recalc_orig_accs/recalc_bar_gra
-ph.png  used on input line 468.
-(pdftex.def)             Requested size: 433.63878pt x 274.03561pt.
-<supplementary_analysis/confusion_matrices/supp_conf_matrices.pdf, id=354, 1022
-.82124pt x 650.43pt>
-File: supplementary_analysis/confusion_matrices/supp_conf_matrices.pdf Graphic 
-file (type pdf)
-<use supplementary_analysis/confusion_matrices/supp_conf_matrices.pdf>
-Package pdftex.def Info: supplementary_analysis/confusion_matrices/supp_conf_ma
-trices.pdf  used on input line 495.
+[19 <./figures/r_code/img_subset_chance.pdf>] [20 <./figures/img_conf_matrices.
+pdf>] [21] [22] [23] [24] [25] [26] [27] [28] [29]
+<figures/supp_analysis/supp_subset_chance.pdf, id=792, 648.4225pt x 374.39874pt
+>
+File: figures/supp_analysis/supp_subset_chance.pdf Graphic file (type pdf)
+<use figures/supp_analysis/supp_subset_chance.pdf>
+Package pdftex.def Info: figures/supp_analysis/supp_subset_chance.pdf  used on 
+input line 446.
+(pdftex.def)             Requested size: 469.76282pt x 271.24075pt.
+<figures/supp_analysis/confusion_matrices/supp_conf_matrices.pdf, id=793, 1022.
+82124pt x 650.43pt>
+File: figures/supp_analysis/confusion_matrices/supp_conf_matrices.pdf Graphic f
+ile (type pdf)
+<use figures/supp_analysis/confusion_matrices/supp_conf_matrices.pdf>
+Package pdftex.def Info: figures/supp_analysis/confusion_matrices/supp_conf_mat
+rices.pdf  used on input line 468.
 (pdftex.def)             Requested size: 469.75435pt x 298.72504pt.
-[31
-
-
-] [32 <./supplementary_analysis/recalc_orig_accs/recalc_bar_graph.png>]
-<supplementary_analysis/recalc_orig_accs/confusion_matrices/recalc_conf_matrice
-s.pdf, id=373, 1023.825pt x 650.43pt>
-File: supplementary_analysis/recalc_orig_accs/confusion_matrices/recalc_conf_ma
-trices.pdf Graphic file (type pdf)
-<use supplementary_analysis/recalc_orig_accs/confusion_matrices/recalc_conf_mat
-rices.pdf>
-Package pdftex.def Info: supplementary_analysis/recalc_orig_accs/confusion_matr
-ices/recalc_conf_matrices.pdf  used on input line 539.
-(pdftex.def)             Requested size: 469.74667pt x 298.42729pt.
-AED endfloat: Processing end Figures and Tables [33 <./supplementary_analysis/c
-onfusion_matrices/supp_conf_matrices.pdf>] [34 <./supplementary_analysis/recalc
-_orig_accs/confusion_matrices/recalc_conf_matrices.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 549.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 549.
+[30] [31 <./figures/supp_analysis/supp_subset_chance.pdf>]
+<figures/supp_analysis/recalculations/confusion_matrices/recalc_conf_matrices.p
+df, id=841, 1023.825pt x 651.43375pt>
+File: figures/supp_analysis/recalculations/confusion_matrices/recalc_conf_matri
+ces.pdf Graphic file (type pdf)
+<use figures/supp_analysis/recalculations/confusion_matrices/recalc_conf_matric
+es.pdf>
+Package pdftex.def Info: figures/supp_analysis/recalculations/confusion_matrice
+s/recalc_conf_matrices.pdf  used on input line 478.
+(pdftex.def)             Requested size: 469.74667pt x 298.88783pt.
+AED endfloat: Processing end Figures and Tables [32 <./figures/supp_analysis/co
+nfusion_matrices/supp_conf_matrices.pdf>] [33 <./figures/supp_analysis/recalcul
+ations/confusion_matrices/recalc_conf_matrices.pdf>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 482.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 482.
 (./z_deepeye.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 549.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 549.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 482.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 482.
  ) 
 Here is how much of TeX's memory you used:
- 16846 strings out of 492609
- 251129 string characters out of 6129048
- 397096 words of memory out of 5000000
- 20302 multiletter control sequences out of 15000+600000
- 62872 words of font info for 91 fonts, out of 8000000 for 9000
+ 16842 strings out of 492609
+ 251100 string characters out of 6129048
+ 397375 words of memory out of 5000000
+ 20298 multiletter control sequences out of 15000+600000
+ 63001 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,11n,47p,2781b,508s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,11n,47p,2248b,463s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/lo
 cal/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/20
 19/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/texmf-dist/
@@ -1030,10 +1002,10 @@ dist/fonts/type1/public/lm/lmri8.pfb></usr/local/texlive/2019/texmf-dist/fonts/
 type1/public/lm/lmss8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/publi
 c/lm/lmsy8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/
 symbols/msbm10.pfb>
-Output written on z_deepeye.pdf (34 pages, 8045761 bytes).
+Output written on z_deepeye.pdf (33 pages, 7633506 bytes).
 PDF statistics:
- 588 PDF objects out of 1000 (max. 8388607)
- 450 compressed objects within 5 object streams
- 95 named destinations out of 1000 (max. 500000)
+ 1057 PDF objects out of 1200 (max. 8388607)
+ 706 compressed objects within 8 object streams
+ 92 named destinations out of 1000 (max. 500000)
  6339 words of extra memory for PDF output out of 10000 (max. 10000000)
 
