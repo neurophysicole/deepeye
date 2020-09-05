@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1596590458935.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "682213016",
+    "id" : "1D4F24E8",
+    "lastKnownWriteTime" : 1596590477,
+    "last_content_update" : 1596590477,
+    "path" : "~/Box/projects/deepeye/dev_git/deepeye/z_deepeye.Rmd",
+    "project_path" : "z_deepeye.Rmd",
+    "properties" : {
+        "cursorPosition" : "0,0",
+        "scrollLine" : "45"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
