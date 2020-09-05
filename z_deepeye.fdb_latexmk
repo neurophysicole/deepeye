@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ["pdflatex"] 1599268487 "/Users/zcole/Box/projects/deepeye/dev_git/deepeye/z_deepeye.tex" "/Users/zcole/Box/projects/deepeye/dev_git/deepeye/z_deepeye.pdf" "z_deepeye" 1599268842
 =======
 ["pdflatex"] 1599268487 "/Users/zcole/Box/projects/deepeye/dev_git/deepeye/z_deepeye.tex" "/Users/zcole/Box/projects/deepeye/dev_git/deepeye/z_deepeye.pdf" "z_deepeye" 1599268798
@@ -16,10 +17,13 @@
 =======
 =======
 >>>>>>> parent of a41c982... final (maybe) revisions
+=======
+>>>>>>> parent of a41c982... final (maybe) revisions
 ["pdflatex"] 1583457394 "/Users/zjcole/Box/projects/deepeye/dev_git/deepeye/z_deepeye.tex" "/Users/zjcole/Box/projects/deepeye/dev_git/deepeye/z_deepeye.pdf" "z_deepeye" 1583457396
   "/Users/zjcole/Box/projects/deepeye/dev_git/deepeye/z_deepeye.aux" 1583457396 8645 6448d1225e8353ba99c9b8ae501d2938 ""
   "/Users/zjcole/Box/projects/deepeye/dev_git/deepeye/z_deepeye.tex" 1583457376 49114 5a7e126295d9d8cdf56be5c234f6a1be ""
   "/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> parent of a41c982... final (maybe) revisions
   "/usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
@@ -28,6 +32,10 @@
   "/usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/jknappen/ec/ecrm1200.tfm" 1136768653 3584 f80ddd985bd00e29e9a6047ebd9d4781 ""
 >>>>>>> parent of 84d70eb... catching up on missed commits.. added some notes in the README documentation (among the rest of the out-of-date documentation that is in there...)
+=======
+  "/usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
+  "/usr/local/texlive/2019/texmf-dist/fonts/tfm/jknappen/ec/ecrm1000.tfm" 1136768653 3584 adb004a0c8e7c46ee66cad73671f37b4 ""
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
   "/usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/jknappen/ec/ecrm1000.tfm" 1136768653 3584 adb004a0c8e7c46ee66cad73671f37b4 ""
@@ -43,6 +51,9 @@
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm" 1246382020 940 228d6584342e91276bf566bcf9716b83 ""
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
 >>>>>>> parent of a41c982... final (maybe) revisions
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/txfonts/rtxb.tfm" 1136768653 1020 c53143d3e3747b5c1149bd9a5ecd7b55 ""
@@ -70,6 +81,7 @@
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/txfonts/txr.tfm" 1136768653 2408 aec793a3c45e495f7ad15b227c91f508 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/txfonts/txsy.tfm" 1136768653 1268 1d124f224979493f8fd017a7597ea1cd ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/txfonts/txsyc.tfm" 1136768653 1084 75e807e9e71f7a312e4e1187dce5e93b ""
+<<<<<<< HEAD
 <<<<<<< HEAD
   "/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1248133631 34694 ad62b13721ee8eda1dcc8993c8bd7041 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb" 1232065820 13806 49b888f4605a088e66b9eb4fee320a6e ""
@@ -128,6 +140,8 @@
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/rm-lmr8.tfm" 1254269338 11864 309fd7f43e4a0ba39f6f7644d76e8edf ""
 =======
 >>>>>>> parent of a41c982... final (maybe) revisions
+=======
+>>>>>>> parent of a41c982... final (maybe) revisions
   "/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1248133631 34694 ad62b13721ee8eda1dcc8993c8bd7041 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb" 1232065820 13806 49b888f4605a088e66b9eb4fee320a6e ""
   "/usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb" 1136849748 6339 e2b78706efdc360ee6aec9b6e20211a7 ""
@@ -151,8 +165,12 @@
   "/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/etexcmds.sty" 1463608860 7612 729a8cc22a1ee0029997c7f74717ae05 ""
   "/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty" 1463608860 8237 3b62ef1f7e2c23a328c814b3893bc11f ""
 <<<<<<< HEAD
+<<<<<<< HEAD
   "/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty" 1564261595 185392 ed78c0cbc4fc8c3af82e7bffbdeeb1a9 ""
 >>>>>>> parent of 84d70eb... catching up on missed commits.. added some notes in the README documentation (among the rest of the out-of-date documentation that is in there...)
+=======
+  "/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty" 1536701967 185392 b99a6d53180e04300c35e18725f31231 ""
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
   "/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty" 1536701967 185392 b99a6d53180e04300c35e18725f31231 ""
 >>>>>>> parent of a41c982... final (maybe) revisions
@@ -166,10 +184,14 @@
   "/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/pdfescape.sty" 1463608860 18878 db0959c22354bb57c495ba18abe41f74 ""
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   "/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty" 1536701967 20457 0d2e642faacbb41c9d72690f8cc529cd ""
 =======
   "/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty" 1564261595 20457 7f1b68cac266f44439ba63b922267486 ""
 >>>>>>> parent of 84d70eb... catching up on missed commits.. added some notes in the README documentation (among the rest of the out-of-date documentation that is in there...)
+=======
+  "/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty" 1536701967 20457 0d2e642faacbb41c9d72690f8cc529cd ""
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
   "/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty" 1536701967 20457 0d2e642faacbb41c9d72690f8cc529cd ""
 >>>>>>> parent of a41c982... final (maybe) revisions
@@ -189,10 +211,14 @@
   "/usr/local/texlive/2019/texmf-dist/tex/latex/base/inputenc.sty" 1544567569 5052 b64c57f4a38aae0d2745f8298fa50814 ""
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   "/usr/local/texlive/2019/texmf-dist/tex/latex/base/size10.clo" 1544567569 8294 6d6e23d5169c0d89d173f6c7e08a005a ""
 =======
   "/usr/local/texlive/2019/texmf-dist/tex/latex/base/size12.clo" 1544567569 8305 6a682ae291edd56e2d7accbf95eca451 ""
 >>>>>>> parent of 84d70eb... catching up on missed commits.. added some notes in the README documentation (among the rest of the out-of-date documentation that is in there...)
+=======
+  "/usr/local/texlive/2019/texmf-dist/tex/latex/base/size10.clo" 1544567569 8294 6d6e23d5169c0d89d173f6c7e08a005a ""
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
   "/usr/local/texlive/2019/texmf-dist/tex/latex/base/size10.clo" 1544567569 8294 6d6e23d5169c0d89d173f6c7e08a005a ""
 >>>>>>> parent of a41c982... final (maybe) revisions
@@ -202,6 +228,7 @@
   "/usr/local/texlive/2019/texmf-dist/tex/latex/base/ts1enc.def" 1523050425 7769 97b639552068544f7c98d557abb19f41 ""
   "/usr/local/texlive/2019/texmf-dist/tex/latex/base/ts1enc.dfu" 1544567569 4973 923be56c54607ca99f7cc085a8c7e52b ""
   "/usr/local/texlive/2019/texmf-dist/tex/latex/booktabs/booktabs.sty" 1462233275 5869 94335281ffcab47f341cf07ea8220e30 ""
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   "/usr/local/texlive/2019/texmf-dist/tex/latex/caption/caption.sty" 1539032178 68576 86bbc6bd5a409b3c353fccc1a815fa5b ""
@@ -221,15 +248,24 @@
   "/usr/local/texlive/2019/texmf-dist/tex/latex/caption/caption3.sty" 1538606650 68510 943558eecf41da4e76fc614fd7f5deff ""
   "/usr/local/texlive/2019/texmf-dist/tex/latex/caption/ltcaption.sty" 1538606650 7103 69d108d6f68aad0b59c34ccdaa701351 ""
 >>>>>>> parent of a41c982... final (maybe) revisions
+=======
+  "/usr/local/texlive/2019/texmf-dist/tex/latex/caption/caption.sty" 1539032178 68576 86bbc6bd5a409b3c353fccc1a815fa5b ""
+  "/usr/local/texlive/2019/texmf-dist/tex/latex/caption/caption3.sty" 1538606650 68510 943558eecf41da4e76fc614fd7f5deff ""
+  "/usr/local/texlive/2019/texmf-dist/tex/latex/caption/ltcaption.sty" 1538606650 7103 69d108d6f68aad0b59c34ccdaa701351 ""
+>>>>>>> parent of a41c982... final (maybe) revisions
   "/usr/local/texlive/2019/texmf-dist/tex/latex/csquotes/csquotes.cfg" 1429144587 7068 06f8d141725d114847527a66439066b6 ""
   "/usr/local/texlive/2019/texmf-dist/tex/latex/csquotes/csquotes.def" 1525283624 19672 064123762b65f5f6167cd01f4155a8c2 ""
   "/usr/local/texlive/2019/texmf-dist/tex/latex/csquotes/csquotes.sty" 1525283624 61418 e956203a0a8d7a811e2100c0ecfdfcac ""
   "/usr/local/texlive/2019/texmf-dist/tex/latex/environ/environ.sty" 1399239813 4378 f429f0da968c278653359293040a8f52 ""
 <<<<<<< HEAD
+<<<<<<< HEAD
   "/usr/local/texlive/2019/texmf-dist/tex/latex/etoolbox/etoolbox.sty" 1569190624 45259 743c52a37a6e5ed83cfe0e128b2da10d ""
   "/usr/local/texlive/2019/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty" 1548974385 11128 a53805799bebfed6358fc1658a18e41f ""
   "/usr/local/texlive/2019/texmf-dist/tex/latex/float/float.sty" 1137110151 6749 16d2656a1984957e674b149555f1ea1d ""
 >>>>>>> parent of 84d70eb... catching up on missed commits.. added some notes in the README documentation (among the rest of the out-of-date documentation that is in there...)
+=======
+  "/usr/local/texlive/2019/texmf-dist/tex/latex/etoolbox/etoolbox.sty" 1534713891 43865 f83cc2fa3767abdb988c7d2cd17c02bf ""
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
   "/usr/local/texlive/2019/texmf-dist/tex/latex/etoolbox/etoolbox.sty" 1534713891 43865 f83cc2fa3767abdb988c7d2cd17c02bf ""
 >>>>>>> parent of a41c982... final (maybe) revisions
@@ -244,6 +280,9 @@
   "/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/trig.sty" 1523134385 3977 cb9221976ed8a183afad65b59aa8629a ""
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
 >>>>>>> parent of a41c982... final (maybe) revisions
   "/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/hpdftex.def" 1543704539 51744 477aad43ad6a7ba8c462d20c3e0808e0 ""
@@ -251,6 +290,7 @@
   "/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty" 1465687530 12949 81e4e808884a8f0e276b69410e234656 ""
   "/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/pd1enc.def" 1543704539 14098 b4e1ecab4699a0341b8e1349e4c53fb1 ""
   "/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/puenc.def" 1543704539 122411 537c1e113664b098b6572dbc27a726af ""
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
   "/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/hpdftex.def" 1568579807 50203 0105c00feb9868bd62fd7b7a9b7584c6 ""
@@ -261,10 +301,13 @@
 >>>>>>> parent of 84d70eb... catching up on missed commits.. added some notes in the README documentation (among the rest of the out-of-date documentation that is in there...)
 =======
 >>>>>>> parent of a41c982... final (maybe) revisions
+=======
+>>>>>>> parent of a41c982... final (maybe) revisions
   "/usr/local/texlive/2019/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg" 1279039959 678 4792914a8f45be57bb98413425e4c7af ""
   "/usr/local/texlive/2019/texmf-dist/tex/latex/latexconfig/hyperref.cfg" 1254097189 235 6031e5765137be07eed51a510b2b8fb7 ""
   "/usr/local/texlive/2019/texmf-dist/tex/latex/lineno/lineno.sty" 1159951381 151738 8cd767481920f0eb785302dacfc87057 ""
   "/usr/local/texlive/2019/texmf-dist/tex/latex/lm/lmodern.sty" 1257296302 1606 c17281c7cff2bbd7ff0173e1433487ec ""
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   "/usr/local/texlive/2019/texmf-dist/tex/latex/microtype/microtype-pdftex.def" 1551479146 48850 54ae402537e77736eecdda92621a7019 ""
@@ -287,6 +330,8 @@
   "/usr/local/texlive/2019/texmf-dist/tex/latex/lm/t1lmss.fd" 1257296302 1639 ba1c66ef577aa5cadc2c0fdc691a26ee ""
 =======
 >>>>>>> parent of a41c982... final (maybe) revisions
+=======
+>>>>>>> parent of a41c982... final (maybe) revisions
   "/usr/local/texlive/2019/texmf-dist/tex/latex/microtype/microtype-pdftex.def" 1551479146 48850 54ae402537e77736eecdda92621a7019 ""
   "/usr/local/texlive/2019/texmf-dist/tex/latex/microtype/microtype.cfg" 1551479146 24293 a476ddd756680fbcb9069ebeb6d3924f ""
   "/usr/local/texlive/2019/texmf-dist/tex/latex/microtype/microtype.sty" 1551479146 70989 103a1397bac5d973ce7b0cd08f1b6f15 ""
@@ -297,9 +342,14 @@
   "/usr/local/texlive/2019/texmf-dist/tex/latex/multirow/multirow.sty" 1546383059 5164 bcc9f9eb87b893f14f0e34388a369d7e ""
   "/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/auxhook.sty" 1463608860 3834 4363110eb0ef1eb2b71c8fcbcdb6c357 ""
 <<<<<<< HEAD
+<<<<<<< HEAD
   "/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/bkm-pdftex.def" 1564261595 8383 c60c2374152a41ec5b464b148f02274b ""
   "/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/bookmark.sty" 1564261595 18926 5b6b8a7ae062fc5fb5c5415ad8424755 ""
 >>>>>>> parent of 84d70eb... catching up on missed commits.. added some notes in the README documentation (among the rest of the out-of-date documentation that is in there...)
+=======
+  "/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/bkm-pdftex.def" 1465595255 8382 d027b9fab7440aa0716d4a2e9455eeca ""
+  "/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/bookmark.sty" 1465595255 18920 32621f3a02f5d05b1e35f55abc232aab ""
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
   "/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/bkm-pdftex.def" 1465595255 8382 d027b9fab7440aa0716d4a2e9455eeca ""
   "/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/bookmark.sty" 1465595255 18920 32621f3a02f5d05b1e35f55abc232aab ""
@@ -312,10 +362,14 @@
   "/usr/local/texlive/2019/texmf-dist/tex/latex/parskip/parskip.sty" 1547677674 4152 3f6e512e6999979e82f39978a3e61b9e ""
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   "/usr/local/texlive/2019/texmf-dist/tex/latex/sttools/flushend.sty" 1491281624 32965 b8b3944582c948eb8dd7c6f4a0e26444 ""
 =======
   "/usr/local/texlive/2019/texmf-dist/tex/latex/setspace/setspace.sty" 1324344192 22913 a27d7908fc6f0385466454a966a316eb ""
 >>>>>>> parent of 84d70eb... catching up on missed commits.. added some notes in the README documentation (among the rest of the out-of-date documentation that is in there...)
+=======
+  "/usr/local/texlive/2019/texmf-dist/tex/latex/sttools/flushend.sty" 1491281624 32965 b8b3944582c948eb8dd7c6f4a0e26444 ""
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
   "/usr/local/texlive/2019/texmf-dist/tex/latex/sttools/flushend.sty" 1491281624 32965 b8b3944582c948eb8dd7c6f4a0e26444 ""
 >>>>>>> parent of a41c982... final (maybe) revisions
@@ -325,6 +379,9 @@
   "/usr/local/texlive/2019/texmf-dist/tex/latex/tools/bm.sty" 1523050425 12626 7d9d99d0bbe65f44cc0bb90f67262000 ""
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of a41c982... final (maybe) revisions
   "/usr/local/texlive/2019/texmf-dist/tex/latex/tools/ftnright.sty" 1523050425 6141 285d7aff02382bf24b8a13332c0cb9ef ""
   "/usr/local/texlive/2019/texmf-dist/tex/latex/tools/longtable.sty" 1546812253 12131 6791c5e94fb3ca8579d185a449d8b41e ""
   "/usr/local/texlive/2019/texmf-dist/tex/latex/tools/tabularx.sty" 1523050425 7145 01b7b53bf69f5c0f63803657eb51217f ""
@@ -339,6 +396,7 @@
   "/usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/utxexa.fd" 1137111002 310 1b00b0b05685b816e4c6caccce437e0d ""
   "/usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/utxmia.fd" 1137111002 334 87436a82076ca2e35cd305f852507afc ""
   "/usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/utxsyc.fd" 1137111002 310 4b5d6fe830337242ef847b3bff48ba21 ""
+<<<<<<< HEAD
 =======
   "/usr/local/texlive/2019/texmf-dist/tex/latex/tools/longtable.sty" 1546812253 12131 6791c5e94fb3ca8579d185a449d8b41e ""
   "/usr/local/texlive/2019/texmf-dist/tex/latex/tools/tabularx.sty" 1523050425 7145 01b7b53bf69f5c0f63803657eb51217f ""
@@ -360,11 +418,14 @@
   "/usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/utxmia.fd" 1137111002 334 87436a82076ca2e35cd305f852507afc ""
   "/usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/utxsyc.fd" 1137111002 310 4b5d6fe830337242ef847b3bff48ba21 ""
 >>>>>>> parent of a41c982... final (maybe) revisions
+=======
+>>>>>>> parent of a41c982... final (maybe) revisions
   "/usr/local/texlive/2019/texmf-dist/tex/latex/upquote/upquote.sty" 1334873510 1048 517e01cde97c1c0baf72e69d43aa5a2e ""
   "/usr/local/texlive/2019/texmf-dist/tex/latex/url/url.sty" 1388531844 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/usr/local/texlive/2019/texmf-dist/tex/latex/was/upgreek.sty" 1137111079 5794 9054e31be15d93f1e6bd28cca2b6643f ""
   "/usr/local/texlive/2019/texmf-dist/tex/latex/xcolor/xcolor.sty" 1463002160 55589 34128738f682d033422ca125f82e5d62 ""
   "/usr/local/texlive/2019/texmf-dist/tex/latex/xurl/xurl.sty" 1545606274 4374 b62e8cf75069e4432442106e3295cc46 ""
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   "/usr/local/texlive/2019/texmf-dist/web2c/texmf.cnf" 1557092114 35484 cb1661360667bf4db662a8895053b554 ""
@@ -396,6 +457,11 @@
   "/usr/local/texlive/2019/texmf-dist/web2c/texmf.cnf" 1566248362 39543 a0bd1f17d0daea30a3905c0b020d0959 ""
   "/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1569690885 4654859 5ecb56b8bd89fba3a3752a443a79f535 ""
   "/usr/local/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1569690989 4264921 83efd3f07730e4134d6a6d9f6fea20fa ""
+=======
+  "/usr/local/texlive/2019/texmf-dist/web2c/texmf.cnf" 1557092114 35484 cb1661360667bf4db662a8895053b554 ""
+  "/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1557342064 3277517 23507ed665b4dd9046f0f2a94bbef2be ""
+  "/usr/local/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1557342086 4259635 562fc36ec496993777a6c428d8bfb811 ""
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
   "/usr/local/texlive/2019/texmf-dist/web2c/texmf.cnf" 1557092114 35484 cb1661360667bf4db662a8895053b554 ""
   "/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1557342064 3277517 23507ed665b4dd9046f0f2a94bbef2be ""

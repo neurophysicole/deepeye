@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 PWD /Users/zjcole/Box/projects/deepeye/dev_git/deepeye
 INPUT /usr/local/texlive/2019/texmf.cnf
 INPUT /usr/local/texlive/2019/texmf-dist/web2c/texmf.cnf
@@ -22,10 +23,19 @@ INPUT /usr/local/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt
 INPUT /Users/zjcole/Box/projects/deepeye/dev_git/deepeye/z_deepeye.tex
 OUTPUT /Users/zjcole/Box/projects/deepeye/dev_git/deepeye/z_deepeye.log
 >>>>>>> parent of a41c982... final (maybe) revisions
+=======
+PWD /Users/zjcole/Box/projects/deepeye/dev_git/deepeye
+INPUT /usr/local/texlive/2019/texmf.cnf
+INPUT /usr/local/texlive/2019/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT /Users/zjcole/Box/projects/deepeye/dev_git/deepeye/z_deepeye.tex
+OUTPUT /Users/zjcole/Box/projects/deepeye/dev_git/deepeye/z_deepeye.log
+>>>>>>> parent of a41c982... final (maybe) revisions
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/apa6/apa6.cls
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/apa6/apa6.cls
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/article.cls
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/size10.clo
@@ -40,6 +50,10 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/size10.clo
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/size10.clo
 >>>>>>> parent of a41c982... final (maybe) revisions
+=======
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/size10.clo
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/size10.clo
+>>>>>>> parent of a41c982... final (maybe) revisions
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/lm/lmodern.sty
@@ -50,6 +64,9 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/t1enc.def
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/t1enc.def
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
 >>>>>>> parent of a41c982... final (maybe) revisions
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map
@@ -58,11 +75,14 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/txfonts.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/txfonts.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/txfonts.sty
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/jknappen/ec/ecrm1200.tfm
 >>>>>>> parent of 84d70eb... catching up on missed commits.. added some notes in the README documentation (among the rest of the out-of-date documentation that is in there...)
 =======
 >>>>>>> parent of a41c982... final (maybe) revisions
+=======
+>>>>>>> parent of a41c982... final (maybe) revisions
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/geometry/geometry.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/geometry/geometry.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/graphics/keyval.sty
@@ -96,6 +116,9 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/tools/bm.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/tools/bm.sty
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
 >>>>>>> parent of a41c982... final (maybe) revisions
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/sttools/flushend.sty
@@ -105,6 +128,7 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/tools/ftnright.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/tools/ftnright.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/tools/ftnright.sty
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
@@ -113,6 +137,8 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/endfloat/endfloat.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/float/float.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/float/float.sty
 >>>>>>> parent of 84d70eb... catching up on missed commits.. added some notes in the README documentation (among the rest of the out-of-date documentation that is in there...)
+=======
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
 >>>>>>> parent of a41c982... final (maybe) revisions
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amssymb.sty
@@ -234,10 +260,13 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/csquotes/csquotes.cfg
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/csquotes/csquotes.cfg
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/setspace/setspace.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/setspace/setspace.sty
 >>>>>>> parent of 84d70eb... catching up on missed commits.. added some notes in the README documentation (among the rest of the out-of-date documentation that is in there...)
+=======
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
 >>>>>>> parent of a41c982... final (maybe) revisions
 INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/babel/babel.sty
@@ -251,6 +280,9 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/babel-english/english.ldf
 INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/babel-english/english.ldf
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
 >>>>>>> parent of a41c982... final (maybe) revisions
 INPUT /Users/zjcole/Box/projects/deepeye/dev_git/deepeye/z_deepeye.aux
@@ -264,6 +296,7 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/omxtxex.fd
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/omxtxex.fd
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/utxexa.fd
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/utxexa.fd
+<<<<<<< HEAD
 <<<<<<< HEAD
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/ts1cmr.fd
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/ts1cmr.fd
@@ -287,6 +320,13 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/t1txr.fd
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/t1txr.fd
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/txfonts/t1xr.tfm
 >>>>>>> parent of a41c982... final (maybe) revisions
+=======
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/ts1cmr.fd
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/ts1cmr.fd
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/t1txr.fd
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/t1txr.fd
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/txfonts/t1xr.tfm
+>>>>>>> parent of a41c982... final (maybe) revisions
 INPUT /usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
@@ -299,6 +339,7 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/apa6/config/APAamerican.txt
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/apa6/config/APAamerican.txt
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/caption/ltcaption.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/caption/ltcaption.sty
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/microtype/mt-ptm.cfg
@@ -311,12 +352,19 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/microtype/mt-ptm.cfg
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/microtype/mt-ptm.cfg
 >>>>>>> parent of a41c982... final (maybe) revisions
+=======
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/microtype/mt-ptm.cfg
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/microtype/mt-ptm.cfg
+>>>>>>> parent of a41c982... final (maybe) revisions
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
 >>>>>>> parent of a41c982... final (maybe) revisions
 OUTPUT /Users/zjcole/Box/projects/deepeye/dev_git/deepeye/z_deepeye.pdf
@@ -344,6 +392,7 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/utxmia.fd
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/txfonts/txmia.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/txfonts/txmia.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/txfonts/txmia.tfm
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 OUTPUT /Users/zcole/Box/projects/deepeye/dev_git/deepeye/z_deepeye.pdf
@@ -381,6 +430,8 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmbsy7.tfm
 >>>>>>> parent of 84d70eb... catching up on missed commits.. added some notes in the README documentation (among the rest of the out-of-date documentation that is in there...)
 =======
 >>>>>>> parent of a41c982... final (maybe) revisions
+=======
+>>>>>>> parent of a41c982... final (maybe) revisions
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
@@ -397,6 +448,9 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm1
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
 >>>>>>> parent of a41c982... final (maybe) revisions
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/txfonts/utxsyc.fd
@@ -420,8 +474,11 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/txfonts/txbex.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/txfonts/txbex.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/txfonts/txbex.tfm
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 84d70eb... catching up on missed commits.. added some notes in the README documentation (among the rest of the out-of-date documentation that is in there...)
+=======
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
 >>>>>>> parent of a41c982... final (maybe) revisions
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/euler/eurm10.tfm
@@ -431,6 +488,9 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/euler/eurm10.
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/euler/eurm7.tfm
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
 >>>>>>> parent of a41c982... final (maybe) revisions
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/txfonts/t1xr.tfm
@@ -454,6 +514,7 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/txfonts/txmia.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/txfonts/txmia.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+<<<<<<< HEAD
 <<<<<<< HEAD
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
@@ -581,6 +642,8 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmmib5.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/lmbsy5.tfm
 =======
 >>>>>>> parent of a41c982... final (maybe) revisions
+=======
+>>>>>>> parent of a41c982... final (maybe) revisions
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
@@ -680,12 +743,18 @@ INPUT /Users/zjcole/Box/projects/deepeye/dev_git/deepeye/z_deepeye.aux
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> parent of 84d70eb... catching up on missed commits.. added some notes in the README documentation (among the rest of the out-of-date documentation that is in there...)
 =======
+=======
+>>>>>>> parent of a41c982... final (maybe) revisions
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmb8a.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmri8a.pfb
+<<<<<<< HEAD
+>>>>>>> parent of a41c982... final (maybe) revisions
+=======
 >>>>>>> parent of a41c982... final (maybe) revisions

@@ -5,6 +5,7 @@ Two separate datasets were used to develop and test the deep CNN architecture. T
 \subsection{Materials and Procedures}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Each participant viewed a series of indoor and outdoor scene images while carrying out a search, memorization, or rating task. For the memorization task, participants were instructed to memorize the image for a forced choice recognition test. At the end of each Memorize trial, the participants were prompted to indicate which of two images was just presented. For the rating task, participants were asked to think about how they would rate the image on a scale from 1 (very unpleasant) to 7 (very pleasant). The participants were prompted to provide a rating immediately after viewing the image. For the search task, participants were instructed to find a small 'Z' or 'N' embedded in the image. Trials containing a target (_n_ = 5) were not analyzed but were included in the experiment design to encourage searching behavior on other Search trials. Trials containing the target were excluded because search behavior was likely to stop if the target was found, adding considerable noise to the eye movement data. For consistency between trial types, participants were prompted to indicate if they found a 'Z' or 'N' at the end of each Search trial.
 
 The same materials were used in both experiments with a minor variation in the procedures. In the Confirmatory experiment, participants were directed as to where search targets might appear in the image (e.g., on flat surfaces). No such instructions were provided in the Exploratory experiment.
@@ -24,16 +25,27 @@ The same materials were used in both experiments with a minor variation in the p
 
 In both experiments, participants completed three mixed or uniform blocks of 40 trials (_n_ = 120 trials). Block type was assigned  in counterbalanced order. When the blocks were mixed, the trial types were randomly intermixed within the block. For uniform blocks, each block consisted entirely of one of the three conditions (Search, Memorize, Rate), with block types presented in random order. Each stimulus image was presented for 8 seconds. The pictures were presented in color, with a size of 1024 x 768 pixels, subtending a visual angle of 23.8$^{\circ}$ x 18.0$^{\circ}$.
 >>>>>>> parent of a41c982... final (maybe) revisions
+=======
+Each participant viewed a series of indoor and outdoor scene images while carrying out a search, memorization, or rating task. For the memorization task, participants were instructed to memorize the image for a forced choice recognition test. At the end of each Memorize trial, the participants were prompted to indicate which of two images was just presented. For the rating task, participants were asked to think about how they would rate the image on a scale from 1 (very unpleasant) to 7 (very pleasant). The participants were prompted to provide a rating immediately after viewing the image. For the search task, participants were instructed to find a small 'Z' or 'N' embedded in the image. Trials containing a target (_n_ = 5) were not analyzed but were included in the experiment design to encourage searching behavior on other Search trials. Trials containing the target were excluded because search behavior was likely to stop if the target was found, adding considerable noise to the eye movement data. For consistency between trial types, participants were prompted to indicate if they found a 'Z' or 'N' at the end of each Search trial.
+
+The same materials were used in both experiments with a minor variation in the procedures. In the Confirmatory experiment, participants were directed as to where search targets might appear in the image (e.g., on flat surfaces). No such instructions were provided in the Exploratory experiment.
+
+In both experiments, participants completed three mixed or uniform blocks of 40 trials (_n_ = 120 trials). Block type was assigned  in counterbalanced order. When the blocks were mixed, the trial types were randomly intermixed within the block. For uniform blocks, each block consisted entirely of one of the three conditions (Search, Memorize, Rate), with block types presented in random order. Each stimulus image was presented for 8 seconds. The pictures were presented in color, with a size of 1024 x 768 pixels, subtending a visual angle of 23.8$^{\circ}$ x 18.0$^{\circ}$.
+>>>>>>> parent of a41c982... final (maybe) revisions
 
 Eye movements were recorded using an SR Research EyeLink 1000 eye tracker with a sampling rate of 1000Hz. Only the right eye was recorded. The system was calibrated using a nine-point accuracy and validity test. Errors greater than 1$^{\circ}$ or averaging greater than 0.5$^{\circ}$ in total were re-calibrated.<!-- When eye movement velocities remained below 30$^{\circ}$/s for 10 consecutive samples, movement offset was detected. -->
 
 \subsection{Datasets}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 On some trials, a probe was presented on the screen six seconds after the onset of the trial. To avoid confounds resulting from the probe, only the first six seconds of the data for each trial was analyzed. Trials that contained fewer than 6000 samples within the first six seconds of the trial were excluded before analysis. For both datasets, the trials were pooled across participants. After excluding trials, the Exploratory dataset consisted of 12,177 of the 16,740 total trials, and the Confirmatory dataset consisted of 9,301 of the 10,395 total trials.
 =======
 On some trials, a probe was presented on the screen six seconds after the onset of the trial which required participants to fixate the probe once detected. To avoid confounds resulting from the probe, only the first six seconds of the data for each trial was analyzed. Trials that contained fewer than 6000 samples within the first six seconds of the trial were excluded before analysis. For both datasets, the trials were pooled across participants. After excluding trials, the Exploratory dataset consisted of 12,177 of the 16,740 total trials, and the Confirmatory dataset consisted of 9,301 of the 10,395 total trials.
 >>>>>>> parent of 84d70eb... catching up on missed commits.. added some notes in the README documentation (among the rest of the out-of-date documentation that is in there...)
+=======
+On some trials, a probe was presented on the screen six seconds after the onset of the trial. To avoid confounds resulting from the probe, only the first six seconds of the data for each trial was analyzed. Trials that contained fewer than 6000 samples within the first six seconds of the trial were excluded before analysis. For both datasets, the trials were pooled across participants. After excluding trials, the Exploratory dataset consisted of 12,177 of the 16,740 total trials, and the Confirmatory dataset consisted of 9,301 of the 10,395 total trials.
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
 On some trials, a probe was presented on the screen six seconds after the onset of the trial. To avoid confounds resulting from the probe, only the first six seconds of the data for each trial was analyzed. Trials that contained fewer than 6000 samples within the first six seconds of the trial were excluded before analysis. For both datasets, the trials were pooled across participants. After excluding trials, the Exploratory dataset consisted of 12,177 of the 16,740 total trials, and the Confirmatory dataset consisted of 9,301 of the 10,395 total trials.
 >>>>>>> parent of a41c982... final (maybe) revisions
@@ -50,6 +62,7 @@ The full timeline dataset was structured into three columns representing the x- 
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <!-- Image Subset Figures -->
 ```{r ave-subset, fig.cap = "Plot images were used to represent each type of data subset. As with the trials in the full XYP dataset, the time course of the eye movements was represented by the shading of the dot. The first sample of each trial was white, and the last sample was black.", echo = FALSE}
 =======
@@ -58,6 +71,10 @@ The full timeline dataset was structured into three columns representing the x- 
 <!-- Image Subset Figures -->
 ```{r ave-subset, fig.cap = "(ref:ave-subset-caption)", echo = FALSE}
 >>>>>>> parent of 84d70eb... catching up on missed commits.. added some notes in the README documentation (among the rest of the out-of-date documentation that is in there...)
+=======
+<!-- Image Subset Figures -->
+```{r ave-subset, fig.cap = "Plot images were used to represent each type of data subset. As with the trials in the full XYP dataset, the time course of the eye movements was represented by the shading of the dot. The first sample of each trial was white, and the last sample was black.", echo = FALSE}
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
 <!-- Image Subset Figures -->
 ```{r ave-subset, fig.cap = "Plot images were used to represent each type of data subset. As with the trials in the full XYP dataset, the time course of the eye movements was represented by the shading of the dot. The first sample of each trial was white, and the last sample was black.", echo = FALSE}

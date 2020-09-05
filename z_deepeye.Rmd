@@ -23,10 +23,14 @@ affiliation:
 authornote        : >
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   The data used for the exploratory and confirmatory analyses in the present manuscript are derived from experiments funded by NIH/NEI Grant 1R01EY022974 to MDD. Work done to develop the analysis approach was supported by NSF/EPSCoR grant #1632849 (MRJ and MDD) and NIH grant GM130461 awarded to MRJ and colleagues. Additionally, this work was supported by the National Institute of General Medical Sciences of the National Institutes of Health [grant number P20 GM130461] and the Rural Drug Addiction Research Center at the University of Nebraska-Lincoln. The content is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health or the University of Nebraska.
 =======
   The data used for the exploratory and confirmatory analyses in the present manuscript are derived from experiments funded by NIH/NEI Grant 1R01EY022974 to MDD. Work done to develop the analysis approach was supported by NSF/EPSCoR grant #1632849 (MRJ and MDD). Additionally, this work was supported by the National Institute of General Medical Sciences of the National Institutes of Health [grant number P20 GM130461 awarded to MRJ and colleagues] and the Rural Drug Addiction Research Center at the University of Nebraska-Lincoln. The content is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health or the University of Nebraska.
 >>>>>>> parent of 84d70eb... catching up on missed commits.. added some notes in the README documentation (among the rest of the out-of-date documentation that is in there...)
+=======
+  The data used for the exploratory and confirmatory analyses in the present manuscript are derived from experiments funded by NIH/NEI Grant 1R01EY022974 to MDD. Work done to develop the analysis approach was supported by NSF/EPSCoR grant #1632849 (MRJ and MDD) and NIH grant GM130461 awarded to MRJ and colleagues. Additionally, this work was supported by the National Institute of General Medical Sciences of the National Institutes of Health [grant number P20 GM130461] and the Rural Drug Addiction Research Center at the University of Nebraska-Lincoln. The content is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health or the University of Nebraska.
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
   The data used for the exploratory and confirmatory analyses in the present manuscript are derived from experiments funded by NIH/NEI Grant 1R01EY022974 to MDD. Work done to develop the analysis approach was supported by NSF/EPSCoR grant #1632849 (MRJ and MDD) and NIH grant GM130461 awarded to MRJ and colleagues. Additionally, this work was supported by the National Institute of General Medical Sciences of the National Institutes of Health [grant number P20 GM130461] and the Rural Drug Addiction Research Center at the University of Nebraska-Lincoln. The content is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health or the University of Nebraska.
 >>>>>>> parent of a41c982... final (maybe) revisions
@@ -38,10 +42,14 @@ abstract          : >
 keywords          : "deep learning, eye tracking, convolutional neural network, cognitive state, endogenous attention"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 wordcount         : "7960" #knit word doc to get the count
 =======
 # wordcount         : "7960" #knit word doc to get the count
 >>>>>>> parent of 84d70eb... catching up on missed commits.. added some notes in the README documentation (among the rest of the out-of-date documentation that is in there...)
+=======
+wordcount         : "7960" #knit word doc to get the count
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
 wordcount         : "7960" #knit word doc to get the count
 >>>>>>> parent of a41c982... final (maybe) revisions
@@ -73,10 +81,14 @@ documentclass     : "apa6"
 classoption       : "man, donotrepeattitle" #doc or man
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 output            : papaja::apa6_docx #apa6_docx or apa6_pdf
 =======
 output            : papaja::apa6_pdf #apa6_docx or apa6_pdf
 >>>>>>> parent of 84d70eb... catching up on missed commits.. added some notes in the README documentation (among the rest of the out-of-date documentation that is in there...)
+=======
+output            : papaja::apa6_docx #apa6_docx or apa6_pdf
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
 output            : papaja::apa6_docx #apa6_docx or apa6_pdf
 >>>>>>> parent of a41c982... final (maybe) revisions
