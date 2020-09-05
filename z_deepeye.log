@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.9.28)  28 AUG 2020 01:40
 entering extended mode
  restricted \write18 enabled.
@@ -20,6 +21,14 @@ entering extended mode
 (/Users/zcole/Box/projects/deepeye/dev_git/deepeye/z_deepeye.tex
 >>>>>>> parent of 84d70eb... catching up on missed commits.. added some notes in the README documentation (among the rest of the out-of-date documentation that is in there...)
 =======
+**z_deepeye.tex
+(./z_deepeye.tex
+>>>>>>> parent of a41c982... final (maybe) revisions
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.9.28)  28 AUG 2020 01:40
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
 **z_deepeye.tex
 (./z_deepeye.tex
 >>>>>>> parent of a41c982... final (maybe) revisions
@@ -57,6 +66,7 @@ Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Class apa6 Info: No bibliography package was specified; defaulting to (but not 
 loading) Biblatex on input line 213.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/lm/lmodern.sty
@@ -64,6 +74,11 @@ loading) Biblatex on input line 213.
 Class apa6 Info: No bibliography package was specified; defaulting to (but not loading) Biblatex on input line 213.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/lm/lmodern.sty
 >>>>>>> parent of 84d70eb... catching up on missed commits.. added some notes in the README documentation (among the rest of the out-of-date documentation that is in there...)
+=======
+Class apa6 Info: No bibliography package was specified; defaulting to (but not 
+loading) Biblatex on input line 213.
+(/usr/local/texlive/2019/texmf-dist/tex/latex/lm/lmodern.sty
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
 Class apa6 Info: No bibliography package was specified; defaulting to (but not 
 loading) Biblatex on input line 213.
@@ -112,10 +127,14 @@ Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/t1enc.def
 =======
  (/usr/local/texlive/2019/texmf-dist/tex/latex/base/t1enc.def
 >>>>>>> parent of 84d70eb... catching up on missed commits.. added some notes in the README documentation (among the rest of the out-of-date documentation that is in there...)
+=======
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/t1enc.def
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/t1enc.def
 >>>>>>> parent of a41c982... final (maybe) revisions
@@ -129,10 +148,14 @@ Package: geometry 2018/04/16 v5.8 Page Geometry
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/keyval.sty
 =======
  (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/keyval.sty
 >>>>>>> parent of 84d70eb... catching up on missed commits.. added some notes in the README documentation (among the rest of the out-of-date documentation that is in there...)
+=======
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/keyval.sty
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
 (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/keyval.sty
 >>>>>>> parent of a41c982... final (maybe) revisions
@@ -166,6 +189,7 @@ Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/trig.sty
@@ -184,6 +208,11 @@ Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/trig.sty
 >>>>>>> parent of a41c982... final (maybe) revisions
+=======
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/trig.sty
+>>>>>>> parent of a41c982... final (maybe) revisions
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
@@ -192,10 +221,14 @@ Package graphics Info: Driver file: pdftex.def on input line 99.
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-def/pdftex.def
 =======
  (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-def/pdftex.def
 >>>>>>> parent of 84d70eb... catching up on missed commits.. added some notes in the README documentation (among the rest of the out-of-date documentation that is in there...)
+=======
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-def/pdftex.def
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
 (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-def/pdftex.def
 >>>>>>> parent of a41c982... final (maybe) revisions
@@ -228,11 +261,16 @@ Package: booktabs 2016/04/27 v1.618033 publication quality tables
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 )
 (/usr/local/texlive/2019/texmf-dist/tex/latex/threeparttable/threeparttable.sty
 =======
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/threeparttable/threeparttable.sty
 >>>>>>> parent of 84d70eb... catching up on missed commits.. added some notes in the README documentation (among the rest of the out-of-date documentation that is in there...)
+=======
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/threeparttable/threeparttable.sty
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
 )
 (/usr/local/texlive/2019/texmf-dist/tex/latex/threeparttable/threeparttable.sty
@@ -257,6 +295,7 @@ Package: threeparttable 2003/06/13  v 3.0
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 (/usr/local/texlive/2019/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2019/09/01 v3.3d Customizing captions (AR)
 (/usr/local/texlive/2019/texmf-dist/tex/latex/caption/caption3.sty
@@ -265,6 +304,11 @@ Package: caption 2019/09/01 v3.3d Customizing captions (AR)
 Package: caption 2019/09/01 v3.3d Customizing captions (AR)
  (/usr/local/texlive/2019/texmf-dist/tex/latex/caption/caption3.sty
 >>>>>>> parent of 84d70eb... catching up on missed commits.. added some notes in the README documentation (among the rest of the out-of-date documentation that is in there...)
+=======
+(/usr/local/texlive/2019/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2019/09/01 v3.3d Customizing captions (AR)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/caption/caption3.sty
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
 (/usr/local/texlive/2019/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2019/09/01 v3.3d Customizing captions (AR)
@@ -297,10 +341,14 @@ Package caption Info: threeparttable package is loaded.
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 (/usr/local/texlive/2019/texmf-dist/tex/latex/tools/bm.sty
 =======
  (/usr/local/texlive/2019/texmf-dist/tex/latex/tools/bm.sty
 >>>>>>> parent of 84d70eb... catching up on missed commits.. added some notes in the README documentation (among the rest of the out-of-date documentation that is in there...)
+=======
+(/usr/local/texlive/2019/texmf-dist/tex/latex/tools/bm.sty
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
 (/usr/local/texlive/2019/texmf-dist/tex/latex/tools/bm.sty
 >>>>>>> parent of a41c982... final (maybe) revisions
@@ -318,6 +366,7 @@ LaTeX Info: Redefining \bm on input line 207.
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 (/usr/local/texlive/2019/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
 s
@@ -325,6 +374,11 @@ s
  (/usr/local/texlive/2019/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footers
 >>>>>>> parent of 84d70eb... catching up on missed commits.. added some notes in the README documentation (among the rest of the out-of-date documentation that is in there...)
+=======
+(/usr/local/texlive/2019/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
+s
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
 (/usr/local/texlive/2019/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
@@ -348,11 +402,16 @@ s
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Package: endfloat 2019/04/15 v2.7 LaTeX2e package puts figures and tables at en
 d (jdm)
 =======
 Package: endfloat 2019/04/15 v2.7 LaTeX2e package puts figures and tables at end (jdm)
 >>>>>>> parent of 84d70eb... catching up on missed commits.. added some notes in the README documentation (among the rest of the out-of-date documentation that is in there...)
+=======
+Package: endfloat 2019/04/15 v2.7 LaTeX2e package puts figures and tables at en
+d (jdm)
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
 Package: endfloat 2019/04/15 v2.7 LaTeX2e package puts figures and tables at en
 d (jdm)
@@ -379,10 +438,14 @@ Package: amssymb 2013/01/14 v3.01 AMS font symbols
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 =======
  (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 >>>>>>> parent of 84d70eb... catching up on missed commits.. added some notes in the README documentation (among the rest of the out-of-date documentation that is in there...)
+=======
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
 (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 >>>>>>> parent of a41c982... final (maybe) revisions
@@ -401,6 +464,7 @@ Package: amsmath 2018/12/01 v2.17b AMS math features
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 For additional information on amsmath, use the `?' option.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
@@ -412,6 +476,12 @@ For additional information on amsmath, use the `?' option.
 Package: amstext 2000/06/29 v2.01 AMS text
  (/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsgen.sty
 >>>>>>> parent of 84d70eb... catching up on missed commits.. added some notes in the README documentation (among the rest of the out-of-date documentation that is in there...)
+=======
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsgen.sty
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
 For additional information on amsmath, use the `?' option.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -479,10 +549,14 @@ Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/t1enc.def
 =======
  (/usr/local/texlive/2019/texmf-dist/tex/latex/base/t1enc.def
 >>>>>>> parent of 84d70eb... catching up on missed commits.. added some notes in the README documentation (among the rest of the out-of-date documentation that is in there...)
+=======
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/t1enc.def
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/t1enc.def
 >>>>>>> parent of a41c982... final (maybe) revisions
@@ -512,6 +586,7 @@ Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 Now handling font encoding TS1 ...
@@ -524,6 +599,13 @@ Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
  (/usr/local/texlive/2019/texmf-dist/tex/latex/base/ts1enc.dfu
 >>>>>>> parent of 84d70eb... catching up on missed commits.. added some notes in the README documentation (among the rest of the out-of-date documentation that is in there...)
+=======
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+Now handling font encoding TS1 ...
+... processing UTF-8 mapping file for font encoding TS1
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/ts1enc.dfu
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
@@ -638,9 +720,13 @@ Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 372.
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> parent of 84d70eb... catching up on missed commits.. added some notes in the README documentation (among the rest of the out-of-date documentation that is in there...)
+=======
+
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
 
 >>>>>>> parent of a41c982... final (maybe) revisions
@@ -688,11 +774,16 @@ Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
 tim
 =======
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verbatim
 >>>>>>> parent of 84d70eb... catching up on missed commits.. added some notes in the README documentation (among the rest of the out-of-date documentation that is in there...)
+=======
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
 tim
@@ -709,6 +800,7 @@ LaTeX Info: Redefining \textls on input line 790.
 \MT@outer@kern=\dimen142
 LaTeX Info: Redefining \textmicrotypecontext on input line 1336.
 \MT@listname@count=\count118
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -729,11 +821,17 @@ File: microtype-pdftex.def 2019/02/28 v2.7b Definitions specific to pdftex (RS)
 File: microtype-pdftex.def 2019/02/28 v2.7b Definitions specific to pdftex (RS)
 
 >>>>>>> parent of a41c982... final (maybe) revisions
+=======
+(/usr/local/texlive/2019/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+File: microtype-pdftex.def 2019/02/28 v2.7b Definitions specific to pdftex (RS)
+
+>>>>>>> parent of a41c982... final (maybe) revisions
 LaTeX Info: Redefining \lsstyle on input line 914.
 LaTeX Info: Redefining \lslig on input line 914.
 \MT@outer@space=\skip68
 )
 Package microtype Info: Loading configuration file microtype.cfg.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -756,6 +854,9 @@ Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 =======
 (/usr/local/texlive/2019/texmf-dist/tex/latex/microtype/microtype.cfg
 >>>>>>> parent of a41c982... final (maybe) revisions
+=======
+(/usr/local/texlive/2019/texmf-dist/tex/latex/microtype/microtype.cfg
+>>>>>>> parent of a41c982... final (maybe) revisions
 File: microtype.cfg 2019/02/28 v2.7b microtype main configuration file (RS)
 )) (/usr/local/texlive/2019/texmf-dist/tex/latex/parskip/parskip.sty
 Package: parskip 2019-01-16 v2.0c non-zero parskip adjustments
@@ -767,8 +868,12 @@ Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 >>>>>>> parent of 84d70eb... catching up on missed commits.. added some notes in the README documentation (among the rest of the out-of-date documentation that is in there...)
+=======
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
 (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 >>>>>>> parent of a41c982... final (maybe) revisions
@@ -783,10 +888,14 @@ Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/color.cfg
 =======
  (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/color.cfg
 >>>>>>> parent of 84d70eb... catching up on missed commits.. added some notes in the README documentation (among the rest of the out-of-date documentation that is in there...)
+=======
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/color.cfg
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
 (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/color.cfg
 >>>>>>> parent of a41c982... final (maybe) revisions
@@ -810,6 +919,7 @@ Package: xurl 2018/12/23 v 0.07 modify URL breaks
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 (/usr/local/texlive/2019/texmf-dist/tex/latex/url/url.sty
 =======
  (/usr/local/texlive/2019/texmf-dist/tex/latex/url/url.sty
@@ -820,10 +930,14 @@ Package: xurl 2018/12/23 v 0.07 modify URL breaks
 =======
 (/usr/local/texlive/2019/texmf-dist/tex/latex/url/url.sty
 >>>>>>> parent of a41c982... final (maybe) revisions
+=======
+(/usr/local/texlive/2019/texmf-dist/tex/latex/url/url.sty
+>>>>>>> parent of a41c982... final (maybe) revisions
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/bookmark.sty
 Package: bookmark 2019/06/04 v1.27 PDF bookmarks (HO)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -852,12 +966,20 @@ Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
 Package: pdftexcmds 2019/07/25 v0.30 Utility functions of pdfTeX for LuaTeX (HO
 )
 >>>>>>> parent of a41c982... final (maybe) revisions
+=======
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/pdfescape.sty
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2019/07/25 v0.30 Utility functions of pdfTeX for LuaTeX (HO
+)
+>>>>>>> parent of a41c982... final (maybe) revisions
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )) (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2019/09/12 v6.88i Hypertext links for LaTeX
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -870,6 +992,12 @@ Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
  (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
 >>>>>>> parent of 84d70eb... catching up on missed commits.. added some notes in the README documentation (among the rest of the out-of-date documentation that is in there...)
+=======
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
 (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
@@ -898,11 +1026,16 @@ Package hobsub Info: Skipping package `pdfescape' (already loaded).
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
 )
 =======
 Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO)
 >>>>>>> parent of 84d70eb... catching up on missed commits.. added some notes in the README documentation (among the rest of the out-of-date documentation that is in there...)
+=======
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
 Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
 )
@@ -931,10 +1064,14 @@ Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/pd1enc.def
 =======
  (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/pd1enc.def
 >>>>>>> parent of 84d70eb... catching up on missed commits.. added some notes in the README documentation (among the rest of the out-of-date documentation that is in there...)
+=======
+(/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/pd1enc.def
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
 (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/pd1enc.def
 >>>>>>> parent of a41c982... final (maybe) revisions
@@ -946,6 +1083,7 @@ Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
 \Hy@SavedSpaceFactor=\count121
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -961,6 +1099,13 @@ File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 Package hyperref Info: Option `unicode' set `true' on input line 4424.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/puenc.def
 >>>>>>> parent of 84d70eb... catching up on missed commits.. added some notes in the README documentation (among the rest of the out-of-date documentation that is in there...)
+=======
+(/usr/local/texlive/2019/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `unicode' set `true' on input line 4424.
+(/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/puenc.def
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
 (/usr/local/texlive/2019/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -1009,6 +1154,7 @@ Package hyperref Info: Driver (autodetected): hpdftex.
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2019/09/12 v6.88i Hyperref driver for pdfTeX
 \Fld@listcount=\count127
@@ -1025,6 +1171,9 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 =======
 (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/hpdftex.def
 >>>>>>> parent of a41c982... final (maybe) revisions
+=======
+(/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/hpdftex.def
+>>>>>>> parent of a41c982... final (maybe) revisions
 File: hpdftex.def 2019/09/12 v6.88i Hyperref driver for pdfTeX
 \Fld@listcount=\count127
 \c@bookmark@seq@number=\count128
@@ -1032,8 +1181,13 @@ File: hpdftex.def 2019/09/12 v6.88i Hyperref driver for pdfTeX
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 282.
 >>>>>>> parent of 84d70eb... catching up on missed commits.. added some notes in the README documentation (among the rest of the out-of-date documentation that is in there...)
+=======
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
@@ -1089,10 +1243,14 @@ Package: tabularx 2016/02/03 v2.11b `tabularx' package (DPC)
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 (/usr/local/texlive/2019/texmf-dist/tex/latex/tools/array.sty
 =======
  (/usr/local/texlive/2019/texmf-dist/tex/latex/tools/array.sty
 >>>>>>> parent of 84d70eb... catching up on missed commits.. added some notes in the README documentation (among the rest of the out-of-date documentation that is in there...)
+=======
+(/usr/local/texlive/2019/texmf-dist/tex/latex/tools/array.sty
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
 (/usr/local/texlive/2019/texmf-dist/tex/latex/tools/array.sty
 >>>>>>> parent of a41c982... final (maybe) revisions
@@ -1115,6 +1273,7 @@ Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
 \TX@delta=\dimen155
 \TX@cols=\count136
 \TX@ftn=\toks29
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1150,6 +1309,15 @@ Package: threeparttablex 2013/07/23 v0.3 by daleif
 Package: environ 2014/05/04 v0.3 A new way to define environments
 (/usr/local/texlive/2019/texmf-dist/tex/latex/trimspaces/trimspaces.sty
 >>>>>>> parent of a41c982... final (maybe) revisions
+=======
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/threeparttablex/threeparttablex.s
+ty
+Package: threeparttablex 2013/07/23 v0.3 by daleif
+(/usr/local/texlive/2019/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+(/usr/local/texlive/2019/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+>>>>>>> parent of a41c982... final (maybe) revisions
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
 \TPTL@width=\skip78
@@ -1158,10 +1326,14 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 (/usr/local/texlive/2019/texmf-dist/tex/latex/lineno/lineno.sty
 =======
  (/usr/local/texlive/2019/texmf-dist/tex/latex/lineno/lineno.sty
 >>>>>>> parent of 84d70eb... catching up on missed commits.. added some notes in the README documentation (among the rest of the out-of-date documentation that is in there...)
+=======
+(/usr/local/texlive/2019/texmf-dist/tex/latex/lineno/lineno.sty
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
 (/usr/local/texlive/2019/texmf-dist/tex/latex/lineno/lineno.sty
 >>>>>>> parent of a41c982... final (maybe) revisions
@@ -1196,10 +1368,14 @@ Package: csquotes 2019/05/10 v5.2e context-sensitive quotations (JAW)
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 (/usr/local/texlive/2019/texmf-dist/tex/latex/csquotes/csquotes.def
 =======
  (/usr/local/texlive/2019/texmf-dist/tex/latex/csquotes/csquotes.def
 >>>>>>> parent of 84d70eb... catching up on missed commits.. added some notes in the README documentation (among the rest of the out-of-date documentation that is in there...)
+=======
+(/usr/local/texlive/2019/texmf-dist/tex/latex/csquotes/csquotes.def
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
 (/usr/local/texlive/2019/texmf-dist/tex/latex/csquotes/csquotes.def
 >>>>>>> parent of a41c982... final (maybe) revisions
@@ -1213,10 +1389,14 @@ Package csquotes Info: ... configuration file loaded successfully.
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 (/usr/local/texlive/2019/texmf-dist/tex/latex/csquotes/csquotes.cfg
 =======
  (/usr/local/texlive/2019/texmf-dist/tex/latex/csquotes/csquotes.cfg
 >>>>>>> parent of 84d70eb... catching up on missed commits.. added some notes in the README documentation (among the rest of the out-of-date documentation that is in there...)
+=======
+(/usr/local/texlive/2019/texmf-dist/tex/latex/csquotes/csquotes.cfg
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
 (/usr/local/texlive/2019/texmf-dist/tex/latex/csquotes/csquotes.cfg
 >>>>>>> parent of a41c982... final (maybe) revisions
@@ -1228,6 +1408,7 @@ File: csquotes.cfg
 Package: setspace 2011/12/19 v6.7a set line spacing
 ) (/usr/local/texlive/2019/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2019/09/27 3.34 The Babel package
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1248,6 +1429,9 @@ File: babel.def 2019/09/27 3.34 Babel common definitions
 =======
 (/usr/local/texlive/2019/texmf-dist/tex/generic/babel/switch.def
 >>>>>>> parent of a41c982... final (maybe) revisions
+=======
+(/usr/local/texlive/2019/texmf-dist/tex/generic/babel/switch.def
+>>>>>>> parent of a41c982... final (maybe) revisions
 File: switch.def 2019/09/27 3.34 Babel switching mechanism
 ) (/usr/local/texlive/2019/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
@@ -1257,8 +1441,12 @@ File: babel.def 2019/09/27 3.34 Babel common definitions
 \U@D=\dimen161
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  (/usr/local/texlive/2019/texmf-dist/tex/generic/babel/txtbabel.def)
 >>>>>>> parent of 84d70eb... catching up on missed commits.. added some notes in the README documentation (among the rest of the out-of-date documentation that is in there...)
+=======
+(/usr/local/texlive/2019/texmf-dist/tex/generic/babel/txtbabel.def)
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
 (/usr/local/texlive/2019/texmf-dist/tex/generic/babel/txtbabel.def)
 >>>>>>> parent of a41c982... final (maybe) revisions
@@ -1277,6 +1465,7 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1316,6 +1505,9 @@ LaTeX Font Info:    Try loading font information for T1+lmr on input line 146.
 =======
 (./z_deepeye.aux)
 >>>>>>> parent of a41c982... final (maybe) revisions
+=======
+(./z_deepeye.aux)
+>>>>>>> parent of a41c982... final (maybe) revisions
 \openout1 = `z_deepeye.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 146.
@@ -1338,6 +1530,7 @@ File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 LaTeX Font Info:    ... okay on input line 156.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 156.
 LaTeX Font Info:    ... okay on input line 156.
@@ -1349,6 +1542,8 @@ LaTeX Font Info:    Try loading font information for T1+lmr on input line 156.
 =======
 =======
 >>>>>>> parent of a41c982... final (maybe) revisions
+=======
+>>>>>>> parent of a41c982... final (maybe) revisions
 LaTeX Font Info:    ... okay on input line 146.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 146.
 LaTeX Font Info:    ... okay on input line 146.
@@ -1357,6 +1552,9 @@ LaTeX Font Info:    ... okay on input line 146.
 LaTeX Font Info:    Try loading font information for T1+lmr on input line 146.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/lm/t1lmr.fd
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of a41c982... final (maybe) revisions
+=======
 >>>>>>> parent of a41c982... final (maybe) revisions
 =======
 >>>>>>> parent of a41c982... final (maybe) revisions
@@ -1414,6 +1612,7 @@ Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 )
@@ -1434,6 +1633,9 @@ e
 =======
 (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/grfext.sty
 >>>>>>> parent of a41c982... final (maybe) revisions
+=======
+(/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/grfext.sty
+>>>>>>> parent of a41c982... final (maybe) revisions
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 )
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1444,9 +1646,15 @@ G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  (/usr/local/texlive/2019/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 >>>>>>> parent of 84d70eb... catching up on missed commits.. added some notes in the README documentation (among the rest of the out-of-date documentation that is in there...)
+=======
+(/usr/local/texlive/2019/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
 (/usr/local/texlive/2019/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
@@ -1464,6 +1672,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: longtable package is loaded.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1493,6 +1702,13 @@ Package: ltcaption 2018/08/26 v1.4a longtable captions (AR)
 Package caption Info: End \AtBeginDocument code.
 LaTeX Info: Redefining \microtypecontext on input line 146.
 >>>>>>> parent of a41c982... final (maybe) revisions
+=======
+(/usr/local/texlive/2019/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2018/08/26 v1.4a longtable captions (AR)
+)
+Package caption Info: End \AtBeginDocument code.
+LaTeX Info: Redefining \microtypecontext on input line 146.
+>>>>>>> parent of a41c982... final (maybe) revisions
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using protrusion set `basicmath'.
@@ -1502,6 +1718,7 @@ Package microtype Info: Using default expansion set `basictext'.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1527,6 +1744,11 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 >>>>>>> parent of a41c982... final (maybe) revisions
+=======
+(/usr/local/texlive/2019/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
+(RS)
+>>>>>>> parent of a41c982... final (maybe) revisions
 )
 \AtBeginShipoutBox=\box41
 Package hyperref Info: Link coloring OFF on input line 146.
@@ -1534,8 +1756,12 @@ Package hyperref Info: Link coloring OFF on input line 146.
 Package: nameref 2019/09/12 v2.45 Cross-referencing by name of section
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 >>>>>>> parent of 84d70eb... catching up on missed commits.. added some notes in the README documentation (among the rest of the out-of-date documentation that is in there...)
+=======
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
 (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 >>>>>>> parent of a41c982... final (maybe) revisions
@@ -1549,6 +1775,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
 >>>>>>> parent of a41c982... final (maybe) revisions
 =======
@@ -1559,6 +1788,7 @@ LaTeX Info: Redefining \nameref on input line 146.
 LaTeX Font Info:    Try loading font information for T1+lmss on input line 148.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/lm/t1lmss.fd
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1601,6 +1831,8 @@ LaTeX Font Info:    Try loading font information for T1+lmss on input line 158.
 >>>>>>> parent of a41c982... final (maybe) revisions
 =======
 >>>>>>> parent of a41c982... final (maybe) revisions
+=======
+>>>>>>> parent of a41c982... final (maybe) revisions
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Try loading font information for OT1+lmr on input line 148.
@@ -1630,10 +1862,16 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 (Font)              <6> on input line 158.
 LaTeX Font Info:    Try loading font information for U+msa on input line 158.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
 >>>>>>> parent of 84d70eb... catching up on missed commits.. added some notes in the README documentation (among the rest of the out-of-date documentation that is in there...)
+=======
+(Font)              <6> on input line 148.
+LaTeX Font Info:    Try loading font information for U+msa on input line 148.
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
 (Font)              <6> on input line 148.
 LaTeX Font Info:    Try loading font information for U+msa on input line 148.
@@ -1651,12 +1889,17 @@ File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 LaTeX Font Info:    Try loading font information for U+msb on input line 148.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 =======
 LaTeX Font Info:    Try loading font information for U+msb on input line 158.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 >>>>>>> parent of 84d70eb... catching up on missed commits.. added some notes in the README documentation (among the rest of the out-of-date documentation that is in there...)
+=======
+LaTeX Font Info:    Try loading font information for U+msb on input line 148.
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
 LaTeX Font Info:    Try loading font information for U+msb on input line 148.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -1676,10 +1919,14 @@ File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Overfull \hbox (59.23741pt too wide) in paragraph at lines 165--179
 =======
 Overfull \hbox (59.23741pt too wide) in paragraph at lines 175--189
 >>>>>>> parent of 84d70eb... catching up on missed commits.. added some notes in the README documentation (among the rest of the out-of-date documentation that is in there...)
+=======
+Overfull \hbox (59.23741pt too wide) in paragraph at lines 165--179
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
 Overfull \hbox (59.23741pt too wide) in paragraph at lines 165--179
 >>>>>>> parent of a41c982... final (maybe) revisions
@@ -1696,6 +1943,9 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
 >>>>>>> parent of a41c982... final (maybe) revisions
 <figures/cond_imgs.pdf, id=64, 993.7125pt x 281.05pt>
@@ -1734,6 +1984,7 @@ Package pdftex.def Info: figures/timeline_conf_matrices.pdf  used on input line
 [16 <./figures/r_code/timeline_subset_chance.pdf>] [17 <./figures/timeline_conf
 _matrices.pdf>] [18]
 <figures/r_code/img_subset_chance.pdf, id=631, 469.755pt x 346.29375pt>
+<<<<<<< HEAD
 <<<<<<< HEAD
 File: figures/r_code/img_subset_chance.pdf Graphic file (type pdf)
 <use figures/r_code/img_subset_chance.pdf>
@@ -1851,6 +2102,8 @@ _matrices.pdf>] [18]
 <figures/r_code/img_subset_chance.pdf, id=631, 469.755pt x 346.29375pt>
 =======
 >>>>>>> parent of a41c982... final (maybe) revisions
+=======
+>>>>>>> parent of a41c982... final (maybe) revisions
 File: figures/r_code/img_subset_chance.pdf Graphic file (type pdf)
 <use figures/r_code/img_subset_chance.pdf>
 Package pdftex.def Info: figures/r_code/img_subset_chance.pdf  used on input li
@@ -1925,9 +2178,14 @@ Output written on z_deepeye.pdf (33 pages, 7633506 bytes).
 PDF statistics:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  1058 PDF objects out of 1200 (max. 8388607)
  707 compressed objects within 8 object streams
 >>>>>>> parent of 84d70eb... catching up on missed commits.. added some notes in the README documentation (among the rest of the out-of-date documentation that is in there...)
+=======
+ 1057 PDF objects out of 1200 (max. 8388607)
+ 706 compressed objects within 8 object streams
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
  1057 PDF objects out of 1200 (max. 8388607)
  706 compressed objects within 8 object streams
