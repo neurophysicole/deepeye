@@ -84,7 +84,11 @@ There was also a difference in classification accuracies between the X$\varnothi
 Classification accuracies for the XYP confirmatory image dataset were well above chance (_M_ = .449, _SD_ = 0.012, _t_$_{(9)}$ = 31.061, _p_ < .001), but were less accurate than the classifications of the confirmatory timeline dataset (_t_$_{(18)}$ = 11.167 _p_ < .001). Accuracies for classifications of the data subsets were also all better than chance (see Figure \@ref(fig:img-parcellation-chance)). The confusion matrices followed the pattern showing that the Memorize condition was mistaken most often, and was relatively equally mis-identified as a Search or Rate trial (see Figure \@ref(fig:img-conf-matrices)). As with the timeline data, the general trend showing that pupil size data was the least informative to the model was replicated in the Confirmatory dataset (see Table \@ref(tab:image-parcellation-comparisons)).
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 To test the generalizability of the model architecture, the classification accuracies for the XYP Exploratory and Confirmatory plot image datasets were compared. The independent samples _t_-test comparing the classification accuracies for the Exploratory and Confirmatory plot image datasets did not show a significant difference, _t_$_{18}$ = 1.777, _p_ = .092, Cohen's _d_ = 0.795.<!-- double-checked. looks right --
+=======
+To test the generalizability of the model architecture, the classification accuracies for the XYP Exploratory and Confirmatory plot image datasets were compared. The independent samples _t_-test comparing the classification accuracies for the Exploratory and Confirmatory plot image datasets did not show a significant difference, _t_$_{(18)}$ = 1.777, _p_ = .092, Cohen's _d_ = 0.795.<!-- double-checked. looks right -->
+>>>>>>> parent of a41c982... final (maybe) revisions
 =======
 To test the generalizability of the model architecture, the classification accuracies for the XYP Exploratory and Confirmatory plot image datasets were compared. The independent samples _t_-test comparing the classification accuracies for the Exploratory and Confirmatory plot image datasets did not show a significant difference, _t_$_{(18)}$ = 1.777, _p_ = .092, Cohen's _d_ = 0.795.<!-- double-checked. looks right -->
 >>>>>>> parent of a41c982... final (maybe) revisions
