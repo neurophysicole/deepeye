@@ -1,0 +1,10 @@
+MacInnes Notes
+
+- Partial set - no model
+- Don't have old Genie files, no longer compatible with new company license
+- Final processed input used for training the mean (saccademeans.txt) and single saccade (saccade.dat) models
+- combined with graphical representation in manuscript, should be able to replicate
+- Any simple Bayesian classifier package should get close to reproducing first part of paper
+- Not sure how to reproduce models from second part of paper
+- Models from second part of paper were better theoretical fit than statistical fit
+- Also included model output tested using BIC & Wilcoxon Rank Tests
