@@ -14,7 +14,8 @@ addpath(toolbox_path);
 
 subj_data = cell(length(all_files), 9);
 
-current_subj = 0;
+current_subj    = 0;
+data_size       = 0;
 
 
 %% ------------------------ %%
@@ -27,7 +28,6 @@ for current_file = 1:length(all_files)
     % -----------------------------------------
     % some of these files are busted, skip them
     try
-        % edf_data = Edf2Mat( join([data_dir,'/',data_file]) );
         owd = pwd;
         cd(data_dir);
         edf_data = Edf2Mat( data_file );
@@ -81,8 +81,6 @@ for current_file = 1:length(all_files)
         trial_info_str = edf_info_strings{start_inds(i)};
         tt_ind = strfind(trial_info_str,'TRIALTYPE');
         trial_types(i) = str2double( trial_info_str( (tt_ind+9):(tt_ind+11) )); %works in very limited circumstances
-        %! bt_ind = strfind(trial_info_str,'BLOCKTYPE');
-        %! block_types(i) = str2double( trial_info_str( (bt_ind+9):end )); %works in very limited circumstances
 
         
         % --------------
@@ -137,20 +135,45 @@ for current_file = 1:length(all_files)
     %% assign to subj data %%
     %% ------------------- %%
 
-    %! will need to stack it then assign it...
+    subj_data{current_file, 1}  = current_file; %subject number
+    subj_data{current_file, 2}  = 1:n_trials; %trial numbers
+    subj_data{current_file, 3}  = trialtype;
+    subj_data{current_file, 4}  = init_time;
+    subj_data{current_file, 5}  = num_fixations;
+    subj_data{current_file, 6}  = entropy_attn;
+    subj_data{current_file, 7}  = mean_sacc_amplitude;
+    subj_data{current_file, 8}  = mean_fix_dur;
+    subj_data{current_file, 9}  = area_fixated;
+    subj_data{current_file, 20} = saliency_fix;
 
-    %? trialnum
+    % need to know how many rows to make
+    data_size = data_size + n_trials;
+end
 
-    subj_data{current_file, 1} = clean_fixations;
-    subj_data{current_file, 2} = clean_saccades;
-    subj_data{current_file, 3} = init_time;
-    subj_data{current_file, 4} = num_fixations;
-    subj_data{current_file, 5} = entropy_attn;
-    subj_data{current_file, 6} = mean_sacc_amplitude;
-    subj_data{current_file, 7} = mean_fix_dur;
-    subj_data{current_file, 8} = area_fixated;
-    subj_data{current_file, 9} = saliency_fix;
 
+%% -------------- %%
+%% stack the data %%
+%% -------------- %%
+
+% init vars
+eye_data    = (data_size, 9);
+x_start     = 1;
+iter_size   = length(subj_data{i, 1});
+
+% iterate through files
+for i = 1:length(all_files)
+    eye_data(x_start:iter_size, 1)  = subj_data{i, 1}; %subj_num
+    eye_data(x_start:iter_size, 2)  = subj_data{i, 2}; %trialnum
+    eye_data(x_start:iter_size, 3)  = subj_data{i, 3}; %trialtype
+    eye_data(x_start:iter_size, 4)  = subj_data{i, 4}; %init_time
+    eye_data(x_start:iter_size, 5)  = subj_data{i, 5}; %num_fixations
+    eye_data(x_start:iter_size, 6)  = subj_data{i, 6}; %entropy_attn
+    eye_data(x_start:iter_size, 7)  = subj_data{i, 7}; %mean_sacc_amplitude
+    eye_data(x_start:iter_size, 8)  = subj_data{i, 8}; %mean_fix_dur
+    eye_data(x_start:iter_size, 9)  = subj_data{i, 9}; %area_fixated
+    eye_data(x_start:iter_size, 10) = subj_data{i, 10}; %saliency_fix
+
+    x_start = x_start + iter_size
 end
 
 
@@ -158,7 +181,7 @@ end
 %% gen table %%
 %% --------- %%
 
-eye_data = table(trialnum, trial_type, subj_data{:, 1}, subj_data{:, 2}, subj_data{:, 3}, subj_data{:, 4}, subj_data{:, 5}, subj_data{:, 6}, subj_data{:, 7}, subj_data{:, 8}, subj_data{:, 9}, 'VariableNames', {'trialnum', 'trial_type', 'clean_fixations', 'clean_saccades', 'init_time', 'num_fixations', 'entropy_attn', 'mean_sacc_amplitude', 'mean_fix_dur', 'area_fixated', 'saliency_fix'});
+eye_data_table = table(eye_data{:, 1}, eye_data{:, 2}, eye_data{:, 3}, eye_data{:, 4}, eye_data{:, 5}, eye_data{:, 6}, eye_data{:, 7}, eye_data{:, 8}, eye_data{:, 9}, eye_data{:, 10}, 'VariableNames', {'subj_num', 'trialnum', 'trialtype', 'init_time', 'num_fixations', 'entropy_attn', 'mean_sacc_amplitude', 'mean_fix_dur', 'area_fixated', 'saliency_fix'});
 
 
 %% ----------- %%
@@ -166,10 +189,10 @@ eye_data = table(trialnum, trial_type, subj_data{:, 1}, subj_data{:, 2}, subj_da
 %% ----------- %%
 
 % .mat file
-save('ck_features.mat', 'eye_data', '-v7.3');
+save('ck_features.mat', 'eye_data_table', '-v7.3');
 
 % csv
-save('ck_features.csv', 'eye_data');
+save('ck_features.csv', 'eye_data_table');
 
 
 %% ==================== %%
@@ -211,6 +234,10 @@ num_fixations = length(fixation_duration);
 
 %!===========================
 function entropy_attn(input)
+% (1) compute attentional landscapes by fitting 2D Gaussians on the (x,y) coords of each fixation, with the height of the Gaussian weighted by fixation duration and the 1 degree radius of visual angle.
+% (2) Entropy of map is calculated with equation: \sum$_{x,y}$p(L$_{x,y}$)log$_{2}$p(L$_{x,y}$), where p(L$_{x,y}$) is the normalized fixation probability at point (x,y) in the landscape L.
+% higher entropy should be related to more spread of the scenes.
+
 
 
 %==========================================================================
@@ -269,3 +296,26 @@ area_fixated    = area_fixated / total_area;
 
 %!===========================
 function fix_saliency(input)
+% compute the saliency map of each scene using the model developed by Torralba, Oliva, Castelhano, and Henderson (2006), then map the (x,y) coordinates of each fixation onto the saliency map (assign saliency values to each coordinate location)
+% use the saliency part of the equation, not the context part of the equation
+
+% Torralba et al. equation: log p(L) = log k - 1/2[(L - \eta)^t * \delta^(-1) * (L - eta)]^\alpha
+%% **deep sigh** %%
+
+%% now to decode their equation...
+% k is the normalization constant
+% \eta and \delta are the mean and covariance matrix of the local features
+% \alpha (w/\alpha > 1) accounts for the long tail of the distribution
+% when \alpha = 1, the distribution is multivariate Gaussian
+% Maximul likelihod used to fit the dsitribution parameters \eta, \delta, \alpha
+% For \alpha, obtain vals in range [0.01, 0.1] for images
+% Distribution can also be fitted by constraining \delta to be diagonal then allowing explonent \alpha to be different for each component of vector of local features L
+% No diff bn the two approx when using probability for predicting fixation points
+% approximated conditional distribution using the equation: p(L|G) \inf p(L|\eta(I), \delta(I), \alpha(I))
+% fitted the power-exponential distribution using the features computed at the current image I
+
+%% now to encode their equation
+
+
+%! There may be another option: https://people.csail.mit.edu/tjudd/WherePeopleLook/Code/JuddSaliencyModel/  
+%? Maybe this is the updated version of the Torralba saliency model?
