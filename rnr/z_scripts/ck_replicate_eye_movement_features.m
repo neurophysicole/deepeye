@@ -6,20 +6,20 @@ function ck_replicate_eye_movement_features
 %% init vars %%
 %% --------- %%
 
-data_dir            = '/Volumes/eeg_data_analysis/04_mike_eye_tracking/messin_around/E1-8/LaurenElise/Exp1/exp1_v4/data/';
-eye_dir             = sprintf(data_dir, '/data_eyelink');
+data_dir            = '/Volumes/eeg_data_analysis/04_mike_eye_tracking/messin_around/E1-8/LaurenElise/Exp1/exp1_v4/data';
+eye_dir             = sprintf('%s/data_eyelink', data_dir);
 eye_files_struct    = dir([eye_dir '/*.edf']);
 eye_files           = extractfield(eye_files_struct,'name');
-txt_dir             = sprintf(data_dir, '/data_text');
-text_files_struct   = dir([txt_dir '/*.txt']);
-txt_files           = extractfield(text_files_struct,'name');
+txt_dir             = sprintf('%s/data_text', data_dir);
+% text_files_struct   = dir([txt_dir '/*.txt']);
+% txt_files           = extractfield(text_files_struct,'name');
 
 toolbox_path        = '/Volumes/eeg_data_analysis/04_mike_eye_tracking/messin_around/mrj_matlab_scripts/uzh-edf-converter-fae25ca';
 addpath(toolbox_path);
 
 subj_data = cell(length(eye_files), 9);
 
-current_subj    = 0;
+% current_subj    = 0;
 data_size       = 0;
 
 
@@ -33,9 +33,16 @@ data_size       = 0;
 % init vars
 stim_dir        = '/Volumes/eeg_data_analysis/04_mike_eye_tracking/messin_around/E1-8/LaurenElise/Exp1/exp1_v4/resources/images/';
 stim_dir_struct = dir([stim_dir]);
-stim_dir_names  = extractfield(stim_dir_struct, 'names');
+stim_dir_names  = extractfield(stim_dir_struct, 'name');
 stim_dir_dirs   = extractfield(stim_dir_struct, 'isdir');
-stim_dir_dirs   = stim_dir_names(stim_dir_dirs == 1);
+% assign names to dirs, get rid of fnames
+for i = 1:length(stim_dir_names)
+    if stim_dir_dirs{i} == 1
+        stim_dir_dirs{i} = stim_dir_names{i};
+    else
+        stim_dir_dirs{i} = [];
+    end
+end
 
 % ---------
 % get stims
@@ -44,14 +51,27 @@ stim_subdirs = cell(length(stim_dir_dirs), 1);
 for dirs = 1:length(stim_dir_dirs)
     % get subdir names
     subdir              = sprintf(stim_dir, stim_dir_dirs{dirs});
-    subdir_struct       = dir([subdir, (('/*.jpg') | ('/*.JPG'))]);
-    subdir_contents     = extractfield(subdir_struct, 'names');
-    subdir_folder       = unique(extractfield(subdir_struct, 'folder');
+    subdir_struct       = dir([subdir]);
+    subdir_names        = extractfield(subdir_struct, 'name');
+    subdir_folder       = unique(extractfield(subdir_struct, 'folder'));
+    ftypes              = { 'jpg', 'JPG', 'png' };
+
+    % get file names, no dirs
+    subdir_contents = {};
+    for i = 1:length(ftypes)
+        ftype_contents      = regexp(subdir_names, ftypes{i});
+
+        for j = 1:length(ftype_contents)
+            if length(ftype_contents{j} > 0)
+                subdir_contents = { subdir_contents; subdir_names{j} };
+            end
+        end
+    end
 
     % loop through subdir to assign prefix to each item
     subdir_files = length(subdir_contents);
     for dirs_files = 1:length(subdir_contents)
-        subdir_files{i} = sprintf('%s/%s', subdir_folder, subdir_contents{dirs_files}); %get files
+        subdir_files{dirs_files} = sprintf('%s/%s', subdir_folder{1}, subdir_contents{dirs_files}{2}); %get files
     end
 
     stim_subdirs{dirs}  = subdir_files; %logit
@@ -74,7 +94,7 @@ end
 % calculate saliency
 saliency = cell(stim_count, 1);
 for img = 1:length(stim_fnames)
-    saliency{i} = img_saliency_calculation(stim_fnames{img});
+    saliency{img} = img_saliency_calculation(stim_fnames{img});
 end
 
 
@@ -141,7 +161,7 @@ for current_file = 1:length(eye_files)
         trial_end = end_times(i);
 
         trial_inds = (edf_data.Samples.time >= trial_start) & (edf_data.Samples.time <= trial_end);
-        trial_data{i} = [edf_data.Samples.posX(trial_inds) edf_data.Samples.posY(trial_inds) edf_data.Samples.pupilSize(trial_inds)];
+        % trial_data{i} = [edf_data.Samples.posX(trial_inds) edf_data.Samples.posY(trial_inds) edf_data.Samples.pupilSize(trial_inds)];
         
         % get meta info
         trial_info_str = edf_info_strings{start_inds(i)};
@@ -154,19 +174,19 @@ for current_file = 1:length(eye_files)
         fixations   = edf_data.Events.Efix;
         saccades    = edf_data.Events.Esacc;
 
-        fix_start    = fixations.start((fixations.start >= trial_start) & (fixations.end <= trial_end));
-        fix_end      = fixations.end((fixations.start >= trial_start) & (fixations.end <= trial_end));
+        % fix_start    = fixations.start((fixations.start >= trial_start) & (fixations.end <= trial_end));
+        % fix_end      = fixations.end((fixations.start >= trial_start) & (fixations.end <= trial_end));
         fix_dur      = fixations.duration((fixations.start >= trial_start) & (fixations.end <= trial_end));
         fix_x        = fixations.posX((fixations.start >= trial_start) & (fixations.end <= trial_end));
         fix_y        = fixations.posY((fixations.start >= trial_start) & (fixations.end <= trial_end));
 
         sacc_start   = saccades.start((saccades.start >= trial_start) & (saccades.end <= trial_end));
-        sacc_end     = saccades.end((saccades.start >= trial_start) & (saccades.end <= trial_end));
-        sacc_dur     = saccades.duration((saccades.start >= trial_start) & (saccades.end <= trial_end));
-        sacc_x       = saccades.posX((saccades.start >= trial_start) & (saccades.end <= trial_end));
-        sacc_y       = saccades.posY((saccades.start >= trial_start) & (saccades.end <= trial_end));
-        sacc_x_end   = saccades.posXend((saccades.start >= trial_start) & (saccades.end <= trial_end));
-        sacc_y_end   = saccades.posYend((saccades.start >= trial_start) & (saccades.end <= trial_end));
+        % sacc_end     = saccades.end((saccades.start >= trial_start) & (saccades.end <= trial_end));
+        % sacc_dur     = saccades.duration((saccades.start >= trial_start) & (saccades.end <= trial_end));
+        % sacc_x       = saccades.posX((saccades.start >= trial_start) & (saccades.end <= trial_end));
+        % sacc_y       = saccades.posY((saccades.start >= trial_start) & (saccades.end <= trial_end));
+        % sacc_x_end   = saccades.posXend((saccades.start >= trial_start) & (saccades.end <= trial_end));
+        % sacc_y_end   = saccades.posYend((saccades.start >= trial_start) & (saccades.end <= trial_end));
         sacc_hypot   = saccades.hypot((saccades.start >= trial_start) & (saccades.end <= trial_end));
 
         %% -------------- %%
@@ -221,7 +241,7 @@ end
 %% -------------- %%
 
 % init vars
-eye_data    = (data_size, 9);
+eye_data    = nan(data_size, 11);
 x_start     = 1;
 iter_size   = length(subj_data{i, 1});
 
@@ -239,7 +259,7 @@ for i = 1:length(eye_files)
     eye_data(x_start:iter_size, 10) = subj_data{i, 10}; %saliency_fix
     eye_data(x_start:iter_size, 11) = subj_data{i, 11}; %stim_imgs
 
-    x_start = x_start + iter_size
+    x_start = x_start + iter_size;
 end
 
 
@@ -288,7 +308,7 @@ save('ck_features.csv', 'eye_data_table');
 function init_time = initiation_time( trial_start, first_sacc )
 % the amount of time it takes to make the first saccade in the trial
 
-initiation_time = first_sacc - trial_start;
+init_time = first_sacc - trial_start;
 
 
 %================================================================
@@ -323,7 +343,8 @@ fixations = cell(length(x), 2);
 [cols, rows] = meshgrid(1:h, 1:w); %create the circle
 for i = 1:length(x)
     fixations{i,1} = (cols - x(i)).^2 + (rows - y(i)).^2 <= foveated_radius.^2; %logical array of the pixels in the circle
-    fixations{i,2} = fixations_duration(i);
+    %! should ^^ use foveated pixels instead of foveated radius?
+    fixations{i,2} = fixation_duration(i);
 end
 
 fix_map = zeros(h, w);
@@ -375,7 +396,7 @@ foveated_pixels = pi * foveated_radius^2; %area (in pixels) of the circle spanni
 
 % ------------------------
 % determine if overlapping
-fixation_location   = (x, y);
+fixation_location   = [x, y];
 fixation_area       = length(x) * foveated_pixels; %the total area covered by fixations
 
 % loop through each sample to map each fixation
@@ -404,7 +425,7 @@ area_fixated    = area_fixated / total_area;
 
 %========================================================
 %! ...not working... !%
-function saliency = img_saliency_calculation( img_fname )
+function saliencyMap = img_saliency_calculation( img )
 % calculate a saliency value for each pixel of each image
 
 % stolen -- borrowed -- functions :: https://people.csail.mit.edu/tjudd/WherePeopleLook/Code/JuddSaliencyModel/  
@@ -446,7 +467,7 @@ end
 if nargout == 0
     th = sort(saliencyMap(:));
 
-    p = [0 .5 1]
+    p = [0 .5 1];
     for n = 1:length(p)-1
         th1 = th(1+round(nrows*ncols*p(n)));
         th2 = th(round(nrows*ncols*p(n+1)));
@@ -457,9 +478,6 @@ if nargout == 0
     end
 end
     
-% --------------------
-% added for the output
-saliency = { saliencyMap, img_fname };
 
 
 %=============================================================
