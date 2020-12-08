@@ -6,30 +6,90 @@ function ck_replicate_eye_movement_features
 %% init vars %%
 %% --------- %%
 
-data_dir            = '/Volumes/eeg_data_analysis/04_mike_eye_tracking/messin_around/E1-8/LaurenElise/Exp1/exp1_v4/data/data_eyelink';
-all_files_struct    = dir([data_dir '/*.edf']);
-all_files           = extractfield(all_files_struct,'name');
+data_dir            = '/Volumes/eeg_data_analysis/04_mike_eye_tracking/messin_around/E1-8/LaurenElise/Exp1/exp1_v4/data/';
+eye_dir             = sprintf(data_dir, '/data_eyelink');
+eye_files_struct    = dir([eye_dir '/*.edf']);
+eye_files           = extractfield(eye_files_struct,'name');
+txt_dir             = sprintf(data_dir, '/data_text');
+text_files_struct   = dir([txt_dir '/*.txt']);
+txt_files           = extractfield(text_files_struct,'name');
+
 toolbox_path        = '/Volumes/eeg_data_analysis/04_mike_eye_tracking/messin_around/mrj_matlab_scripts/uzh-edf-converter-fae25ca';
 addpath(toolbox_path);
 
-subj_data = cell(length(all_files), 9);
+subj_data = cell(length(eye_files), 9);
 
 current_subj    = 0;
 data_size       = 0;
+
+
+%% ------------------ %%
+%% Calc Stim Saliency %%
+%% ------------------ %%
+% calculating the average saliency for each pixel location of each image
+% the mapping of the fixations onto the image pixels is done in the saliency_fix function later on..
+
+% ---------
+% init vars
+stim_dir        = '/Volumes/eeg_data_analysis/04_mike_eye_tracking/messin_around/E1-8/LaurenElise/Exp1/exp1_v4/resources/images/';
+stim_dir_struct = dir([stim_dir]);
+stim_dir_names  = extractfield(stim_dir_struct, 'names');
+stim_dir_dirs   = extractfield(stim_dir_struct, 'isdir');
+stim_dir_dirs   = stim_dir_names(stim_dir_dirs == 1);
+
+% ---------
+% get stims
+stim_count = 0;
+stim_subdirs = cell(length(stim_dir_dirs), 1);
+for dirs = 1:length(stim_dir_dirs)
+    % get subdir names
+    subdir              = sprintf(stim_dir, stim_dir_dirs{dirs});
+    subdir_struct       = dir([subdir, (('/*.jpg') | ('/*.JPG'))]);
+    subdir_contents     = extractfield(subdir_struct, 'names');
+    subdir_folder       = unique(extractfield(subdir_struct, 'folder');
+
+    % loop through subdir to assign prefix to each item
+    subdir_files = length(subdir_contents);
+    for dirs_files = 1:length(subdir_contents)
+        subdir_files{i} = sprintf('%s/%s', subdir_folder, subdir_contents{dirs_files}); %get files
+    end
+
+    stim_subdirs{dirs}  = subdir_files; %logit
+
+    stim_count = stim_count + length(subdir_contents);
+end
+
+% stack stim file names
+stim_fnames = cell(stim_count, 1);
+stim_count_counter = 1;
+for dirs = 1:length(stim_dir_dirs) %loop through dirs
+    subdir_files = stim_dir_dirs{dirs}; %get dir
+    for dirs_files = 1:length(subdir_files) %loop through subdirs
+        stim_fnames{stim_count_counter} = subdir_files{dirs_files}; %assign fnames
+        stim_count_counter              = stim_count_counter + 1; %update counter
+    end
+end
+
+% ------------------
+% calculate saliency
+saliency = cell(stim_count, 1);
+for img = 1:length(stim_fnames)
+    saliency{i} = img_saliency_calculation(stim_fnames{img});
+end
 
 
 %% ------------------------ %%
 %% cycle through data files %%
 %% ------------------------ %%
 
-for current_file = 1:length(all_files)
-    data_file = all_files{current_file};
+for current_file = 1:length(eye_files)
+    data_file = eye_files{current_file};
     
     % -----------------------------------------
     % some of these files are busted, skip them
     try
         owd = pwd;
-        cd(data_dir);
+        cd(eye_dir);
         edf_data = Edf2Mat( data_file );
         cd(owd);
         fprintf('Loaded: %s\n', data_file);
@@ -52,9 +112,15 @@ for current_file = 1:length(all_files)
 
     n_trials    = numel(start_inds);
 
+    % ----------------------------------------
+    % extract stim imgs per trial (.txt files)
+    txt_file    = sprintf(txt_dir, data_file(1:end-4), '.txt'); %change from .edf to .txt
+    txt_data    = readtable(txt_file); %get data
+    stim_imgs   = txt_data.imagename; %isolate stim imgs
+
     % ---------------
     % init trial vars
-    trial_types         = nan(n_trials,1);
+    trial_types         = nan(n_trials, 1);
     init_time           = nan(n_trials, 1);
     num_fixations       = nan(n_trials, 1);
     entropy_attn        = nan(n_trials, 1);
@@ -120,15 +186,13 @@ for current_file = 1:length(all_files)
     
         init_time(i)           = initiation_time( trial_start, sacc_start );
         num_fixations(i)       = number_of_fixations( fix_dur );
-        entropy_attn(i)        = entropy_of_attentional_landscape(input);
+        entropy_attn(i)        = entropy_of_attentional_landscape(fix_x, fix_y, fix_dur, stim_imgs);
         mean_sacc_amplitude(i) = mean_sacade_amplitude( sacc_hypot );
         mean_fix_dur(i)        = mean_fixation_duration( fix_dur );
         area_fixated(i)        = percent_area_fixated( fix_x, fix_y );
-        saliency_fix(i)        = saliency_at_fixation(input);
+        saliency_fix(i)        = saliency_at_fixation( fix_x, fix_y, saliency(saliency{:,2} == stim_imgs{i}, 1) );
 
     end
-
-
 
 
     %% ------------------- %%
@@ -144,7 +208,8 @@ for current_file = 1:length(all_files)
     subj_data{current_file, 7}  = mean_sacc_amplitude;
     subj_data{current_file, 8}  = mean_fix_dur;
     subj_data{current_file, 9}  = area_fixated;
-    subj_data{current_file, 20} = saliency_fix;
+    subj_data{current_file, 10} = saliency_fix;
+    subj_data{current_file, 11} = stim_imgs;
 
     % need to know how many rows to make
     data_size = data_size + n_trials;
@@ -161,7 +226,7 @@ x_start     = 1;
 iter_size   = length(subj_data{i, 1});
 
 % iterate through files
-for i = 1:length(all_files)
+for i = 1:length(eye_files)
     eye_data(x_start:iter_size, 1)  = subj_data{i, 1}; %subj_num
     eye_data(x_start:iter_size, 2)  = subj_data{i, 2}; %trialnum
     eye_data(x_start:iter_size, 3)  = subj_data{i, 3}; %trialtype
@@ -172,6 +237,7 @@ for i = 1:length(all_files)
     eye_data(x_start:iter_size, 8)  = subj_data{i, 8}; %mean_fix_dur
     eye_data(x_start:iter_size, 9)  = subj_data{i, 9}; %area_fixated
     eye_data(x_start:iter_size, 10) = subj_data{i, 10}; %saliency_fix
+    eye_data(x_start:iter_size, 11) = subj_data{i, 11}; %stim_imgs
 
     x_start = x_start + iter_size
 end
@@ -181,7 +247,7 @@ end
 %% gen table %%
 %% --------- %%
 
-eye_data_table = table(eye_data{:, 1}, eye_data{:, 2}, eye_data{:, 3}, eye_data{:, 4}, eye_data{:, 5}, eye_data{:, 6}, eye_data{:, 7}, eye_data{:, 8}, eye_data{:, 9}, eye_data{:, 10}, 'VariableNames', {'subj_num', 'trialnum', 'trialtype', 'init_time', 'num_fixations', 'entropy_attn', 'mean_sacc_amplitude', 'mean_fix_dur', 'area_fixated', 'saliency_fix'});
+eye_data_table = table(eye_data{:, 1}, eye_data{:, 2}, eye_data{:, 3}, eye_data{:, 4}, eye_data{:, 5}, eye_data{:, 6}, eye_data{:, 7}, eye_data{:, 8}, eye_data{:, 9}, eye_data{:, 10}, eye_data{:, 11}, 'VariableNames', {'subj_num', 'trialnum', 'trialtype', 'init_time', 'num_fixations', 'entropy_attn', 'mean_sacc_amplitude', 'mean_fix_dur', 'area_fixated', 'saliency_fix', 'stim_imgs'});
 
 
 %% ----------- %%
@@ -232,12 +298,49 @@ function num_fixations = number_of_fixations( fixation_duration )
 num_fixations = length(fixation_duration);
 
 
-%!===========================
-function entropy_attn(input)
+%===========================================================================================
+function entropy_attn = entropy_of_attentional_landscape( x, y, fixation_duration, stim_imgs )
 % (1) compute attentional landscapes by fitting 2D Gaussians on the (x,y) coords of each fixation, with the height of the Gaussian weighted by fixation duration and the 1 degree radius of visual angle.
 % (2) Entropy of map is calculated with equation: \sum$_{x,y}$p(L$_{x,y}$)log$_{2}$p(L$_{x,y}$), where p(L$_{x,y}$) is the normalized fixation probability at point (x,y) in the landscape L.
 % higher entropy should be related to more spread of the scenes.
 
+% ---------
+% init vars
+w       = 1024; %stim width in pixels
+h       = 768; %stim height in pixels
+w_deg   = 23.8; %stim width in degrees of visual angle
+h_deg   = 18.0; %stim height in degrees of visual angle
+
+% ---------------------------------------------------------
+% calculate the amount of pixels foveated for each fixation
+foveated_radius = mean((w / w_deg), (h / h_deg)); %radius (in pixels) of the circle spanning 1 degree of visual angle at the fovea
+foveated_pixels = pi * foveated_radius^2; %area (in pixels) of the circle spanning 1 degree of visual angle at the fovea
+
+% -----------------
+% map all fixations
+% loop through each sample
+fixations = cell(length(x), 2);
+[cols, rows] = meshgrid(1:h, 1:w); %create the circle
+for i = 1:length(x)
+    fixations{i,1} = (cols - x(i)).^2 + (rows - y(i)).^2 <= foveated_radius.^2; %logical array of the pixels in the circle
+    fixations{i,2} = fixations_duration(i);
+end
+
+fix_map = zeros(h, w);
+for i = 1:length(fixations)
+    fix_vals    = fixations{i, 1} * fixations{i, 2}; %ones multiplied by the duration (weighting)
+    fix_map     = fix_map + fix_vals; %add to the map
+end
+
+% ------------------
+% calc 2-D Gaussians
+% using the multivariate normal probability density function :: mvnpdf -- I think this is the same?
+fixations_norm = mvnpdf(fix_map);
+
+% -----------------
+% calculate entropy
+% using MATLAB entropy function (matches up with equation provided in C&K manuscript)
+entropy_attn = entropy(fixations_norm);
 
 
 %==========================================================================
@@ -275,15 +378,20 @@ foveated_pixels = pi * foveated_radius^2; %area (in pixels) of the circle spanni
 fixation_location   = (x, y);
 fixation_area       = length(x) * foveated_pixels; %the total area covered by fixations
 
-% loop through each sample
+% loop through each sample to map each fixation
 pixels = cell(length(x), 1);
 [cols, rows] = meshgrid(1:h, 1:w); %create the circle
-for f = 1:length(x)
-    pixels{f} = (cols - x(f)).^2 + (rows - y(f)).^2 <= foveated_radius.^2; %logical array of the pixels in the circle
+for fixation = 1:length(x)
+    pixels{fixation} = (cols - x(fixation)).^2 + (rows - y(fixation)).^2 <= foveated_radius.^2; %logical array of the pixels in the circle
 end
 
 % get the overlap
-overlap             = pixels + pixels; %the circle pixels will be ones, and everything else is zero, so we'll add them up to find the overlap
+% the circle pixels will be ones, and everything else is zero, so we'll add them up to find the overlap
+overlap = zeros(h, w);
+for i = 1:length(pixels)
+    overlap = overlap + pixels{i};
+end
+
 overlapping_pixels  = length(overlap(overlap > 1)); %this is the number of overlapping pixels
 
 % ------------------------
@@ -294,28 +402,69 @@ area_fixated    = fixation_area - overlapping_pixels; %total area fixated
 area_fixated    = area_fixated / total_area;
 
 
-%!===========================
-function fix_saliency(input)
+%========================================================
+%! ...not working... !%
+function saliency = img_saliency_calculation( img_fname )
+% calculate a saliency value for each pixel of each image
+
+% stolen -- borrowed -- functions :: https://people.csail.mit.edu/tjudd/WherePeopleLook/Code/JuddSaliencyModel/  
+
+% ---------------------------
+% torralba et al. (2009) code
+function saliencyMap = torralbaSaliency(img)
+%
+% written by Antonio Torralba 
+% saliencyMap = saliency(img);
+%
+% If you call it without output arguments it will show two images.
+% saliency = Product_i (hist(featuremap_i))
+
+edges = 'reflect1';
+pyrFilters = 'sp3Filters';
+
+[nrows, ncols, cc]=size(img);
+Nsc = 4;%maxPyrHt([nrows ncols], [15 15])-1; % Number of scales
+
+[pyr, ind] = buildSpyr(double(mean(img,3)), Nsc, pyrFilters, edges);
+
+weight = 2.^(1:Nsc);
+sal = zeros(size(pyr));
+saliencyMap = 1;
+for b=2:size(ind,1)-1
+    out =  pyrBand(pyr,ind,b);
+    scale = floor((b-2)/6);
+
+    [h,x] = hist(out(:), 100);
+    h = h+1; h = h/sum(h);
+
+    probOut = interp1(x, 1./h, out, 'nearest', min(h));   
+    probOutR = imresize(probOut, [nrows ncols], 'bilinear');
+    saliencyMap = saliencyMap + log(probOutR)*weight(scale+1);
+end
+
+
+if nargout == 0
+    th = sort(saliencyMap(:));
+
+    p = [0 .5 1]
+    for n = 1:length(p)-1
+        th1 = th(1+round(nrows*ncols*p(n)));
+        th2 = th(round(nrows*ncols*p(n+1)));
+
+        subplot(1,2,n)
+        imagesc(img.*uint8(repmat((saliencyMap>th1).*(saliencyMap<=th2),[1 1 cc])))
+        axis('equal'); axis('tight')
+    end
+end
+    
+% --------------------
+% added for the output
+saliency = { saliencyMap, img_fname };
+
+
+%=============================================================
+function saliency_fix = saliency_at_fixation( x, y, saliency )
 % compute the saliency map of each scene using the model developed by Torralba, Oliva, Castelhano, and Henderson (2006), then map the (x,y) coordinates of each fixation onto the saliency map (assign saliency values to each coordinate location)
 % use the saliency part of the equation, not the context part of the equation
 
-% Torralba et al. equation: log p(L) = log k - 1/2[(L - \eta)^t * \delta^(-1) * (L - eta)]^\alpha
-%% **deep sigh** %%
-
-%% now to decode their equation...
-% k is the normalization constant
-% \eta and \delta are the mean and covariance matrix of the local features
-% \alpha (w/\alpha > 1) accounts for the long tail of the distribution
-% when \alpha = 1, the distribution is multivariate Gaussian
-% Maximul likelihod used to fit the dsitribution parameters \eta, \delta, \alpha
-% For \alpha, obtain vals in range [0.01, 0.1] for images
-% Distribution can also be fitted by constraining \delta to be diagonal then allowing explonent \alpha to be different for each component of vector of local features L
-% No diff bn the two approx when using probability for predicting fixation points
-% approximated conditional distribution using the equation: p(L|G) \inf p(L|\eta(I), \delta(I), \alpha(I))
-% fitted the power-exponential distribution using the features computed at the current image I
-
-%% now to encode their equation
-
-
-%! There may be another option: https://people.csail.mit.edu/tjudd/WherePeopleLook/Code/JuddSaliencyModel/  
-%? Maybe this is the updated version of the Torralba saliency model?
+saliency_fix = saliency(y, x);
