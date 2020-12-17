@@ -31,10 +31,16 @@ data_size       = 0;
 
 % ---------
 % init vars
-stim_dir        = '/Volumes/eeg_data_analysis/04_mike_eye_tracking/messin_around/E1-8/LaurenElise/Exp1/exp1_v4/resources/images/';
-stim_dir_struct = dir([stim_dir]);
+stim_dir        = '/Volumes/eeg_data_analysis/04_mike_eye_tracking/messin_around/E1-8/LaurenElise/Exp1/exp1_v4/resources/images';
+stim_dir_struct = dir(stim_dir);
 stim_dir_names  = extractfield(stim_dir_struct, 'name');
 stim_dir_dirs   = extractfield(stim_dir_struct, 'isdir');
+ftypes          = { 'jpg', 'JPG', 'png' };
+
+% remove useless dirs
+stim_dir_dirs   = stim_dir_dirs(~strcmp(stim_dir_names, '.') & ~strcmp(stim_dir_names, '..') & ~strcmp(stim_dir_names, '.DS_Store') & ~isempty(stim_dir_names));
+stim_dir_names 	= stim_dir_names(~strcmp(stim_dir_names, '.') & ~strcmp(stim_dir_names, '..') & ~strcmp(stim_dir_names, '.DS_Store') & ~isempty(stim_dir_names));
+
 % assign names to dirs, get rid of fnames
 for i = 1:length(stim_dir_names)
     if stim_dir_dirs{i} == 1
@@ -49,52 +55,64 @@ end
 stim_count = 0;
 stim_subdirs = cell(length(stim_dir_dirs), 1);
 for dirs = 1:length(stim_dir_dirs)
+    % turns out there are dirs in the dirs.. dirsception
     % get subdir names
-    subdir              = sprintf(stim_dir, stim_dir_dirs{dirs});
-    subdir_struct       = dir([subdir]);
+    subdir              = sprintf('%s/%s', stim_dir, stim_dir_dirs{dirs});
+    subdir_struct       = dir(subdir);
     subdir_names        = extractfield(subdir_struct, 'name');
     subdir_folder       = unique(extractfield(subdir_struct, 'folder'));
-    ftypes              = { 'jpg', 'JPG', 'png' };
-
-    % get file names, no dirs
-    subdir_contents = {};
+    
+    % get file names within the subdirs
+    subdir_files = [];
     for i = 1:length(ftypes)
-        ftype_contents      = regexp(subdir_names, ftypes{i});
+        % get the files that match the extension type
+        ftype_files = regexp(subdir_names, ftypes{i});
 
-        for j = 1:length(ftype_contents)
-            if length(ftype_contents{j} > 0)
-                subdir_contents = { subdir_contents; subdir_names{j} };
+        % get the fnames
+        for j = 1:length(ftype_files)
+            if ~isempty(ftype_files{j})
+                subdir_files = [ subdir_files; subdir_names(j) ];
             end
         end
     end
 
     % loop through subdir to assign prefix to each item
-    subdir_files = length(subdir_contents);
-    for dirs_files = 1:length(subdir_contents)
-        subdir_files{dirs_files} = sprintf('%s/%s', subdir_folder{1}, subdir_contents{dirs_files}{2}); %get files
+    for dirs_files = 1:length(subdir_files)
+        subdir_files{dirs_files} = sprintf('%s/%s', subdir_folder{1}, subdir_files{dirs_files});
     end
 
     stim_subdirs{dirs}  = subdir_files; %logit
 
-    stim_count = stim_count + length(subdir_contents);
+    stim_count = stim_count + length(subdir_files); %update count (for future vars)
 end
 
-% stack stim file names
+
+% -----------
+% stack stims
+% the stims are folded in the `stim_subdirs` var
+
+% init vars
 stim_fnames = cell(stim_count, 1);
-stim_count_counter = 1;
-for dirs = 1:length(stim_dir_dirs) %loop through dirs
-    subdir_files = stim_dir_dirs{dirs}; %get dir
-    for dirs_files = 1:length(subdir_files) %loop through subdirs
-        stim_fnames{stim_count_counter} = subdir_files{dirs_files}; %assign fnames
-        stim_count_counter              = stim_count_counter + 1; %update counter
+stim_count  = 1;
+
+% loop through the subdirs
+for dirs = 1:length(stim_subdirs)
+    for stims = 1:length(stim_subdirs{dirs})
+        stim_fnames{stim_count} = stim_subdirs{dirs}{stims};
+        
+        stim_count = stim_count + 1;
     end
 end
 
+% remove duplicates
+stim_fnames = unique(stim_fnames);
+
 % ------------------
 % calculate saliency
-saliency = cell(stim_count, 1);
+saliency = cell(length(stim_fnames), 1);
 for img = 1:length(stim_fnames)
-    saliency{img} = img_saliency_calculation(stim_fnames{img});
+    saliencyMap     = img_saliency_calculation(stim_fnames{img}); %stolen function
+    saliency{img}   = saliencyMap;
 end
 
 
@@ -160,7 +178,7 @@ for current_file = 1:length(eye_files)
         trial_start = start_times(i);
         trial_end = end_times(i);
 
-        trial_inds = (edf_data.Samples.time >= trial_start) & (edf_data.Samples.time <= trial_end);
+%         trial_inds = (edf_data.Samples.time >= trial_start) & (edf_data.Samples.time <= trial_end);
         % trial_data{i} = [edf_data.Samples.posX(trial_inds) edf_data.Samples.posY(trial_inds) edf_data.Samples.pupilSize(trial_inds)];
         
         % get meta info
@@ -206,7 +224,7 @@ for current_file = 1:length(eye_files)
     
         init_time(i)           = initiation_time( trial_start, sacc_start );
         num_fixations(i)       = number_of_fixations( fix_dur );
-        entropy_attn(i)        = entropy_of_attentional_landscape(fix_x, fix_y, fix_dur, stim_imgs);
+        entropy_attn(i)        = entropy_of_attentional_landscape( fix_x, fix_y, fix_dur );
         mean_sacc_amplitude(i) = mean_sacade_amplitude( sacc_hypot );
         mean_fix_dur(i)        = mean_fixation_duration( fix_dur );
         area_fixated(i)        = percent_area_fixated( fix_x, fix_y );
@@ -319,7 +337,7 @@ num_fixations = length(fixation_duration);
 
 
 %===========================================================================================
-function entropy_attn = entropy_of_attentional_landscape( x, y, fixation_duration, stim_imgs )
+function entropy_attn = entropy_of_attentional_landscape( x, y, fixation_duration )
 % (1) compute attentional landscapes by fitting 2D Gaussians on the (x,y) coords of each fixation, with the height of the Gaussian weighted by fixation duration and the 1 degree radius of visual angle.
 % (2) Entropy of map is calculated with equation: \sum$_{x,y}$p(L$_{x,y}$)log$_{2}$p(L$_{x,y}$), where p(L$_{x,y}$) is the normalized fixation probability at point (x,y) in the landscape L.
 % higher entropy should be related to more spread of the scenes.
@@ -424,15 +442,23 @@ area_fixated    = area_fixated / total_area;
 
 
 %========================================================
-%! ...not working... !%
 function saliencyMap = img_saliency_calculation( img )
 % calculate a saliency value for each pixel of each image
+% NOTE: For this to work, need to make sure the folder containing the
+% collection of scripts that this function uses are included in the MATLAB
+% path.
+% Also, need to complile the MEX files with the script provided in the MEX
+% folder: compilePyrTools.m
 
-% stolen -- borrowed -- functions :: https://people.csail.mit.edu/tjudd/WherePeopleLook/Code/JuddSaliencyModel/  
+% read in the img
+img = imread(img); 
+
+% stolen -- aka. borrowed -- functions :: https://people.csail.mit.edu/tjudd/WherePeopleLook/Code/JuddSaliencyModel/  
+saliencyMap = torralbaSaliency( img );
 
 % ---------------------------
 % torralba et al. (2009) code
-function saliencyMap = torralbaSaliency(img)
+function saliencyMap = torralbaSaliency( img )
 %
 % written by Antonio Torralba 
 % saliencyMap = saliency(img);
