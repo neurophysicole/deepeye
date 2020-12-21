@@ -1,5 +1,32 @@
 function ck_replicate_eye_movement_features
-% Extracting fixation and saccade statistics from the edf files..
+% Replicating the Coco & Keller classification of eye movement data
+% This script extracts the fixation/saccade statistics used by Coco &
+% Keller to decode the eye movements.
+% The features are saved at the end of this script, and the decoding models
+% are run using R scripts (to replicate Coco & Keller).
+
+
+%% NOTE %%
+% This script calculates a bunch of eye movement features, including
+% saliency. Saliency is calculated from a Torralba script that uses A TON a
+% other .m and MEX files. In order for this to work, you might have to
+% first compile the MEX files (even if this isn't fully necessary, the
+% data will be processed much faster if these are compiled..).
+
+% In order to compile, see the saliency calculation function (below), where
+% the necessary steps to run the script are detailed (if need more info,
+% the folder containing the Torralba scripts has READMEs that contain all
+% of the necessary information.
+
+% Also, make sure to add the folder (and subfolders) containing the
+% Torralba saliency scripts to the path..
+
+
+%% NOTE NOTE %%
+% It is also worth noting that there are lines commented out that are
+% dedicated to cleaning the data. The data cleaning steps are skipped
+% because there was no mention in the Coco & Keller manuscript of data
+% cleaning / processing besides the feature extraction.
 
 
 %% --------- %%
@@ -11,16 +38,16 @@ eye_dir             = sprintf('%s/data_eyelink', data_dir);
 eye_files_struct    = dir([eye_dir '/*.edf']);
 eye_files           = extractfield(eye_files_struct,'name');
 txt_dir             = sprintf('%s/data_text', data_dir);
-% text_files_struct   = dir([txt_dir '/*.txt']);
-% txt_files           = extractfield(text_files_struct,'name');
 
 toolbox_path        = '/Volumes/eeg_data_analysis/04_mike_eye_tracking/messin_around/mrj_matlab_scripts/uzh-edf-converter-fae25ca';
 addpath(toolbox_path);
 
-subj_data = cell(length(eye_files), 9);
+subj_data = cell(length(eye_files), 12);
 
-% current_subj    = 0;
 data_size       = 0;
+
+% text file options
+probe_block_opt       = [ {'_probe_blocked'}, {'_noprobe_mixed'}, {'_probe_mixed'}, {'_noprobe_blocked'} ];
 
 
 %% ------------------ %%
@@ -89,7 +116,7 @@ end
 
 % -----------
 % stack stims
-% the stims are folded in the `stim_subdirs` var
+% the stims are folded in the `stim_subdirs` var, but we don't want that
 
 % init vars
 stim_fnames = cell(stim_count, 1);
@@ -107,19 +134,20 @@ end
 % remove duplicates
 stim_fnames = unique(stim_fnames);
 
+
 % ------------------
 % calculate saliency
-saliency = cell(length(stim_fnames), 1);
+saliency = cell(length(stim_fnames), 2);
 for img = 1:length(stim_fnames)
-    saliencyMap     = img_saliency_calculation(stim_fnames{img}); %stolen function
-    saliency{img}   = saliencyMap;
+    saliencyMap       = img_saliency_calculation(stim_fnames{img}); %stolen function
+    saliency{img, 1}  = saliencyMap; %assign saliency
+    saliency{img, 2}  = stim_fnames{img}; %assign img name
 end
 
 
 %% ------------------------ %%
 %% cycle through data files %%
 %% ------------------------ %%
-
 for current_file = 1:length(eye_files)
     data_file = eye_files{current_file};
     
@@ -152,35 +180,92 @@ for current_file = 1:length(eye_files)
 
     % ----------------------------------------
     % extract stim imgs per trial (.txt files)
-    txt_file    = sprintf(txt_dir, data_file(1:end-4), '.txt'); %change from .edf to .txt
+    % the txt fnames include the blocktype, could do some strfind thing,
+    % but can also just build it in.. so building it in
+    
+    % cycle through probe types and block options
+    for probe_opt = 1:length(probe_block_opt)
+        txt_probe_block = probe_block_opt{probe_opt};
+        txt_file        = sprintf( '%s/%s%s.txt', txt_dir, data_file(1:end-4), txt_probe_block ); %change from .edf to .txt
+        
+        if isfile(txt_file) %break away if is a file
+            break
+        else %assign zero val if not file
+            txt_file = 0;
+        end
+    end
+        
+    % check file validity
+    if txt_file == 0
+        continue %if no good, need to cut bait
+    end
+    
+    % read the data in
     txt_data    = readtable(txt_file); %get data
     stim_imgs   = txt_data.imagename; %isolate stim imgs
+    stim_chng   = txt_data.imagechange; %label to denote anything added to the original img
+    
+    % ---------------------------------------------
+    % get the stim name to match the stim file name
+    for i = 1:length(stim_imgs)
+        
+        % determine if the img was modified
+        if ~isempty(stim_chng{i})
+            mod = 'b'; %all of the modified stims have a 'b'
+        else
+            mod = 'a';
+        end
+        
+        % modify the fname to match
+        stim_imgs{i} = erase(stim_imgs{i}, '_'); %remove the underscore
+        
+        % add in the mod
+        if strcmp(mod, 'b')
+            mod = sprintf('%s(%s)', mod, stim_chng{i});
+        end
+            
+        % rename the img
+        stim_imgs{i} = sprintf('%s%s', stim_imgs{i}, mod);
+    end
 
     % ---------------
     % init trial vars
-    trial_types         = nan(n_trials, 1);
-    init_time           = nan(n_trials, 1);
-    num_fixations       = nan(n_trials, 1);
-    entropy_attn        = nan(n_trials, 1);
-    mean_sacc_amplitude = nan(n_trials, 1);
-    mean_fix_dur        = nan(n_trials, 1);
-    area_fixated        = nan(n_trials, 1);
-    saliency_fix        = nan(n_trials, 1);
+    trial_types             = nan(n_trials, 1);
+    init_time               = nan(n_trials, 1);
+    num_fixations           = nan(n_trials, 1);
+    entropy_attn            = nan(n_trials, 1);
+    mean_sacc_amplitude     = nan(n_trials, 1);
+    mean_fix_dur            = nan(n_trials, 1);
+    area_fixated            = nan(n_trials, 1);
+    mean_fixation_saliency  = nan(n_trials, 1);
 
+    % init other vars
+    subj_num        = nan(n_trials, 1);
+    subj_datfile    = cell(n_trials, 1);
+    
+    % assign other vars
+    subj_num(:)     = current_file;
+    subj_datfile(:) = {data_file};
 
     % -------------------
     % loop through trials
     % -------------------
 
     for i = 1:n_trials
+        
+        % get stim name and assign saliency
+        for j = 1:length(saliency(:,2))
+            % find the stim name within the filenames
+            if contains(saliency{j,2}, stim_imgs{i})
+                trial_saliency  = saliency{j,1};
+                break
+            end   
+        end
 
         % mark the borders
         trial_start = start_times(i);
         trial_end = end_times(i);
 
-%         trial_inds = (edf_data.Samples.time >= trial_start) & (edf_data.Samples.time <= trial_end);
-        % trial_data{i} = [edf_data.Samples.posX(trial_inds) edf_data.Samples.posY(trial_inds) edf_data.Samples.pupilSize(trial_inds)];
-        
         % get meta info
         trial_info_str = edf_info_strings{start_inds(i)};
         tt_ind = strfind(trial_info_str,'TRIALTYPE');
@@ -206,11 +291,22 @@ for current_file = 1:length(eye_files)
         % sacc_x_end   = saccades.posXend((saccades.start >= trial_start) & (saccades.end <= trial_end));
         % sacc_y_end   = saccades.posYend((saccades.start >= trial_start) & (saccades.end <= trial_end));
         sacc_hypot   = saccades.hypot((saccades.start >= trial_start) & (saccades.end <= trial_end));
-
+        
+        
         %% -------------- %%
         %% clean the data %%
         %% -------------- %%
-    
+        % catch bad trials
+        if isempty(sacc_start) %saccades
+            fprintf('\n--Skipping bad trial (%i)', i);
+            continue
+        end
+        
+        if isempty(fix_dur) %fixations (just in case)
+            fprintf('\n--Skipping bad trial (%i)', i);
+            continue
+        end
+        
         % clean_fixations(input);
         % clean_saccades(input);
     
@@ -222,13 +318,13 @@ for current_file = 1:length(eye_files)
         % all defined in functions at the end of the script
         % listed in order of importance, as determined by Coco & Keller
     
-        init_time(i)           = initiation_time( trial_start, sacc_start );
-        num_fixations(i)       = number_of_fixations( fix_dur );
-        entropy_attn(i)        = entropy_of_attentional_landscape( fix_x, fix_y, fix_dur );
-        mean_sacc_amplitude(i) = mean_sacade_amplitude( sacc_hypot );
-        mean_fix_dur(i)        = mean_fixation_duration( fix_dur );
-        area_fixated(i)        = percent_area_fixated( fix_x, fix_y );
-        saliency_fix(i)        = saliency_at_fixation( fix_x, fix_y, saliency(saliency{:,2} == stim_imgs{i}, 1) );
+        init_time(i)                = initiation_time( trial_start, sacc_start(1) );
+        num_fixations(i)            = number_of_fixations( fix_dur );
+        entropy_attn(i)             = entropy_of_attentional_landscape( fix_x, fix_y, fix_dur );
+        mean_sacc_amplitude(i)      = mean_saccade_amplitude( sacc_hypot );
+        mean_fix_dur(i)             = mean_fixation_duration( fix_dur );
+        area_fixated(i)             = percent_area_fixated( fix_x, fix_y );
+        mean_fixation_saliency(i)   = saliency_at_fixation( fix_x, fix_y, trial_saliency );
 
     end
 
@@ -237,17 +333,18 @@ for current_file = 1:length(eye_files)
     %% assign to subj data %%
     %% ------------------- %%
 
-    subj_data{current_file, 1}  = current_file; %subject number
+    subj_data{current_file, 1}  = subj_num; %subject number
     subj_data{current_file, 2}  = 1:n_trials; %trial numbers
-    subj_data{current_file, 3}  = trialtype;
-    subj_data{current_file, 4}  = init_time;
-    subj_data{current_file, 5}  = num_fixations;
-    subj_data{current_file, 6}  = entropy_attn;
-    subj_data{current_file, 7}  = mean_sacc_amplitude;
-    subj_data{current_file, 8}  = mean_fix_dur;
-    subj_data{current_file, 9}  = area_fixated;
-    subj_data{current_file, 10} = saliency_fix;
-    subj_data{current_file, 11} = stim_imgs;
+    subj_data{current_file, 3}  = trial_types; %trial type (0,1,2)
+    subj_data{current_file, 4}  = init_time; %time to initiate the first saccade
+    subj_data{current_file, 5}  = num_fixations; %total number of fixations per trial
+    subj_data{current_file, 6}  = entropy_attn; %entropy for the attentional landscape
+    subj_data{current_file, 7}  = mean_sacc_amplitude; %mean saccade amplitude
+    subj_data{current_file, 8}  = mean_fix_dur; %mean fixation duration
+    subj_data{current_file, 9}  = area_fixated; %percent of area fixated
+    subj_data{current_file, 10} = mean_fixation_saliency; %mean saliency at the fixation points of the trial
+    subj_data{current_file, 11} = stim_imgs; %stim img
+    subj_data{current_file, 12} = subj_datfile; %name of the subj data file
 
     % need to know how many rows to make
     data_size = data_size + n_trials;
@@ -258,26 +355,52 @@ end
 %% stack the data %%
 %% -------------- %%
 
+% clean out data (throw away the empties)
+n_cols      = length(subj_data(1,:)); %number of columns in the dataset
+subj_data   = reshape(subj_data(~cellfun('isempty',subj_data)), [], n_cols); %clean
+
+% get new n_rows
+n_rows      = length(subj_data(:,1));
+
 % init vars
-eye_data    = nan(data_size, 11);
-x_start     = 1;
-iter_size   = length(subj_data{i, 1});
+eye_data    = nan(data_size, 10); %data
+eye_info    = cell(data_size, 2); %for cell features
+iter_size   = length(subj_data{1,1});
+x_inds      = 1;
+y_inds      = x_inds + iter_size - 1;
 
 % iterate through files
-for i = 1:length(eye_files)
-    eye_data(x_start:iter_size, 1)  = subj_data{i, 1}; %subj_num
-    eye_data(x_start:iter_size, 2)  = subj_data{i, 2}; %trialnum
-    eye_data(x_start:iter_size, 3)  = subj_data{i, 3}; %trialtype
-    eye_data(x_start:iter_size, 4)  = subj_data{i, 4}; %init_time
-    eye_data(x_start:iter_size, 5)  = subj_data{i, 5}; %num_fixations
-    eye_data(x_start:iter_size, 6)  = subj_data{i, 6}; %entropy_attn
-    eye_data(x_start:iter_size, 7)  = subj_data{i, 7}; %mean_sacc_amplitude
-    eye_data(x_start:iter_size, 8)  = subj_data{i, 8}; %mean_fix_dur
-    eye_data(x_start:iter_size, 9)  = subj_data{i, 9}; %area_fixated
-    eye_data(x_start:iter_size, 10) = subj_data{i, 10}; %saliency_fix
-    eye_data(x_start:iter_size, 11) = subj_data{i, 11}; %stim_imgs
+for i = 1:n_rows
+    
+    % update iteration length
+    iter_size   = length(subj_data{i, 1});
+    
+    % x/y indices
+    if i == 1 %set the initial indices
+        x_inds = 1;
+        y_inds = iter_size;
+    else
+        y_inds = y_inds + iter_size; %update y indices
+    end
+    
+    % data
+    eye_data(x_inds:y_inds, 1)  = subj_data{i, 1}; %subj_num
+    eye_data(x_inds:y_inds, 2)  = subj_data{i, 2}; %trialnum
+    eye_data(x_inds:y_inds, 3)  = subj_data{i, 3}; %trial_types
+    eye_data(x_inds:y_inds, 4)  = subj_data{i, 4}; %init_time
+    eye_data(x_inds:y_inds, 5)  = subj_data{i, 5}; %num_fixations
+    eye_data(x_inds:y_inds, 6)  = subj_data{i, 6}; %entropy_attn
+    eye_data(x_inds:y_inds, 7)  = subj_data{i, 7}; %mean_sacc_amplitude
+    eye_data(x_inds:y_inds, 8)  = subj_data{i, 8}; %mean_fix_dur
+    eye_data(x_inds:y_inds, 9)  = subj_data{i, 9}; %area_fixated
+    eye_data(x_inds:y_inds, 10) = subj_data{i, 10}; %mean_fixation_saliency
+    
+    % info
+    eye_info(x_inds:y_inds, 1) = subj_data{i, 11}; %stim_imgs
+    eye_info(x_inds:y_inds, 2) = subj_data{i, 12}; %name of subj data file
 
-    x_start = x_start + iter_size;
+    % update iter
+    x_inds = x_inds + iter_size; %update x indices
 end
 
 
@@ -285,7 +408,7 @@ end
 %% gen table %%
 %% --------- %%
 
-eye_data_table = table(eye_data{:, 1}, eye_data{:, 2}, eye_data{:, 3}, eye_data{:, 4}, eye_data{:, 5}, eye_data{:, 6}, eye_data{:, 7}, eye_data{:, 8}, eye_data{:, 9}, eye_data{:, 10}, eye_data{:, 11}, 'VariableNames', {'subj_num', 'trialnum', 'trialtype', 'init_time', 'num_fixations', 'entropy_attn', 'mean_sacc_amplitude', 'mean_fix_dur', 'area_fixated', 'saliency_fix', 'stim_imgs'});
+eye_data_table = table(eye_data(:, 1), eye_data(:, 2), eye_data(:, 3), eye_data(:, 4), eye_data(:, 5), eye_data(:, 6), eye_data(:, 7), eye_data(:, 8), eye_data(:, 9), eye_data(:, 10), eye_info(:, 1), eye_info(:, 2), 'VariableNames', {'subj_num', 'trialnum', 'trialtype', 'init_time', 'num_fixations', 'entropy_attn', 'mean_sacc_amplitude', 'mean_fix_dur', 'area_fixated', 'mean_fixation_saliency', 'stim_imgs', 'datfile_name'});
 
 
 %% ----------- %%
@@ -296,7 +419,8 @@ eye_data_table = table(eye_data{:, 1}, eye_data{:, 2}, eye_data{:, 3}, eye_data{
 save('ck_features.mat', 'eye_data_table', '-v7.3');
 
 % csv
-save('ck_features.csv', 'eye_data_table');
+writetable(eye_data_table, 'ck_features.csv', 'Delimiter', ' ');
+writetable(eye_data_table, 'ck_features.csv', 'Delimiter', ',');
 
 
 %% ==================== %%
@@ -351,35 +475,28 @@ h_deg   = 18.0; %stim height in degrees of visual angle
 
 % ---------------------------------------------------------
 % calculate the amount of pixels foveated for each fixation
-foveated_radius = mean((w / w_deg), (h / h_deg)); %radius (in pixels) of the circle spanning 1 degree of visual angle at the fovea
-foveated_pixels = pi * foveated_radius^2; %area (in pixels) of the circle spanning 1 degree of visual angle at the fovea
+foveated_radius = mean( [(w / w_deg), (h / h_deg)] ); %radius (in pixels) of the circle spanning 1 degree of visual angle at the fovea
 
-% -----------------
-% map all fixations
-% loop through each sample
-fixations = cell(length(x), 2);
-[cols, rows] = meshgrid(1:h, 1:w); %create the circle
+% --------------------------------
+% map 2-D Gaussians onto fixations
+% loop through each fixation
+% fixations = cell(length(x), 2);
+gaussians = cell(length(x), 1);
+[cols, rows] = meshgrid(1:w, 1:h); %create the circle
 for i = 1:length(x)
-    fixations{i,1} = (cols - x(i)).^2 + (rows - y(i)).^2 <= foveated_radius.^2; %logical array of the pixels in the circle
-    %! should ^^ use foveated pixels instead of foveated radius?
-    fixations{i,2} = fixation_duration(i);
+    gaussians{i,1} = fixation_duration(i) * exp( -((cols - x(i)).^2 + (rows - y(i)).^2) ./ (2 * foveated_radius.^2) );
 end
 
-fix_map = zeros(h, w);
-for i = 1:length(fixations)
-    fix_vals    = fixations{i, 1} * fixations{i, 2}; %ones multiplied by the duration (weighting)
-    fix_map     = fix_map + fix_vals; %add to the map
+gauss_map = zeros(h, w);
+for i = 1:length(gaussians)
+    gauss_map(gauss_map == 0) = gauss_map(gauss_map == 0) + gaussians{i}(gauss_map == 0);
+    gauss_map(gauss_map ~= 0) = ( gauss_map(gauss_map ~= 0) + gaussians{i}(gauss_map ~= 0) ) ./ 2;
 end
-
-% ------------------
-% calc 2-D Gaussians
-% using the multivariate normal probability density function :: mvnpdf -- I think this is the same?
-fixations_norm = mvnpdf(fix_map);
 
 % -----------------
 % calculate entropy
 % using MATLAB entropy function (matches up with equation provided in C&K manuscript)
-entropy_attn = entropy(fixations_norm);
+entropy_attn = entropy(gauss_map);
 
 
 %==========================================================================
@@ -409,17 +526,17 @@ h_deg   = 18.0; %stim height in degrees of visual angle
 
 % ---------------------------------------------------------
 % calculate the amount of pixels foveated for each fixation
-foveated_radius = mean((w / w_deg), (h / h_deg)); %radius (in pixels) of the circle spanning 1 degree of visual angle at the fovea
+foveated_radius = mean([ (w / w_deg), (h / h_deg) ]); %radius (in pixels) of the circle spanning 1 degree of visual angle at the fovea
 foveated_pixels = pi * foveated_radius^2; %area (in pixels) of the circle spanning 1 degree of visual angle at the fovea
 
 % ------------------------
 % determine if overlapping
-fixation_location   = [x, y];
+% fixation_location   = [x, y];
 fixation_area       = length(x) * foveated_pixels; %the total area covered by fixations
 
 % loop through each sample to map each fixation
 pixels = cell(length(x), 1);
-[cols, rows] = meshgrid(1:h, 1:w); %create the circle
+[cols, rows] = meshgrid(1:w, 1:h); %create the circle
 for fixation = 1:length(x)
     pixels{fixation} = (cols - x(fixation)).^2 + (rows - y(fixation)).^2 <= foveated_radius.^2; %logical array of the pixels in the circle
 end
@@ -441,7 +558,7 @@ area_fixated    = fixation_area - overlapping_pixels; %total area fixated
 area_fixated    = area_fixated / total_area;
 
 
-%========================================================
+%=====================================================
 function saliencyMap = img_saliency_calculation( img )
 % calculate a saliency value for each pixel of each image
 % NOTE: For this to work, need to make sure the folder containing the
@@ -475,7 +592,7 @@ Nsc = 4;%maxPyrHt([nrows ncols], [15 15])-1; % Number of scales
 [pyr, ind] = buildSpyr(double(mean(img,3)), Nsc, pyrFilters, edges);
 
 weight = 2.^(1:Nsc);
-sal = zeros(size(pyr));
+sal = zeros(size(pyr)); %!ZC: this pops up yellow, but I don't have the guts to change anything in the script.
 saliencyMap = 1;
 for b=2:size(ind,1)-1
     out =  pyrBand(pyr,ind,b);
@@ -506,9 +623,37 @@ end
     
 
 
-%=============================================================
-function saliency_fix = saliency_at_fixation( x, y, saliency )
+%=======================================================================
+function mean_fixation_saliency = saliency_at_fixation( x, y, saliency )
 % compute the saliency map of each scene using the model developed by Torralba, Oliva, Castelhano, and Henderson (2006), then map the (x,y) coordinates of each fixation onto the saliency map (assign saliency values to each coordinate location)
 % use the saliency part of the equation, not the context part of the equation
+% take the mean saliency of all mean saliency values for each fixations in the trial
 
-saliency_fix = saliency(y, x);
+% ---------
+% init vars
+w_sal   = size(saliency, 2); %width of the saliency obj
+h_sal   = size(saliency, 1); %height of saliency obj
+w       = 1028; %width of the stim img
+h       = 768; %height of the stim img
+w_deg   = 23.8; %stim width in degrees of visual angle
+h_deg   = 18.0; %stim height in degrees of visual angle
+
+% ---------------------------------------------------------
+% calculate the amount of pixels foveated for each fixation
+foveated_radius = mean([ (w / w_deg), (h / h_deg) ]); %radius (in pixels) of the circle spanning 1 degree of visual angle at the fovea
+
+% -------------------
+% get saliency values
+% loop through each sample to map each fixation
+fixation_saliency = nan(length(x), 1);
+[cols, rows] = meshgrid(1:w_sal, 1:h_sal); %create the circle (with the saliency size parameters)
+for fixation = 1:length(x)
+    % get fixation location
+    fovea                       = (cols - x(fixation)).^2 + (rows - y(fixation)).^2 <= foveated_radius.^2; %logical array of the pixels in the circle
+    
+    % get saliency values at the fixation location
+    fovea_saliency              = saliency(fovea);
+    fixation_saliency(fixation) = mean(fovea_saliency); %average
+end
+
+mean_fixation_saliency = mean(fixation_saliency);
