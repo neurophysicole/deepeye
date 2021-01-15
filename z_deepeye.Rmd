@@ -69,6 +69,29 @@ set.seed(42)
 knitr::opts_chunk$set(cache.extra = knitr::rand_seed)
 ```
 
+<!-- REVISION CHECKLIST -->
+# Revisions to be made
+- clarify the difference between the Yarbus problem and the Inverse Yarbus problem; something like what Greene et al. did
+- [ just in case it is not covered by the previous bullet ] go through and clarify what the Inverse Yarbus Problem even is :: MD S
+- make it more clear that the data we classified was not raw, but was actually processed
+- do something with the Coco & Keller replication results ( Should we present in another supplement.. or should we put into the results section as well?? Or should we just report to the reviewers? [I think the reviewers wanted it included in the paper though...] Might be worth reading throuhg the manuscript in its current form and deciding.. )
+- Clarify the terms "task", "cognitive process", and "mental state"..
+- [ just in case it is not coverede by the previous bullet ] Go through and check that the wording of "task", "cognitive process", and "mental state" are used consistently throughout the manuscript
+- further clarify how studies do not fit the spirit of the Inverse Yarbus Problem
+ - **MD Comment:** Important to note that all images are same general structure (interior of rooms/locations, no people) and no one is asked to answer specific questions about the image as they did with Yarbus.  The point of the instruction is to not constrain how they look at the image because in Yarbus, of course if you ask about the age of someone they look at the face and if you ask about the wealth they look at material belongings.  The instructions in these studies are completely unbiased so as to not influence in any way what people do
+- Need to clarify what it is we intend to find from comparing the timeline and image data formats
+ - **MD Comment:** Are they asking for the image data to be removed?  I can agree with the reviewer that there might be a bit of a disconnect in the paper as to why the timeline data and image data were what was selected to be compared but if the argument is that the image model was never going to be as useful as the timeline one, then that would suggest the reason for doing the image one at all is less clear
+- Provide more comprehensive model information
+- [ just in case it is not coverede by the previous bullet ] Add in the learning rate information
+
+# Reviewer 2 issues that still need to be addressed
+- training/test question..
+- was there an overfitting issue?
+- Figure out what they mean with the ANOVA comparison issue..
+- overfitting due to pupil size?
+
+
+
 <!-- Intro -->
 ```{r child = "01_intro_deepeye.md"}
 ```
