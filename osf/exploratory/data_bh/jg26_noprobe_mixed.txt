@@ -1,0 +1,121 @@
+blocknr	blocktype	trialnr	trialtype	trialstart	trialend	duration	probeNback	probeonset	probefixated	probefixtime	probeRT	imagename	imagechange	filler	response	RT	
+0	mixed	0	search	1102055.19975	1110065.46707	8010.26732041	None	None	False	0	0	takeaway_63	ovenlogo	False	Z	2271.16785864	
+0	mixed	1	memory	1119181.88045	1127191.9905	8010.11005358	None	None	False	0	0	takeaway_42	lights	False	incorrect	17205.1393351	
+0	mixed	2	rating	1154554.27109	1162564.78382	8010.5127291	None	None	False	0	0	takeaway_94	topshelf	False	6	4733.16226164	
+0	mixed	3	search	1174226.83069	1182237.07386	8010.24317195	None	None	False	0	0	color_80	backchair	False	N	1297.8359058	
+0	mixed	4	memory	1191726.68897	1199736.83162	8010.14265399	None	None	False	0	0	color_9	chairs	False	correct	14485.3344908	
+0	mixed	5	rating	1235749.44074	1243759.55562	8010.11488327	None	None	False	0	0	clone_94	bottononwheel	False	4	1533.86081614	
+0	mixed	6	search	1282850.78698	1290861.09566	8010.30867464	None	None	False	0	0	horizontal_46		False	Z	935.285756244	
+0	mixed	7	search	1297978.27937	1305988.57627	8010.29690227	None	None	False	0	0	takeaway_1	.thermostat	False	N	884.842345286	
+0	mixed	8	memory	1314038.62033	1322048.90364	8010.28331876	None	None	False	0	0	clone_60	xtralight	False	incorrect	19442.3203528	
+0	mixed	9	rating	1348998.31897	1357008.49392	8010.17495256	None	None	False	0	0	horizontal_62		False	5	2789.00828624	
+0	mixed	10	memory	1366031.59645	1374041.73306	8010.13661688	None	None	False	0	0	horizontal_39		False	correct	9696.4366838	
+0	mixed	11	search	1390128.70494	1398138.99912	8010.29418556	None	None	False	0	0	color_56	book	False	N	1134.87456838	
+0	mixed	12	search	1407588.24465	1415598.7773	8010.53265158	None	None	False	0	0	clone_96	NtoMinPoster	False	Z	2210.67838752	
+0	mixed	13	rating	1423715.57283	1431725.75593	8010.18310266	None	None	False	0	0	clone_64	xtraglass	False	5	3597.91792	
+0	mixed	14	memory	1441375.36634	1449385.56454	8010.19819545	None	None	False	0	0	horizontal_43		False	incorrect	14774.7866559	
+0	mixed	15	rating	1472243.18312	1480253.36592	8010.1828008	None	None	False	0	0	color_37	redtogreenright	False	5	4301.16839293	
+0	mixed	16	search	1490662.63579	1498672.83368	8010.19789359	None	None	False	0	0	takeaway_51	lightright	False	N	1254.70072364	
+0	mixed	17	rating	1506922.94046	1514933.10032	8010.15985977	None	None	False	0	0	horizontal_9		False	7	2412.6364652	
+0	mixed	18	memory	1523583.06903	1531593.29741	8010.22838102	None	None	False	0	0	color_75	lampchord	False	incorrect	24380.9017698	
+0	mixed	19	search	1563847.25769	1571857.4266	8010.16891544	None	None	False	0	0	color_88	bowltopshelf	False	N	1577.65917531	
+0	mixed	20	search	1579854.31477	1587864.50753	8010.19276204	None	None	False	0	0	clone_24	light	False	Z	1508.95983236	
+0	mixed	21	memory	1595594.47978	1603605.03417	8010.55438519	None	None	False	0	0	clone_85	glassontable	False	incorrect	11087.7548907	
+0	mixed	22	memory	1620518.39946	1628528.58347	8010.18400823	None	None	False	0	0	clone_88	lightright	False	correct	6523.72299184	
+0	mixed	23	memory	1644229.10185	1652239.20073	8010.09888492	None	None	False	0	0	horizontal_8		False	correct	2892.63143024	
+0	mixed	24	memory	1661115.7837	1669125.92938	8010.14567255	None	None	False	0	0	takeaway_46	outletbydoor	False	incorrect	22373.0806881	
+0	mixed	25	search	1696941.71287	1704951.91167	8010.19879916	None	None	False	0	0	horizontal_75		False	N	890.826031192	
+0	mixed	26	memory	1711709.27521	1719719.49997	8010.22475875	None	None	False	0	0	takeaway_100	cabnet	False	incorrect	4962.8222423	
+0	mixed	27	rating	1730102.06708	1738112.26195	8010.19487503	None	None	False	0	0	horizontal_21		False	5	844.394282732	
+0	mixed	28	memory	1744842.92636	1752853.15595	8010.22958844	None	None	False	0	0	horizontal_55		False	correct	2881.75164459	
+0	mixed	29	memory	1761369.6999	1769379.95455	8010.25464247	None	None	False	0	0	horizontal_2		False	incorrect	2493.2129251	
+0	mixed	30	rating	1778002.92528	1786013.09722	8010.171934	None	None	False	0	0	color_5	applesgreen	False	6	2206.06331544	
+0	mixed	31	rating	1793663.71703	1801673.99462	8010.2775835	None	None	False	0	0	horizontal_3		False	6	1713.1779038	
+0	mixed	32	search	1808831.18327	1816841.09198	8009.90871581	None	None	False	0	0	horizontal_66		False	Z	1046.73179304	
+0	mixed	33	memory	1823612.03541	1831622.29247	8010.25705731	None	None	False	0	0	horizontal_20		False	correct	2875.9539018	
+0	mixed	34	rating	1840125.527	1848135.77742	8010.25041649	None	None	False	0	0	clone_54	jarleft	False	4	3447.55664398	
+0	mixed	35	rating	1857345.42286	1865355.64852	8010.22566432	None	None	False	0	0	horizontal_63		False	4	2478.00935813	
+0	mixed	36	rating	1873499.07225	1881509.33957	8010.26732041	None	None	False	0	0	takeaway_85	switchleftdoor	False	7	699.998279423	
+0	mixed	37	memory	1887666.88984	1895677.05211	8010.16227462	None	None	False	0	0	clone_19	plant	False	correct	5374.53563271	
+0	mixed	38	rating	1906632.43633	1914642.95027	8010.51393653	None	None	False	0	0	color_34	IAcolor	False	3	6101.42140839	
+0	mixed	39	rating	1926651.20119	1934661.81685	8010.6156619	None	None	False	0	0	horizontal_47		False	5	2018.21276663	
+0	mixed	40	rating	1943405.06079	1951415.18322	8010.12242966	None	None	False	0	0	clone_51	bookshelf	False	4	1144.432226	
+0	mixed	41	search	1958345.79021	1966356.01437	8010.22415504	None	None	False	0	0	color_94	fruit	False	Z	1416.60466047	
+0	mixed	42	rating	1973326.66222	1981336.8417	8010.17948039	None	None	False	0	0	takeaway_16	pillow	False	5	2166.14229297	
+0	mixed	43	memory	1989147.07286	1997157.3278	8010.25494432	None	None	False	0	0	color_68	vase	False	incorrect	6326.66674917	
+0	mixed	44	memory	2009765.69144	2017775.84798	8010.15653936	None	None	False	0	0	clone_21	book	False	correct	12174.1272823	
+0	mixed	45	rating	2035648.81925	2043658.99661	8010.1773674	None	None	False	0	0	horizontal_7		False	4	1634.4174079	
+0	mixed	46	rating	2051136.10463	2059146.30313	8010.1984973	None	None	False	0	0	color_2	bookbinding	False	5	1026.81957872	
+0	mixed	47	search	2065690.38719	2073700.57784	8010.19064905	None	None	False	0	0	clone_36	light	False	N	2605.52981565	
+0	mixed	48	rating	2082417.13683	2090427.36702	8010.23019215	None	None	False	0	0	horizontal_72		False	4	1209.0568186	
+0	mixed	49	memory	2096971.41517	2104981.61336	8010.19819545	None	None	False	0	0	color_76	exit	False	correct	5926.48032308	
+0	mixed	50	memory	2117456.80641	2125466.96023	8010.15382266	None	None	False	0	0	takeaway_78	floweronwallright	False	incorrect	32370.7431175	
+0	mixed	51	rating	2163691.87081	2171702.09255	8010.22174019	None	None	False	0	0	clone_70	cabnethandleright	False	4	2580.33663553	
+0	mixed	52	search	2180645.36964	2188655.50294	8010.13329647	None	None	False	0	0	horizontal_42		False	N	2255.95825456	
+0	mixed	53	search	2196652.38809	2204662.50689	8010.11880739	None	None	False	0	0	horizontal_30		False	N	1704.55660263	
+0	mixed	54	search	2211846.37295	2219856.56118	8010.18823421	None	None	False	0	0	takeaway_62	midwindow	False	N	830.129185191	
+0	mixed	55	memory	2226174.15143	2234184.31733	8010.16589688	None	None	False	0	0	horizontal_31		False	incorrect	23666.8717273	
+0	mixed	56	search	2277034.12147	2285044.37671	8010.25524618	None	None	False	0	0	color_100	stereoright	False	N	1232.79958199	
+0	mixed	57	memory	2291695.07743	2299705.2889	8010.2114771	None	None	False	0	0	color_26	flowerleftchair	False	correct	22219.2891237	
+0	mixed	58	memory	2327614.35517	2335624.46251	8010.10733687	None	None	False	0	0	horizontal_67		False	correct	2163.57682122	
+0	mixed	59	rating	2343648.01993	2351658.17285	8010.15291709	None	None	False	0	0	takeaway_60	lampsonwall	False	5	3940.05930257	
+0	mixed	60	search	2361561.00127	2369571.15298	8010.15170967	None	None	False	0	0	horizontal_14		False	Z	2352.06036148	
+0	mixed	61	memory	2377967.9073	2385978.07109	8010.16378389	None	None	False	0	0	color_64	flowers	False	correct	23795.0541544	
+0	mixed	62	rating	2415753.07749	2423763.31735	8010.23985153	None	None	False	0	0	horizontal_15		False	5	12073.0804768	
+0	mixed	63	rating	2441449.66209	2449459.84006	8010.17797111	None	None	False	0	0	horizontal_65		False	4	744.219538456	
+0	mixed	64	memory	2455710.76004	2463720.91084	8010.1508041	None	None	False	0	0	clone_14	corner	False	correct	6002.84710314	
+0	mixed	65	memory	2475609.62539	2483619.81665	8010.19125276	None	None	False	0	0	takeaway_89	vent	False	correct	20385.9270638	
+0	mixed	66	rating	2511062.38875	2519072.15408	8009.76533435	None	None	False	0	0	takeaway_35	birdhouse	False	7	1162.18798306	
+0	mixed	67	memory	2526656.2289	2534666.39208	8010.16318018	None	None	False	0	0	clone_93	leftcrack	False	incorrect	34271.0966207	
+0	mixed	68	search	2575263.89374	2583274.03971	8010.14597441	None	None	False	0	0	takeaway_39	light	False	N	1684.19703813	
+0	mixed	69	rating	2590777.76114	2598787.95873	8010.19759173	None	None	False	0	0	takeaway_34	flowersleft	False	5	3465.87536196	
+0	mixed	70	search	2607944.32664	2615954.55019	8010.22355133	None	None	False	0	0	takeaway_92	bottlelidwindow	False	N	2816.21725884	
+0	mixed	71	search	2623938.06162	2631948.26253	8010.20091215	None	None	False	0	0	horizontal_59		False	N	1440.89197157	
+0	mixed	72	rating	2638652.24591	2646662.43837	8010.19246019	None	None	False	0	0	color_30	chairsright	False	7	1017.00655117	
+0	mixed	73	memory	2653793.05798	2661803.32862	8010.27064082	None	None	False	0	0	takeaway_77	light	False	incorrect	26939.4827582	
+0	mixed	74	memory	2694670.30926	2702680.5307	8010.22143834	None	None	False	0	0	clone_9	bookshelf	False	correct	3219.07329691	
+0	mixed	75	search	2711757.00162	2719767.14578	8010.14416327	None	None	False	0	0	takeaway_82	reflectionontable	False	Z	2083.92011569	
+0	mixed	76	search	2727124.31264	2735134.52472	8010.21208081	None	None	False	0	0	color_23	bluebooks	False	N	1684.24654247	
+0	mixed	77	search	2742558.24291	2750568.41394	8010.17102843	None	None	False	0	0	horizontal_76		False	N	1721.92779551	
+0	mixed	78	memory	2758178.73722	2766188.95866	8010.22143834	None	None	False	0	0	horizontal_60		False	correct	3975.88414295	
+0	mixed	79	rating	2777571.17833	2785581.31042	8010.13208904	None	None	False	0	0	horizontal_12		False	4	1358.88743227	
+0	mixed	80	memory	2792738.51416	2800748.78239	8010.26822597	None	None	False	0	0	color_38	bottleright	False	correct	3890.10369046	
+0	mixed	81	memory	2810344.94411	2818355.1251	8010.18098967	None	None	False	0	0	color_97	vase	False	correct	21426.7228642	
+0	mixed	82	rating	2845557.83239	2853568.02605	8010.19366761	None	None	False	0	0	horizontal_18		False	5	1256.22268017	
+0	mixed	83	memory	2861231.65344	2869241.87035	8010.2169105	None	None	False	0	0	takeaway_33		False	correct	2080.78564591	
+0	mixed	84	rating	2877625.19964	2885635.40749	8010.20785483	None	None	False	0	0	takeaway_56	chairstar	False	5	1646.48741065	
+0	mixed	85	search	2893445.71744	2901455.88997	8010.17253771	None	None	False	0	0	horizontal_16		False	Z	694.966344597	
+0	mixed	86	search	2907653.48986	2915663.62799	8010.13812616	None	None	False	0	0	color_69	pillow	False	N	1454.88570082	
+0	mixed	87	search	2922567.6264	2930577.8578	8010.23139957	None	None	False	0	0	clone_3	candle	False	N	476.672439154	
+0	mixed	88	rating	2936442.17818	2944452.36189	8010.18370637	None	None	False	0	0	horizontal_64		False	3	844.203509918	
+0	mixed	89	search	2952449.23043	2960459.44101	8010.21057153	None	None	False	0	0	takeaway_50	light	False	N	2162.0527517	
+0	mixed	90	rating	2968562.80908	2976573.07399	8010.26490556	None	None	False	0	0	clone_95	light	False	4	2058.92646221	
+0	mixed	91	rating	2983930.27918	2991940.47315	8010.19396947	None	None	False	0	0	clone_18	wine	False	4	1384.32149324	
+0	mixed	92	rating	2999230.78983	3007241.10212	8010.31229691	None	None	False	0	0	color_11	lemon2orange	False	5	1283.28646017	
+0	mixed	93	rating	3014065.04146	3022075.30334	8010.261887	None	None	False	0	0	color_62	fruit	False	6	923.493762605	
+0	mixed	94	memory	3028632.68174	3036642.91193	8010.23019215	None	None	False	0	0	horizontal_29		False	incorrect	2758.53866817	
+0	mixed	95	search	3045852.58182	3053862.80959	8010.22777731	None	None	False	0	0	clone_78	fireplacehanging	False	N	1292.42393462	
+0	mixed	96	memory	3063099.14994	3071109.39674	8010.24679422	None	None	False	0	0	takeaway_27	reflection	False	correct	11872.7382328	
+0	mixed	97	search	3088955.7066	3096965.86102	8010.15442637	None	None	False	0	0	clone_79	midcouch	False	N	1145.73473342	
+0	mixed	98	search	3103296.71904	3111306.97429	8010.25524618	None	None	False	0	0	takeaway_29	dresserknob	False	Z	631.06077231	
+0	mixed	99	search	3125034.86645	3133045.06404	8010.19759173	None	None	False	0	0	clone_62	robotbottomshelf	False	N	1185.80547633	
+0	mixed	100	search	3139882.37407	3147892.61211	8010.2380404	None	None	False	0	0	takeaway_87	bottleshadow	False	N	1268.54624173	
+0	mixed	101	rating	3154649.93158	3162660.09205	8010.16046348	None	None	False	0	0	clone_83	pumpkin	False	5	4015.29593482	
+0	mixed	102	rating	3172083.14072	3180093.26406	8010.12333523	None	None	False	0	0	color_55	flowerleft	False	5	653.786281926	
+0	mixed	103	search	3186104.30956	3194114.49448	8010.18491379	None	None	False	0	0	color_93	rocks	False	N	2773.55961243	
+0	mixed	104	rating	3202537.80999	3210548.00547	8010.19547874	None	None	False	0	0	horizontal_17		False	4	686.328441359	
+0	mixed	105	rating	3216838.88059	3224849.14066	8010.26007587	None	None	False	0	0	color_29	cupright	False	5	944.871486437	
+0	mixed	106	memory	3231059.99714	3239070.14402	8010.14687997	None	None	False	0	0	color_71	ventreflection	False	correct	21929.141785	
+0	mixed	107	rating	3269884.74666	3277895.0019	8010.25524618	None	None	False	0	0	horizontal_71		False	5	983.109965133	
+0	mixed	108	memory	3284345.74675	3292355.91023	8010.16348204	None	None	False	0	0	clone_46	xtrawine	False	correct	3130.56165388	
+0	mixed	109	search	3304044.66318	3312054.92174	8010.25856659	None	None	False	0	0	takeaway_54	phonebutton	False	N	5342.32491085	
+0	mixed	110	memory	3324623.32844	3332633.59123	8010.26279257	None	None	False	0	0	color_77	booksleft	False	incorrect	18305.0375795	
+0	mixed	111	search	3360369.2921	3368379.46916	8010.17706555	None	None	False	0	0	clone_6	bottomrightobject	False	N	1960.49916069	
+0	mixed	112	rating	3380881.26777	3388891.46083	8010.1930639	None	None	False	0	0	horizontal_41		False	6	840.087707197	
+0	mixed	113	memory	3395182.29399	3403192.59542	8010.3014301	None	None	False	0	0	clone_57	xtrabushes	False	incorrect	14117.9063529	
+0	mixed	114	search	3423504.54097	3431514.73494	8010.19396947	None	None	False	0	0	clone_37	xtraknob	False	N	1615.80256946	
+0	mixed	115	search	3438285.38285	3446295.60127	8010.21841978	None	None	False	0	0	takeaway_91	table	False	N	986.561987129	
+0	mixed	116	memory	3452626.51603	3460636.63363	8010.11759997	None	None	False	0	0	color_61	apple	False	incorrect	3981.81892822	
+0	mixed	117	memory	3470619.39043	3478629.56266	8010.17223585	None	None	False	0	0	horizontal_79		False	correct	1135.33097423	
+0	mixed	118	search	3487266.29983	3495276.3963	8010.09647007	None	None	False	0	0	color_19	pillowbottom	False	N	1860.61449976	
+0	mixed	119	search	3502806.83287	3510816.63865	8009.80578301	None	None	False	0	0	color_31	mid.light	False	N	1320.04222358	

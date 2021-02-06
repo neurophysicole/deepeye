@@ -1,0 +1,16 @@
+blocknr	blocktype	trialnr	trialtype	trialstart	trialend	duration	probeNback	probeonset	probefixated	probefixtime	probeRT	imagename	imagechange	filler	response	RT	
+0	mixed	0	memory	338590.962026	346601.227896	8010.26587	None	None	False	0	0	color_59	dressflowers	False	incorrect	8736.00966185	
+0	mixed	1	rating	364607.558148	372617.833074	8010.27492573	None	None	False	0	0	clone_67	lightleft	False	4	4148.37440708	
+0	mixed	2	search	390344.324265	398354.542743	8010.21847838	None	None	False	0	0	clone_81	barsabovecouchleft	False	Z	3509.86802189	
+0	mixed	3	memory	409230.293085	417240.656455	8010.36336996	None	None	False	0	0	horizontal_48		False	correct	7098.09582284	
+0	mixed	4	rating	431714.928239	439725.214334	8010.28609445	None	None	False	0	0	color_43	purpleright	False	2	2557.0601137	
+0	mixed	5	memory	450587.645518	458597.968439	8010.32292106	None	None	False	0	0	horizontal_18		False	incorrect	10115.8876028	
+0	mixed	6	search	475777.930115	483788.202626	8010.27251087	None	None	False	0	0	horizontal_47		False	N	3074.75409183	
+0	mixed	7	memory	517268.526652	525278.85561	8010.32895821	None	None	False	0	0	clone_61	towel	False	incorrect	3505.73710269	
+0	mixed	8	search	541139.297554	549149.531427	8010.23387311	None	None	False	0	0	takeaway_48	handleleft	False	N	2066.89644056	
+0	mixed	9	rating	577765.173016	585775.3924	8010.21938396	None	None	False	0	0	clone_94	bottononwheel	False	1	2483.07153237	
+0	mixed	10	memory	607513.729986	615523.961444	8010.23145826	None	None	False	0	0	takeaway_99	blockoncushion	False	incorrect	14027.1683779	
+0	mixed	11	search	642526.814601	650536.966067	8010.15146603	None	None	False	0	0	takeaway_100	cabnet	False	Z	3509.57552202	
+0	mixed	12	search	736343.819861	744354.086033	8010.26617186	None	None	False	0	0	horizontal_44		False	N	3570.90269263	
+0	mixed	13	rating	1081037.31803	1089047.55342	8010.2353824	None	None	False	0	0	color_78	ovenclock	False	3	3919.3029387	
+0	mixed	14	memory	1140707.54903	1148717.929	8010.37997212	None	None	False	0	0	takeaway_17	clock	False	correct	9183.96762639	

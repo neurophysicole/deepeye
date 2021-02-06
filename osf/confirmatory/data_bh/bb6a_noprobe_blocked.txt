@@ -1,0 +1,15 @@
+blocknr	blocktype	trialnr	trialtype	trialstart	trialend	duration	probeNback	probeonset	probefixated	probefixtime	probeRT	imagename	imagechange	filler	response	RT	
+0	blocked	0	rating	229218.991844	237229.743705	8010.7518605	None	None	False	0	0	takeaway_87	bottleshadow	False	6	4653.26238476	
+0	blocked	1	rating	252916.468799	260926.64864	8010.17984063	None	None	False	0	0	horizontal_9		False	4	3104.7801542	
+0	blocked	2	rating	278506.205887	286516.779954	8010.57406646	None	None	False	0	0	takeaway_78	floweronwallright	False	7	1284.88460895	
+0	blocked	3	rating	302577.235662	310587.490665	8010.25500314	None	None	False	0	0	clone_53	plates	False	5	1355.13649692	
+0	blocked	4	rating	321423.28957	329433.470014	8010.18044435	None	None	False	0	0	color_65	picright	False	5	6340.70106996	
+0	blocked	5	rating	347626.441747	355636.661131	8010.21938396	None	None	False	0	0	takeaway_70	sceneryabovecouch	False	6	865.157560533	
+0	blocked	6	rating	365073.042258	373083.346766	8010.30450776	None	None	False	0	0	takeaway_16	pillow	False	4	1562.25960827	
+0	blocked	7	rating	384558.83896	392570.211439	8011.37247941	None	None	False	0	0	clone_18	wine	False	5	1699.96214708	
+0	blocked	8	rating	405937.193728	413950.059194	8012.86546636	None	None	False	0	0	color_7	greenonleft	False	5	3113.34867977	
+0	blocked	9	rating	429714.687961	437725.855479	8011.16751821	None	None	False	0	0	takeaway_3	wallpaint	False	6	2022.73801611	
+0	blocked	10	rating	448454.409866	456465.117051	8010.7071856	None	None	False	0	0	horizontal_23		False	3	757.548398314	
+0	blocked	11	rating	466727.620138	474740.236572	8012.61643396	None	None	False	0	0	horizontal_31		False	4	1672.37177246	
+0	blocked	12	rating	493823.250087	501833.853736	8010.60364849	None	None	False	0	0	clone_21	book	False	5	4289.4713329	
+0	blocked	13	rating	664490.807535	672501.178451	8010.3709164	None	None	False	0	0	horizontal_48		False	4	15643.3255394	

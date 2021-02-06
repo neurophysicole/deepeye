@@ -1,0 +1,10 @@
+blocknr	blocktype	trialnr	trialtype	trialstart	trialend	duration	probeNback	probeonset	probefixated	probefixtime	probeRT	imagename	imagechange	filler	response	RT	
+0	blocked	0	rating	59705.1151402	67715.383394	8010.26825387	None	None	False	0	0	horizontal_24		False	6	1302.25830951	
+0	blocked	1	rating	74899.1841421	82909.4771483	8010.2930061	None	None	False	0	0	takeaway_91	table	False	4	1190.52762108	
+0	blocked	2	rating	89706.7940662	97717.0420957	8010.24802948	None	None	False	0	0	color_14	vaseleft	False	4	1054.62365734	
+0	blocked	3	rating	104207.845433	112218.031581	8010.18614889	None	None	False	0	0	takeaway_31	glass.left	False	4	921.369088442	
+0	blocked	4	rating	118442.282011	126452.494724	8010.21271227	None	None	False	0	0	horizontal_80		False	5	1590.54518913	
+0	blocked	5	rating	133703.009389	141713.222705	8010.21331598	None	None	False	0	0	takeaway_30	shotglass	False	4	23545.0692942	
+0	blocked	6	rating	177765.861052	185776.069236	8010.20818442	None	None	False	0	0	horizontal_36		False	4	1495.10992408	
+0	blocked	7	rating	192839.931213	200850.210937	8010.27972442	None	None	False	0	0	clone_76	window	False	4	967.205400093	
+0	blocked	8	rating	211166.176552	219176.418545	8010.24199235	None	None	False	0	0	takeaway_62	midwindow	False	4	1704.89961459	
