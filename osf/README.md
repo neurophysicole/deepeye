@@ -9,108 +9,28 @@ The deep learning analysis was carried out using the [DeLineate](delineate.it)(v
 
 ## Steps of Processing and Analysis
 
-For each analysis, the following provides isntructions for replicating the analysis described in the analysis.
+For each analysis, the following provides instructions for replciating the analysis described in the Cole et al. (2020) manuscript. The steps are the same for analyzing the exploratory and confirmatory datasets, although there are separate scripts for analyzing the two datasets. For each analysis, there are separate data processing steps for the image and timeline data formats. The instructions for both formats are described below. The steps are the same for each subset analysis.
 
-### Exploratory Analysis
+NOTE: Unless you plan to update the scripts with folder names, do not move the scripts from their folder. Also, be sure to move into the folder containing the script prior to running each script.
 
-#### Timeline Data
+### Image Data
 
-##### Process the Data
+- Process the .edf data into images: `edf_to_png.m`
+- Process the .png image files into a .mat file: `png_to_mat.m`
+- Run the CNN specified in the .json file.
 
-- Process the full dataset: `script`
-- Process the `no_x` dataset: `script`
-- Process the `no_y` dataset: `script`
-- Process the `no_pupsz` dataset: `script`
-- Process the `only_x` dataset: `script`
-- Process the `only_y` dataset: `script`
-- Process the `only_pupsz` dataset: `script`
+### Timeline Data
 
-##### Run the Deep Learning Analysis
-
-- Run the full analysis: `script`
-- Run the `no_x` analysis: `script`
-- Run the `no_y` analysis: `script`
-- Run the `no_pupsz` analysis: `script`
-- Run the `only_x` analysis: `script`
-- Run the `only_y` analysis: `script`
-- Run the `only_pupsz` analysis: `script`
-  
-#### Image Data
-
-##### Process the Data
-
-- Process the timeline data into images: `script`
-
-- Process the full dataset: `script`
-- Process the `no_x` dataset: `script`
-- Process the `no_y` dataset: `script`
-- Process the `no_pupsz` dataset: `script`
-- Process the `only_x` dataset: `script`
-- Process the `only_y` dataset: `script`
-- Process the `only_pupsz` dataset: `script`
-
-##### Run the Deep Learning Analysis
-
-- Run the full analysis: `script`
-- Run the `no_x` analysis: `script`
-- Run the `no_y` analysis: `script`
-- Run the `no_pupsz` analysis: `script`
-- Run the `only_x` analysis: `script`
-- Run the `only_y` analysis: `script`
-- Run the `only_pupsz` analysis: `script`
-
-### Confirmatory Analysis
-
-#### Timeline Data
-
-##### Process the Data
-
-- Process the full dataset: `script`
-- Process the `no_x` dataset: `script`
-- Process the `no_y` dataset: `script`
-- Process the `no_pupsz` dataset: `script`
-- Process the `only_x` dataset: `script`
-- Process the `only_y` dataset: `script`
-- Process the `only_pupsz` dataset: `script`
-
-##### Run the Deep Learning Analysis
-
-- Run the full analysis: `script`
-- Run the `no_x` analysis: `script`
-- Run the `no_y` analysis: `script`
-- Run the `no_pupsz` analysis: `script`
-- Run the `only_x` analysis: `script`
-- Run the `only_y` analysis: `script`
-- Run the `only_pupsz` analysis: `script`
-  
-#### Image Data
-
-##### Process the Data
-
-- Process the timeline data into images: `script`
-
-- Process the full dataset: `script`
-- Process the `no_x` dataset: `script`
-- Process the `no_y` dataset: `script`
-- Process the `no_pupsz` dataset: `script`
-- Process the `only_x` dataset: `script`
-- Process the `only_y` dataset: `script`
-- Process the `only_pupsz` dataset: `script`
-
-##### Run the Deep Learning Analysis
-
-- Run the full analysis: `script`
-- Run the `no_x` analysis: `script`
-- Run the `no_y` analysis: `script`
-- Run the `no_pupsz` analysis: `script`
-- Run the `only_x` analysis: `script`
-- Run the `only_y` analysis: `script`
-- Run the `only_pupsz` analysis: `script`
+- Process the .edf data into a .mat file: `edf_to_mat.m`
+- Run the CNN model specified in the .json file.
 
 ### Supplementary Analysis
 
-The supplementary analysis was conducted using the `Confirmatory` dataset.
-
+The supplementary analysis was conducted using the `Timeline` data subsets used in the `Exploratory` and `Confirmatory` analyses.
+- First, edit the `
+- First, edit the `supp_recalc_orig_accs.py` script. You will need to input the accuracy values from the confusion matrices for the relevant datasets and subsets.
+- Re-calculate the accuracies: `supp_recalc_orig_accs.py` --- to compare between supp and orig analysis..
+- The data is now ready for analysis.
 
 ### Coco & Keller Replication Analysis
 

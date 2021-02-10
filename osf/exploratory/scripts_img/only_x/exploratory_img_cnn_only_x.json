@@ -1,0 +1,129 @@
+{
+  "model": {
+    "layers": [
+      {
+        "layer_type": "Reshape",
+        "target_shape": [
+          1,
+          180,
+          240
+        ],
+        "input_shape": [
+          180,
+          240
+        ]
+      },
+      {
+        "layer_type": "Conv2D",
+        "filters": 5,
+        "kernel_size": [
+          20,
+          20
+        ],
+        "kernel_regularizer": "keras.regularizers.l2(0.01)",
+        "padding": "valid",
+        "strides": [
+          2,
+          2
+        ]
+      },
+      {
+        "layer_type": "LeakyReLU",
+        "alpha": 0.1
+      },
+      {
+        "layer_type": "BatchNormalization"
+      },
+      {
+        "layer_type": "Conv2D",
+        "filters": 3,
+        "kernel_size": [
+          10,
+          10
+        ],
+        "kernel_regularizer": "keras.regularizers.l2(0.01)",
+        "padding": "valid",
+        "strides": [
+          3,
+          3
+        ]
+      },
+      {
+        "layer_type": "LeakyReLU",
+        "alpha": 0.1
+      },
+      {
+        "layer_type": "BatchNormalization"
+      },
+      {
+        "layer_type": "Flatten"
+      },
+      {
+        "layer_type": "Dense",
+        "units": 6,
+        "kernel_regularizer": "keras.regularizers.l2(0.01)"
+      },
+      {
+        "layer_type": "LeakyReLU",
+        "alpha": 0.1
+      },
+      {
+        "layer_type": "Dropout",
+        "rate": 0.3
+      },
+      {
+        "layer_type": "BatchNormalization"
+      },
+      {
+        "layer_type": "Dense",
+        "activation": "softmax",
+        "units": 3
+      }
+    ],
+    "compile_options": {
+      "loss": "categorical_crossentropy",
+      "optimizer": "Adam",
+      "optimizer_options": {
+        "lr": 0.005,
+        "beta_1": 0.9,
+        "beta_2": 0.999,
+        "epsilon": 0.1,
+        "decay": 0
+      }
+    }
+  },
+  "data": {
+    "files": [
+      "exploratory_img_only_x_12734_trials.mat",
+      "all_imdata",
+      "class"
+    ],
+    "loader": "matfile_loader_convert_to_float"
+  },
+  "analysis": {
+    "output_location": "results/",
+    "output_filename_stem": "exploratory_img_only_x_12734_trials",
+    "output_file_types": [
+      "acc_summary",
+      "scores",
+      "labels",
+      "job_config",
+      "timestamps"
+    ],
+    "nits": 10,
+    "xval_type": "single",
+    "train_val_test": [
+      70,
+      15,
+      15
+    ],
+    "scaling_method": "standardize",
+    "classify_over": "class",
+    "backend_options": {
+      "patience": 250,
+      "epochs": 10000,
+      "batch_size": 500,
+      "verbose": 1
+    }
+  }
+}

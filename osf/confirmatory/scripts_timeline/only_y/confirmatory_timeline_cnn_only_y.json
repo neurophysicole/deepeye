@@ -1,0 +1,97 @@
+{
+    "model": {"layers": [
+      {"layer_type": "Reshape",
+        "target_shape": [1,3,6000],
+        "input_shape": [3,6000]
+      },
+      {"layer_type": "Conv2D",
+        "filters": 8,
+        "kernel_size": [3, 16],
+        "kernel_regularizer": "keras.regularizers.l2(0.01)",
+        "padding": "same"
+      },
+      {"layer_type": "LeakyReLU",
+        "alpha": 0.1
+      },
+      {"layer_type": "BatchNormalization"
+      },
+	  {"layer_type": "AveragePooling2D",
+        "pool_size": [1,16]
+      },   
+       {"layer_type": "Conv2D",
+        "filters": 8,
+        "kernel_size": [3, 8],
+        "kernel_regularizer": "keras.regularizers.l2(0.01)",
+        "padding": "same"
+      },
+      {"layer_type": "LeakyReLU",
+        "alpha": 0.1
+      },
+      {"layer_type": "BatchNormalization"
+      },
+      {"layer_type": "AveragePooling2D",
+        "pool_size": [1,16]
+      },
+      {"layer_type": "Conv2D",
+        "filters": 3,
+        "kernel_size": [3, 4],
+        "kernel_regularizer": "keras.regularizers.l2(0.01)",
+        "padding": "same"
+      },
+      {"layer_type": "LeakyReLU",
+        "alpha": 0.1
+      },
+      {"layer_type": "BatchNormalization"
+      },
+      {"layer_type": "AveragePooling2D",
+        "pool_size": [1,16]
+      },   
+      {"layer_type": "Flatten"
+      },
+      {"layer_type": "Dense",
+                  "units": 128,
+                  "kernel_regularizer": "keras.regularizers.l2(0.01)"
+                 },
+      {"layer_type": "LeakyReLU",
+        "alpha": 0.1
+        },
+      {"layer_type": "Dropout",
+       "rate": 0.3
+      },
+      {"layer_type": "BatchNormalization"
+                },
+      {"layer_type": "Dense",
+        "activation": "softmax",
+        "units": 3
+      }
+    ],
+    "compile_options": {
+      "loss": "categorical_crossentropy",
+      "optimizer": "Adam",
+      "optimizer_options": {
+        "lr":0.005,
+        "beta_1":0.9, 
+        "beta_2":0.999,
+        "epsilon": 0.1,
+        "decay":0
+      }
+    }
+  },
+  "data": {"files": "confirmatory_timeline_only_y_eyelink_data_interp_flat.mat",
+             "loader": "HDF_eyetracking_loader_3chan"
+ },
+ "analysis": {"output_location": "results/",
+  "output_filename_stem": "confirmatory_timeline_only_y",
+  "output_file_types": ["acc_summary", "scores", "labels", "job_config"],
+  "nits": 10,
+  "scaling_method": "standardize",
+  "xval_type": "single",
+  "train_val_test": [70, 15, 15],
+  "classify_over": "trial_type",
+  "backend_options": {
+   "patience": 100,
+   "epochs": 10000,
+   "batch_size": 100,
+   "verbose": 1
+ }
+}}
