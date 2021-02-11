@@ -77,11 +77,11 @@
       }
     }
   },
-  "data": {"files": "/mnt/eeg_data_analysis/04_mike_eye_tracking/messin_around/z/no_mem_trials/data/e9/e9_nosearch.mat",
+  "data": {"files": "confirmatory_nosearch.mat",
              "loader": "HDF_eyetracking_loader_3chan"
  },
- "analysis": {"output_location": "/mnt/eeg_data_analysis/04_mike_eye_tracking/messin_around/z/no_mem_trials/e9_timeline/nosearch_results/",
-  "output_filename_stem": "z_kk_6s_timeline_e9_NOSEARCH",
+ "analysis": {"output_location": "results/",
+  "output_filename_stem": "confirmatory_timeline_supp_nosearch",
   "output_file_types": ["acc_summary", "scores", "labels", "job_config"],
   "nits": 10,
   "scaling_method": "standardize",
