@@ -1,7 +1,14 @@
 function results_postprocess_confusion_matrices( file, nits )
 
+% get absolute path
+abs_path    = '../';
+owd         = pwd;
+cd(abs_path);
+abs_path    = what(pwd);
+abs_path    = abs_path.path;
+cd(owd);
+    
 % initial parameters
-path        = '../';
 fname_stem  = string(zeros(46));
 nits        = 10;
 
@@ -171,7 +178,7 @@ fname_stem(30)      = [ confirmatory_timeline_only_y_path, confirmatory_timeline
 %run the loop for all of the confusion matrices
 for data = 1:length(results)
     figure_title    = results(data);
-    file            = strcat(path, fname_stem(data));
+    file            = strcat(abs_path, fname_stem(data));
     
     label_fname     = sprintf('%s_labels.tsv', file);
     score_fname     = sprintf('%s_scores.tsv', file);

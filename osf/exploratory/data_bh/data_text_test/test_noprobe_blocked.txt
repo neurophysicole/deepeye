@@ -1,3 +1,0 @@
-blocknr	blocktype	trialnr	trialtype	trialstart	trialend	duration	probeNback	probeonset	probefixated	probefixtime	probeRT	imagename	imagechange	filler	response	RT	
-0	blocked	0	search	294588.781642	302599.401956	8010.62031477	None	None	False	0	0	clone_27	bottomshelf	False	N	8800.24764535	
-0	blocked	1	search	318473.010762	326483.338274	8010.32751127	None	None	False	0	0	clone_10	vase	False	N	2480.96173571	

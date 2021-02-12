@@ -5,7 +5,9 @@ image_pattern = '*.png';
 image_dim1 = 180; %impossibla
 image_dim2 = 240; %it is just being impossible...
 resize_factor = .5; %needs to be exact
-outfile = 'confirmatory_img_8301_trials';
+
+outdir = pwd;
+outfile = sprintf('%s/confirmatory_img_8301_trials', outdir);
 
 owd = pwd;
 cd(image_folder);

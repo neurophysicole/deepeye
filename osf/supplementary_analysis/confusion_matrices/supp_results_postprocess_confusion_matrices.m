@@ -3,8 +3,15 @@ function supp_results_postprocess_confusion_matrices
 % number of iterations
 nits = 10;
 
+% get absolute path
+abs_path    = '../';
+owd         = pwd;
+cd(abs_path);
+abs_path    = what(pwd);
+abs_path    = abs_path.abs_path;
+cd(owd);
+
 % establish paths
-path                            = '../';
 exploratory_supp_nomem_path     = 'exploratory/results/exploratory_timeline_supp_nomem';
 exploratory_supp_norate_path    = 'exploratory/results/exploratory_timeline_supp_norate';
 exploratory_supp_nosearch_path  = 'exploratory/results/exploratory_timeline_supp_nosearch';
@@ -14,12 +21,12 @@ conifrmatory_supp_nosearch_path = 'confirmatory/results/confirmatory_timeline_su
 
 % fname stem
 fname_stem          = string(nan(6));
-fname_stem(1)       = [ path, exploratory_supp_nomem_path ];
-fname_stem(2)       = [ path, exploratory_supp_norate_path ];
-fname_stem(3)       = [ path, exploratory_supp_nosearch_path ];
-fname_stem(4)       = [ path, confirmatory_supp_nomem_path ];
-fname_stem(5)       = [ path, confirmatory_supp_norate_path ];
-fname_stem(6)       = [ path, confirmatory_supp_nosearch_path ];
+fname_stem(1)       = [ abs_path, exploratory_supp_nomem_path ];
+fname_stem(2)       = [ abs_path, exploratory_supp_norate_path ];
+fname_stem(3)       = [ abs_path, exploratory_supp_nosearch_path ];
+fname_stem(4)       = [ abs_path, confirmatory_supp_nomem_path ];
+fname_stem(5)       = [ abs_path, confirmatory_supp_norate_path ];
+fname_stem(6)       = [ abs_path, confirmatory_supp_nosearch_path ];
 
 names = [
     { 'Exploratory S0R' }, { 'Exploratory SM0' }, { 'Exploratory 0MR' },...

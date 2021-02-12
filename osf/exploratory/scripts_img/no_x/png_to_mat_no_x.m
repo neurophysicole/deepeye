@@ -5,7 +5,9 @@ image_pattern = '*.png';
 image_dim1 = 180;
 image_dim2 = 240;
 resize_factor = .5; %needs to be exact
-outfile = 'exploratory_img_no_x_12634_trials';
+
+outdir = pwd;
+outfile = sprintf('%s/exploratory_img_no_x_12634_trials', outdir);
 
 owd = pwd;
 cd(image_folder);

@@ -1,5 +1,0 @@
-blocknr	blocktype	trialnr	trialtype	trialstart	trialend	duration	probeNback	probeonset	probefixated	probefixtime	probeRT	imagename	imagechange	filler	response	RT	
-0	mixed	0	rating	108362.078198	116372.408697	8010.33049868	None	None	False	0	0	clone_55	darklightright	False	7	5950.50186971	
-0	mixed	1	memory	135791.600006	143801.947107	8010.34710089	None	None	False	0	0	takeaway_45	midspeaker	False	correct	5320.52497999	
-0	mixed	2	rating	161741.745683	169752.063806	8010.31812249	None	None	False	0	0	clone_42		False	7	810.042042833	
-0	mixed	3	search	181107.67499	189118.020582	8010.3455916	None	None	False	0	0	clone_29	topshelf	False	Z	4075.78697493	

@@ -1,7 +1,0 @@
-blocknr	blocktype	trialnr	trialtype	trialstart	trialend	duration	probeNback	probeonset	probefixated	probefixtime	probeRT	imagename	imagechange	filler	response	RT	
-0	mixed	0	search	186082.901276	194093.049391	8010.14811497	2	6010.96886289	True	192382.631537	288.761398103	takeaway_77	light	False	Z	4986.9510437	
-0	mixed	1	memory	208993.907328	217004.128492	8010.22116425	2	6024.38608417	True	215337.468969	319.175557348	clone_21	book	False	incorrect	24106.854196	
-0	mixed	2	search	248165.312639	256175.575761	8010.26312231	None	None	False	0	0	color_96	fruit	False	N	1647.23052663	
-0	mixed	3	search	263852.533422	271862.800166	8010.26674459	4	6024.33476856	False	0	0	color_42	cups	False	N	4239.62820934	
-0	mixed	4	search	283578.234272	291588.492263	8010.25799075	None	None	False	0	0	clone_51	bookshelf	False	N	3353.55973379	
-0	mixed	5	memory	304623.358806	312633.544049	8010.18524332	None	None	False	0	0	takeaway_66	spottopleft	False	correct	7091.90897697	

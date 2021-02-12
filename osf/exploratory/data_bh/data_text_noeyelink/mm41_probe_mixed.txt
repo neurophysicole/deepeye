@@ -1,2 +1,0 @@
-blocknr	blocktype	trialnr	trialtype	trialstart	trialend	duration	probeNback	probeonset	probefixated	probefixtime	probeRT	imagename	imagechange	filler	response	RT	
-0	mixed	0	search	1835227.00745	1843237.31018	8010.30272771	4	6011.0785037	False	0	0	takeaway_71	stickerdesk	False	N	4470.38105392	

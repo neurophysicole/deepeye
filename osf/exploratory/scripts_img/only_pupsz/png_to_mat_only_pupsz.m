@@ -1,11 +1,13 @@
-function zach_eyelink_images_to_toolbox_matfile_basic_only_pupsz_filled
+function png_to_mat_only_pupsz
 
 image_folder = 'pngs/';
 image_pattern = '*.png';
 image_dim1 = 180;
 image_dim2 = 240;
 resize_factor = .5; %needs to be exact
-outfile = 'exploratory_img_only_pupsz_12634_trials';
+
+outdir = pwd;
+outfile = sprintf('%s/exploratory_img_only_pupsz_12634_trials', outdir);
 
 owd = pwd;
 cd(image_folder);

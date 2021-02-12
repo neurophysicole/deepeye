@@ -33,17 +33,36 @@ function ck_replicate_eye_movement_features
 %% init vars %%
 %% --------- %%
 
+% ------------------
+% get absolute paths
+% relative paths
 data_dir            = '../exploratory/data_eye';
+toolbox_path        = '../uzh-edf-converter-fae25ca';
+
+% get data dir
+owd = pwd;
+cd(data_dir);
+data_dir = what(pwd);
+data_dir = data_dir.path;
+
+% get toolbox dir
+cd(owd);
+cd(toolbox_path);
+toolbox_path = what(pwd);
+toolbox_path = toolbox_path.path;
+
+cd(owd);
+
+% setup dirs
 eye_dir             = sprintf('%s/data_eyelink', data_dir);
 eye_files_struct    = dir([eye_dir '/*.edf']);
 eye_files           = extractfield(eye_files_struct,'name');
 txt_dir             = sprintf('%s/data_text', data_dir);
 
-toolbox_path        = '../uzh-edf-converter-fae25ca';
 addpath(toolbox_path);
 
+% vars
 subj_data = cell(length(eye_files), 12);
-
 data_size       = 0;
 
 % text file options

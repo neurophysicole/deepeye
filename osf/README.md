@@ -1,7 +1,6 @@
 # Convolutional neural networks can decode eye movement data: A black box approach to predicting task from eye movements
 
-This package contains the scripts and data used for analysis in the following manuscript:
-Cole, Z. J., Kuntzelman, K., Dodd, M. D., & Johnson, M. (2020, September 23). Convolutional neural networks can decode eye movement data: A black box approach to predicting task from eye movements. [DOI](https://doi.org/10.31234/osf.io/5a6jm)
+This package contains the scripts and data necessary to replicate the analysis presented in Cole, Z. J., Kuntzelman, K., Dodd, M. D., & Johnson, M. (2020, September 23). Convolutional neural networks can decode eye movement data: A black box approach to predicting task from eye movements. [DOI](https://doi.org/10.31234/osf.io/5a6jm)
 
 <span style = "color:red">**Important Notes**</span>
 
@@ -9,13 +8,19 @@ Cole, Z. J., Kuntzelman, K., Dodd, M. D., & Johnson, M. (2020, September 23). Co
 
 > Accuracies were compared using the JASP Statistical Package (v0.10.2). There are no scripts for these analyses.
 
+## Edf2Mat
+
+The Edf2Mat package is in the _uzh-edf-converter-fae25ca_ .zip folder. For the Edf2Mat function to work, you must copy the `edfapi.frameworks` file into the `/Library/Frameworks` folder. Make sure that folder is unzipped as well.
+
 ## DeLINEATE
 
 The deep learning analysis was carried out using the [DeLINEATE](delineate.it)(v03b) package.
 
 ## Steps of Processing and Analysis
 
-For each analysis, the following provides instructions for replicating the analysis described in the Cole et al. (2020) manuscript. The steps are the same for analyzing the exploratory and confirmatory datasets, although there are separate scripts for analyzing the two datasets. For each analysis, there are separate data processing steps for the image and timeline data formats. The instructions for both formats are described below. The steps are the same for each subset analysis.
+For each analysis, the following provides instructions for replicating the primary analysis described in the Cole et al. (2020) manuscript. The steps are the same for analyzing the exploratory and confirmatory datasets, although there are separate scripts for analyzing the two datasets. For each analysis, there are separate data processing steps for the image and timeline data formats. The instructions for both formats are described below. The steps are the same for each subset analysis.
+
+The data are provided in their raw .edf form. For convenience, the data is also provided in a minimally processed, but more accessible .mat format.
 
 ### Image Data
 

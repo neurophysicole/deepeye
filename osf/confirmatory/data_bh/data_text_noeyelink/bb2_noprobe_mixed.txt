@@ -1,3 +1,0 @@
-blocknr	blocktype	trialnr	trialtype	trialstart	trialend	duration	probeNback	probeonset	probefixated	probefixtime	probeRT	imagename	imagechange	filler	response	RT	
-0	mixed	0	rating	2277132.02299	2285142.37577	8010.3527737	None	None	False	0	0	horizontal_59		False	6	10178.9828159	
-0	mixed	1	rating	2482398.70781	2490408.84929	8010.14147412	None	None	False	0	0	horizontal_25		False	7	1996.30980382	

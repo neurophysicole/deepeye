@@ -5,7 +5,9 @@ image_pattern = '*.png';
 image_dim1 = 180;
 image_dim2 = 240;
 resize_factor = .5; %needs to be exact
-outfile = 'exp1_kkequated_image_no_y_filled_12634_trials';
+
+outdir = pwd;
+outfile = sprintf('%s/exp1_kkequated_image_no_y_filled_12634_trials', outdir);
 
 owd = pwd;
 cd(image_folder);
