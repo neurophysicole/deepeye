@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.9.28)  13 FEB 2021 19:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.9.28)  13 FEB 2021 20:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -950,14 +950,14 @@ Package pdftex.def Info: figures/img_conf_matrices.pdf  used on input line 322.
 (pdftex.def)             Requested size: 469.74667pt x 302.5367pt.
 [20] [21 <./figures/r_code/img_subset_chance.pdf>] [22 <./figures/img_conf_matr
 ices.pdf>] [23] [24] [25] [26] [27] [28] [29] [30] [31]
-<figures/supp_analysis/supp_subset_chance.pdf, id=805, 648.4225pt x 374.39874pt
+<figures/supp_analysis/supp_subset_chance.pdf, id=806, 648.4225pt x 374.39874pt
 >
 File: figures/supp_analysis/supp_subset_chance.pdf Graphic file (type pdf)
 <use figures/supp_analysis/supp_subset_chance.pdf>
 Package pdftex.def Info: figures/supp_analysis/supp_subset_chance.pdf  used on 
 input line 467.
 (pdftex.def)             Requested size: 469.76282pt x 271.24075pt.
-<figures/supp_analysis/confusion_matrices/supp_conf_matrices.pdf, id=806, 1022.
+<figures/supp_analysis/confusion_matrices/supp_conf_matrices.pdf, id=807, 1022.
 82124pt x 650.43pt>
 File: figures/supp_analysis/confusion_matrices/supp_conf_matrices.pdf Graphic f
 ile (type pdf)
@@ -967,7 +967,7 @@ rices.pdf  used on input line 489.
 (pdftex.def)             Requested size: 469.75435pt x 298.72504pt.
 [32] [33 <./figures/supp_analysis/supp_subset_chance.pdf>]
 <figures/supp_analysis/recalculations/confusion_matrices/recalc_conf_matrices.p
-df, id=853, 1023.825pt x 650.43pt>
+df, id=854, 1023.825pt x 650.43pt>
 File: figures/supp_analysis/recalculations/confusion_matrices/recalc_conf_matri
 ces.pdf Graphic file (type pdf)
 <use figures/supp_analysis/recalculations/confusion_matrices/recalc_conf_matric
@@ -1006,10 +1006,10 @@ ype1/public/lm/lmri8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public
 /lm/lmss8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy8.p
 fb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm
 10.pfb>
-Output written on z_deepeye.pdf (35 pages, 5554672 bytes).
+Output written on z_deepeye.pdf (35 pages, 5555068 bytes).
 PDF statistics:
- 1033 PDF objects out of 1200 (max. 8388607)
- 699 compressed objects within 7 object streams
+ 1034 PDF objects out of 1200 (max. 8388607)
+ 700 compressed objects within 7 object streams
  95 named destinations out of 1000 (max. 500000)
  6339 words of extra memory for PDF output out of 10000 (max. 10000000)
 
