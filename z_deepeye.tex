@@ -156,6 +156,52 @@ Previous attempts to classify task from eye movement data have relied on model a
 \begin{document}
 \maketitle
 
+\hypertarget{revisions-to-be-made}{%
+\section{Revisions to be made}\label{revisions-to-be-made}}
+
+\begin{itemize}
+\tightlist
+\item
+  clarify the difference between the Yarbus problem and the Inverse Yarbus problem; something like what Greene et al.~did
+\item
+  {[} just in case it is not covered by the previous bullet {]} go through and clarify what the Inverse Yarbus Problem even is :: MD S
+\item
+  make it more clear that the data we classified was not raw, but was actually processed
+\item
+  do something with the Coco \& Keller replication results ( Should we present in another supplement.. or should we put into the results section as well?? Or should we just report to the reviewers? {[}I think the reviewers wanted it included in the paper though\ldots{]} Might be worth reading throuhg the manuscript in its current form and deciding.. )
+\item
+  Clarify the terms \enquote{task}, \enquote{cognitive process}, and \enquote{mental state}..
+\item
+  {[} just in case it is not coverede by the previous bullet {]} Go through and check that the wording of \enquote{task}, \enquote{cognitive process}, and \enquote{mental state} are used consistently throughout the manuscript
+\item
+  further clarify how studies do not fit the spirit of the Inverse Yarbus Problem
+\item
+  \textbf{MD Comment:} Important to note that all images are same general structure (interior of rooms/locations, no people) and no one is asked to answer specific questions about the image as they did with Yarbus. The point of the instruction is to not constrain how they look at the image because in Yarbus, of course if you ask about the age of someone they look at the face and if you ask about the wealth they look at material belongings. The instructions in these studies are completely unbiased so as to not influence in any way what people do
+\item
+  Need to clarify what it is we intend to find from comparing the timeline and image data formats
+\item
+  \textbf{MD Comment:} Are they asking for the image data to be removed? I can agree with the reviewer that there might be a bit of a disconnect in the paper as to why the timeline data and image data were what was selected to be compared but if the argument is that the image model was never going to be as useful as the timeline one, then that would suggest the reason for doing the image one at all is less clear
+\item
+  Provide more comprehensive model information
+\item
+  {[} just in case it is not coverede by the previous bullet {]} Add in the learning rate information
+\end{itemize}
+
+\hypertarget{reviewer-2-issues-that-still-need-to-be-addressed}{%
+\section{Reviewer 2 issues that still need to be addressed}\label{reviewer-2-issues-that-still-need-to-be-addressed}}
+
+\begin{itemize}
+\tightlist
+\item
+  training/test question..
+\item
+  was there an overfitting issue?
+\item
+  Figure out what they mean with the ANOVA comparison issue..
+\item
+  overfitting due to pupil size?
+\end{itemize}
+
 \section{Introduction}
 
 The association between eye movements and mental activity is a fundamental topic of interest in attention research that has provided a foundation for developing a wide range of human assistive technologies. Early work by Yarbus (1967) showed that eye movement patterns appear to differ qualitatively depending on the task-at-hand (for a review of this work, see Tatler, Wade, Kwan, Findlay, \& Velichkovsky, 2010). A replication of this work by DeAngelus and Pelz (2009) showed that the differences in eye movements between tasks can be quantified, and appear to be somewhat generalizable. Technological advances and improvements in computing power have allowed researchers to make inferences regarding the mental state underlying eye movement data, also known as the \enquote{inverse Yarbus process} (Haji-Abolhassani \& Clark, 2014).
@@ -164,7 +210,7 @@ Current state-of-the-art machine learning and neural network algorithms are capa
 
 The scope of theoretically informed solutions to decoding eye movement data is limited to the extent of the current theoretical knowledge linking eye movements to cognitive and neurobiological processes. As our theoretical understanding of these processes develops, older theoretically informed models become outdated. Furthermore, these solutions are susceptible to any inaccurate preconceptions that are built into the theory. Consider the case of Greene, Liu, and Wolfe (2012), who were not able to classify task from commonly used aggregate eye movement features (i.e., number of fixations, mean fixation duration, mean saccade amplitude, percent of image covered by fixations) using correlations, a linear discriminant model, and a support vector machine (see Table \ref{tab:previous-studies}). This led Greene and colleagues to question the robustness of Yarbus's (1967) findings, inspiring a slew of responses that successfully decoded the same dataset by aggregating the eye movements into different feature sets or implementing different model architectures (see Table \ref{tab:previous-studies}; Haji-Abolhassani \& Clark, 2014; Borji \& Itti, 2014; Kanan, Ray, Bseiso, Hsiao, \& Cottrell, 2014). The subsequent re-analyses of these data support Yarbus (1967) and the notion that mental state can be decoded from eye movement data using a variety of combinations of data features and model architectures. Collectively, these re-analyses did not point to an obvious global solution capable of clarifying future approaches to the inverse Yarbus problem beyond what could be inferred from black box model solutions, but did provide a wide-ranging survey of a variety of methodological features that can be applied to theoretical or black box approaches.
 
-Eye movements can only delineate tasks to the extent that the cognitive processes underlying the tasks can be differentiated (Król \& Król, 2018). Every task is associated with a unique set of cognitive processes (Coco \& Keller, 2014; Król \& Król, 2018), but in some cases, the cognitive processes for different tasks may produce indistinguishable eye movement patterns. To differentiate the cognitive processes underlying task-evoked eye movements, some studies have chosen to classify tasks that rely on stimuli that prompt easily distinguishable eye movements, such as reading text (e.g., Henderson, Shinkareva, Wang, Luke, \& Olejarczyk, 2013). The eye movements elicited by salient stimulus features facilitate task classifications; however, because these eye movements are the consequence of a feature (or features) inherent to the stimulus rather than the task, it is unclear if these classifications are attributable to the stimulus or a complex mental state (e.g., Henderson et al., 2013; Boisvert \& Bruce, 2016). Additionally, the distinct nature of exogenously elicited eye movements prompts decoding algorithms to prioritize these bottom-up patterns in the data over higher-level top-down effects (Borji \& Itti, 2014). This means that these models are identifying the type of information that is being processed, but are not necessarily reflecting the mental state of the individual observing the stimulus. Eye movements that are the product of bottom-up processes have been reliably decoded, which is relevant for some HCI applications; however, such efforts do not fit the spirit of the inverse Yarbus problem, which is concerned with decoding high-level abstract mental operations that are not dependent on particular stimuli.
+Eye movements can only delineate tasks to the extent that the cognitive processes underlying the tasks can be differentiated (Król \& Król, 2018). Every task is associated with a unique set of cognitive processes (Coco \& Keller, 2014; Król \& Król, 2018), but in some cases, the cognitive processes for different tasks may produce indistinguishable eye movement patterns. \textcolor{red}{(Others may define these terms differently, but for present purposes, our working definitions are that cognitive "processes" are theoretical constructs that could be difficult to isolate in practice, whereas a "task" is a more concrete/explicit set of goals and behaviors imposed by the experimenter in an effort to operationalize one or more cognitive processes. A "mental state," in contrast, is also a more theoretical term that is a bit more general and could include goals and cognitive processes, but could also presumably encompass other elements like mood or distraction.)} To differentiate the cognitive processes underlying task-evoked eye movements, some studies have chosen to classify tasks that rely on stimuli that prompt easily distinguishable eye movements, such as reading text (e.g., Henderson, Shinkareva, Wang, Luke, \& Olejarczyk, 2013). The eye movements elicited by salient stimulus features facilitate task classifications; however, because these eye movements are the consequence of a feature (or features) inherent to the stimulus rather than the task, it is unclear if these classifications are attributable to the stimulus or a complex mental state (e.g., Henderson et al., 2013; Boisvert \& Bruce, 2016). Additionally, the distinct nature of exogenously elicited eye movements prompts decoding algorithms to prioritize these bottom-up patterns in the data over higher-level top-down effects (Borji \& Itti, 2014). This means that these models are identifying the type of information that is being processed, but are not necessarily reflecting the mental state of the individual observing the stimulus. Eye movements that are the product of bottom-up processes have been reliably decoded, which is relevant for some HCI applications; however, such efforts do not fit the spirit of the inverse Yarbus problem, which is concerned with decoding high-level abstract mental operations that are not dependent on particular stimuli.
 
 Currently, there is not a clearly established upper limit to how well cognitive task can be classified from eye movement data. Prior evidence has shown that the task-at-hand is capable of producing distinguishable eye movement features such as the total scan path length, total number of fixations, and the amount of time to the first saccade (Castelhano, Mack, \& Henderson, 2009; DeAngelus \& Pelz, 2009). Decoding accuracies within the context of determining task from eye movements typically range from chance performance to relatively robust classification (see Table \ref{tab:previous-studies}). In one case, Coco and Keller (2014) categorized the same eye movement features used by Greene et al. (2012) with respect to the relative contribution of latent visual or linguistic components of three tasks (visual search, name the picture, name objects in the picture) with 84\% accuracy (chance = 33\%). While this manipulation is reminiscent of other experiments relying on the bottom-up influence of words and pictures (e.g., Henderson et al., 2013; Boisvert \& Bruce, 2016) the eye movements in the Coco and Keller (2014) tasks can be attributed to the occurrence of top-down attentional processes. A conceptually related follow-up to this study classified tasks along two spatial and semantic dimensions, resulting in 51\% classification accuracy (chance = 25\%; Król \& Król, 2018). A closer look at these results showed that the categories within the semantic dimension were consistently misclassified, suggesting that this level of distinction may require a richer dataset, or a more powerful decoding algorithm. Altogether, there is no measurable index of relative top-down or bottom-up influence, but this body of literature suggests that the relative influence of top-down and bottom-up attentional processes may have a role in determining the decodability of the eye movement data.
 
