@@ -8,7 +8,7 @@ function ck_replicate_eye_movement_features
 
 %% NOTE %%
 % This script calculates a bunch of eye movement features, including
-% saliency. Saliency is calculated from a Torralba script that uses A TON a
+% saliency. Saliency is calculated from a Torralba script that uses A TON 
 % other .m and MEX files. In order for this to work, you might have to
 % first compile the MEX files (even if this isn't fully necessary, the
 % data will be processed much faster if these are compiled..).
@@ -19,7 +19,7 @@ function ck_replicate_eye_movement_features
 % of the necessary information.
 
 % Also, make sure to add the folder (and subfolders) containing the
-% Torralba saliency scripts to the path..
+% Torralba saliency scripts to the path..!!
 
 
 %% NOTE NOTE %%
@@ -75,94 +75,18 @@ probe_block_opt       = [ {'_probe_blocked'}, {'_noprobe_mixed'}, {'_probe_mixed
 % calculating the average saliency for each pixel location of each image
 % the mapping of the fixations onto the image pixels is done in the saliency_fix function later on..
 
-% ---------
-% init vars
-stim_dir        = 'stim_imgs';
-stim_dir_struct = dir(stim_dir);
-stim_dir_names  = extractfield(stim_dir_struct, 'name');
-stim_dir_dirs   = extractfield(stim_dir_struct, 'isdir');
-ftypes          = { 'jpg', 'JPG', 'png' };
-
-% remove useless dirs
-stim_dir_dirs   = stim_dir_dirs(~strcmp(stim_dir_names, '.') & ~strcmp(stim_dir_names, '..') & ~strcmp(stim_dir_names, '.DS_Store') & ~isempty(stim_dir_names));
-stim_dir_names 	= stim_dir_names(~strcmp(stim_dir_names, '.') & ~strcmp(stim_dir_names, '..') & ~strcmp(stim_dir_names, '.DS_Store') & ~isempty(stim_dir_names));
-
-% assign names to dirs, get rid of fnames
-for i = 1:length(stim_dir_names)
-    if stim_dir_dirs{i} == 1
-        stim_dir_dirs{i} = stim_dir_names{i};
-    else
-        stim_dir_dirs{i} = [];
-    end
-end
-
-% ---------
-% get stims
-stim_count = 0;
-stim_subdirs = cell(length(stim_dir_dirs), 1);
-for dirs = 1:length(stim_dir_dirs)
-    % turns out there are dirs in the dirs.. dirsception
-    % get subdir names
-    subdir              = sprintf('%s/%s', stim_dir, stim_dir_dirs{dirs});
-    subdir_struct       = dir(subdir);
-    subdir_names        = extractfield(subdir_struct, 'name');
-    subdir_folder       = unique(extractfield(subdir_struct, 'folder'));
-    
-    % get file names within the subdirs
-    subdir_files = [];
-    for i = 1:length(ftypes)
-        % get the files that match the extension type
-        ftype_files = regexp(subdir_names, ftypes{i});
-
-        % get the fnames
-        for j = 1:length(ftype_files)
-            if ~isempty(ftype_files{j})
-                subdir_files = [ subdir_files; subdir_names(j) ];
-            end
-        end
-    end
-
-    % loop through subdir to assign prefix to each item
-    for dirs_files = 1:length(subdir_files)
-        subdir_files{dirs_files} = sprintf('%s/%s', subdir_folder{1}, subdir_files{dirs_files});
-    end
-
-    stim_subdirs{dirs}  = subdir_files; %logit
-
-    stim_count = stim_count + length(subdir_files); %update count (for future vars)
-end
-
-
-% -----------
-% stack stims
-% the stims are folded in the `stim_subdirs` var, but we don't want that
-
-% init vars
-stim_fnames = cell(stim_count, 1);
-stim_count  = 1;
-
-% loop through the subdirs
-for dirs = 1:length(stim_subdirs)
-    for stims = 1:length(stim_subdirs{dirs})
-        stim_fnames{stim_count} = stim_subdirs{dirs}{stims};
-        
-        stim_count = stim_count + 1;
-    end
-end
-
-% remove duplicates
-stim_fnames = unique(stim_fnames);
-
-
 % ------------------
 % calculate saliency
-saliency = cell(length(stim_fnames), 2);
-for img = 1:length(stim_fnames)
-    saliencyMap       = img_saliency_calculation(stim_fnames{img}); %stolen function
-    saliency{img, 1}  = saliencyMap; %assign saliency
-    saliency{img, 2}  = stim_fnames{img}; %assign img name
-end
+% saliency = cell(length(stim_fnames), 2);
+% for img = 1:length(stim_fnames)
+%     saliencyMap       = img_saliency_calculation(stim_fnames{img}); %stolen function
+%     saliency{img, 1}  = saliencyMap; %assign saliency
+%     saliency{img, 2}  = stim_fnames{img}; %assign img name
+% end
 
+% !-----------------------------------
+% saliency values ^^ calculation above
+saliency = load('ck_replication_img_saliency.mat');
 
 %% ------------------------ %%
 %% cycle through data files %%
@@ -199,8 +123,6 @@ for current_file = 1:length(eye_files)
 
     % ----------------------------------------
     % extract stim imgs per trial (.txt files)
-    % the txt fnames include the blocktype, could do some strfind thing,
-    % but can also just build it in.. so building it in
     
     % cycle through probe types and block options
     for probe_opt = 1:length(probe_block_opt)
@@ -296,19 +218,11 @@ for current_file = 1:length(eye_files)
         fixations   = edf_data.Events.Efix;
         saccades    = edf_data.Events.Esacc;
 
-        % fix_start    = fixations.start((fixations.start >= trial_start) & (fixations.end <= trial_end));
-        % fix_end      = fixations.end((fixations.start >= trial_start) & (fixations.end <= trial_end));
         fix_dur      = fixations.duration((fixations.start >= trial_start) & (fixations.end <= trial_end));
         fix_x        = fixations.posX((fixations.start >= trial_start) & (fixations.end <= trial_end));
         fix_y        = fixations.posY((fixations.start >= trial_start) & (fixations.end <= trial_end));
 
         sacc_start   = saccades.start((saccades.start >= trial_start) & (saccades.end <= trial_end));
-        % sacc_end     = saccades.end((saccades.start >= trial_start) & (saccades.end <= trial_end));
-        % sacc_dur     = saccades.duration((saccades.start >= trial_start) & (saccades.end <= trial_end));
-        % sacc_x       = saccades.posX((saccades.start >= trial_start) & (saccades.end <= trial_end));
-        % sacc_y       = saccades.posY((saccades.start >= trial_start) & (saccades.end <= trial_end));
-        % sacc_x_end   = saccades.posXend((saccades.start >= trial_start) & (saccades.end <= trial_end));
-        % sacc_y_end   = saccades.posYend((saccades.start >= trial_start) & (saccades.end <= trial_end));
         sacc_hypot   = saccades.hypot((saccades.start >= trial_start) & (saccades.end <= trial_end));
         
         
@@ -442,20 +356,7 @@ writetable(eye_data_table, 'ck_features.csv', 'Delimiter', ' ');
 writetable(eye_data_table, 'ck_features.csv', 'Delimiter', ',');
 
 
-%% ==================== %%
-%% Process Data (Clean) %%
-%% ==================== %%
 
-% Definitions
-% -----------
-% Fixation: Castelhano limited to 90-2000ms
-% Saccade: Castelhano limited to shifts in eye position greater than 8 pixels (8.8 arcmins) in 15ms or less
-% Note: Just going to go with what was calculated, but can use these as a reference if we decide that the data needs to be cleaner.. Coco & Keller don't mention anything about data clearning, so not going to do anything here..
-
-% function clean_fixations(input)
-
-
-% function clean_saccades(input)
 
 
 
@@ -589,7 +490,7 @@ function saliencyMap = img_saliency_calculation( img )
 % read in the img
 img = imread(img); 
 
-% stolen -- aka. borrowed -- functions :: https://people.csail.mit.edu/tjudd/WherePeopleLook/Code/JuddSaliencyModel/  
+% borrowed functions :: https://people.csail.mit.edu/tjudd/WherePeopleLook/Code/JuddSaliencyModel/  
 saliencyMap = torralbaSaliency( img );
 
 % ---------------------------
@@ -611,7 +512,7 @@ Nsc = 4;%maxPyrHt([nrows ncols], [15 15])-1; % Number of scales
 [pyr, ind] = buildSpyr(double(mean(img,3)), Nsc, pyrFilters, edges);
 
 weight = 2.^(1:Nsc);
-sal = zeros(size(pyr)); %!ZC: this pops up yellow, but I don't have the guts to change anything in the script.
+sal = zeros(size(pyr));
 saliencyMap = 1;
 for b=2:size(ind,1)-1
     out =  pyrBand(pyr,ind,b);

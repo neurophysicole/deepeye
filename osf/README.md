@@ -57,4 +57,5 @@ For each data subset, create a confusion matrix: `supp_results_postprocess_confu
 For a tutorial on this analysis (provided by Coco and Keller), follow this [link](http://www.morenococo.org/wp-content/uploads/2015/10/jov_2014_knit.html).
 
 - Calculate the features necessary for the analysis: `ck_replicate_eye_movement_features.m`
+  - Note: The `ck_replicate_eye_movement_features.m` script requires the calculation of saliency values for the stimulus images. We were not able to post our stimuli openly, so we provided the pre-calculated saliency values. (The code used to calculate the saliency is still in the script, but commented out). If you would prefer to use the stimulus images instead of the pre-calculated saliency values, please feel free to contact us about sharing the stimulus images with you individually.
 - Run the analysis: `ck_replicate_models.r`
