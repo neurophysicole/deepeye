@@ -87,6 +87,7 @@ probe_block_opt       = [ {'_probe_blocked'}, {'_noprobe_mixed'}, {'_probe_mixed
 % !-----------------------------------
 % saliency values ^^ calculation above
 saliency = load('ck_replication_img_saliency.mat');
+saliency = saliency.saliency;
 
 %% ------------------------ %%
 %% cycle through data files %%
