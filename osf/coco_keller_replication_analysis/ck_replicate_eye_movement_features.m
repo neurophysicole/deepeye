@@ -38,6 +38,7 @@ function ck_replicate_eye_movement_features
 % relative paths
 data_dir            = '../exploratory';
 toolbox_path        = '../uzh-edf-converter-fae25ca';
+saliency_dir        = 'saliency_values';
 
 % get data dir
 owd = pwd;
@@ -50,6 +51,12 @@ cd(owd);
 cd(toolbox_path);
 toolbox_path = what(pwd);
 toolbox_path = toolbox_path.path;
+
+% get saliency dir
+cd(owd);
+cd(saliency_dir);
+saliency_dir = what(pwd);
+saliency_dir = saliency_dir.path;
 
 cd(owd);
 
@@ -86,8 +93,18 @@ probe_block_opt       = [ {'_probe_blocked'}, {'_noprobe_mixed'}, {'_probe_mixed
 
 % !-----------------------------------
 % saliency values ^^ calculation above
-saliency = load('ck_replication_img_saliency.mat');
-saliency = saliency.saliency;
+% saliency = load('ck_replication_img_saliency.mat');
+% saliency = saliency.saliency;
+
+saliency_imgs_struct    = dir([saliency_dir '/*.mat']);
+saliency_imgs           = extractfield(saliency_imgs_struct, 'name');
+
+saliency = cell(length(saliency_imgs), 2);
+for img = 1:length(saliency_imgs)
+    load(saliency_imgs{img});
+    saliency{img, 1} = saliency{1};
+    saliency{img, 2} = saliency{2};
+end
 
 %% ------------------------ %%
 %% cycle through data files %%
