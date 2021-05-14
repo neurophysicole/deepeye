@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  8 MAY 2021 22:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.9.28)  14 MAY 2021 00:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -24,7 +24,7 @@ File: size12.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count88
 )
 Class apa6 Info: No bibliography package was specified; defaulting to (but not 
@@ -143,9 +143,9 @@ Package: threeparttable 2003/06/13  v 3.0
 \b@level@five@skip=\skip51
 \e@level@five@skip=\skip52
 (/usr/local/texlive/2019/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
+Package: caption 2019/09/01 v3.3d Customizing captions (AR)
 (/usr/local/texlive/2019/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2018/09/12 v1.8c caption3 kernel (AR)
+Package: caption3 2019/09/01 v1.8d caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 64.
 \captionmargin=\dimen126
 \captionmargin@=\dimen127
@@ -201,15 +201,6 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box29
 \@float@everytoks=\toks17
 \@floatcapt=\box30
-)) (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amssymb.sty
-Package: amssymb 2013/01/14 v3.01 AMS font symbols
-(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amsfonts.sty
-Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\@emptytoks=\toks18
-\symAMSa=\mathgroup7
-\symAMSb=\mathgroup8
-LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )) (/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2018/12/01 v2.17b AMS math features
 \@mathmargin=\skip65
@@ -218,7 +209,7 @@ For additional information on amsmath, use the `?' option.
 Package: amstext 2000/06/29 v2.01 AMS text
 (/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks19
+\@emptytoks=\toks18
 \ex@=\dimen133
 )) (/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
@@ -247,24 +238,32 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
 \dotsspace@=\muskip10
 \c@parentequation=\count112
 \dspbrk@lvl=\count113
-\tag@help=\toks20
+\tag@help=\toks19
 \row@=\count114
 \column@=\count115
 \maxfields@=\count116
-\andhelp@=\toks21
+\andhelp@=\toks20
 \eqnshift@=\dimen136
 \alignsep@=\dimen137
 \tagshift@=\dimen138
 \tagwidth@=\dimen139
 \totwidth@=\dimen140
 \lineht@=\dimen141
-\@envbody=\toks22
+\@envbody=\toks21
 \multlinegap=\skip66
 \multlinetaggap=\skip67
-\mathdisplay@stack=\toks23
+\mathdisplay@stack=\toks22
 LaTeX Info: Redefining \[ on input line 2844.
 LaTeX Info: Redefining \] on input line 2845.
-) (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup7
+\symAMSb=\mathgroup8
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/base/fontenc.sty
@@ -274,8 +273,8 @@ File: t1enc.def 2018/08/11 v2.0j Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 )) (/usr/local/texlive/2019/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2018/08/11 v1.3c Input encoding file
-\inpenc@prehook=\toks24
-\inpenc@posthook=\toks25
+\inpenc@prehook=\toks23
+\inpenc@posthook=\toks24
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2018/08/11 v2.0j Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
@@ -435,7 +434,7 @@ Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
 tim
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2019/02/28 v2.7b Micro-typographical refinements (RS)
-\MT@toks=\toks26
+\MT@toks=\toks25
 \MT@count=\count117
 LaTeX Info: Redefining \textls on input line 790.
 \MT@outer@kern=\dimen142
@@ -484,18 +483,18 @@ Package: xurl 2018/12/23 v 0.07 modify URL breaks
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/bookmark.sty
-Package: bookmark 2016/05/17 v1.26 PDF bookmarks (HO)
+Package: bookmark 2019/06/04 v1.27 PDF bookmarks (HO)
 (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/pdfescape.sty
 Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
 (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
+Package: pdftexcmds 2019/07/25 v0.30 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )) (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2018/11/30 v6.88e Hypertext links for LaTeX
+Package: hyperref 2019/09/12 v6.88i Hypertext links for LaTeX
 (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
@@ -533,7 +532,7 @@ Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 \Hy@linkcounter=\count119
 \Hy@pagecounter=\count120
 (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2018/11/30 v6.88e Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2019/09/12 v6.88i Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
@@ -541,41 +540,41 @@ Now handling font encoding PD1 ...
 (/usr/local/texlive/2019/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Option `unicode' set `true' on input line 4393.
+Package hyperref Info: Option `unicode' set `true' on input line 4424.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2018/11/30 v6.88e Hyperref: PDF Unicode definition (HO)
+File: puenc.def 2019/09/12 v6.88i Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Hyper figures OFF on input line 4519.
-Package hyperref Info: Link nesting OFF on input line 4524.
-Package hyperref Info: Hyper index ON on input line 4527.
-Package hyperref Info: Plain pages OFF on input line 4534.
-Package hyperref Info: Backreferencing OFF on input line 4539.
+Package hyperref Info: Hyper figures OFF on input line 4550.
+Package hyperref Info: Link nesting OFF on input line 4555.
+Package hyperref Info: Hyper index ON on input line 4558.
+Package hyperref Info: Plain pages OFF on input line 4565.
+Package hyperref Info: Backreferencing OFF on input line 4570.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4772.
+Package hyperref Info: Bookmarks ON on input line 4803.
 \c@Hy@tempcnt=\count122
-LaTeX Info: Redefining \url on input line 5125.
+LaTeX Info: Redefining \url on input line 5156.
 \XeTeXLinkMargin=\dimen144
 \Fld@menulength=\count123
 \Field@Width=\dimen145
 \Fld@charsize=\dimen146
-Package hyperref Info: Hyper figures OFF on input line 6380.
-Package hyperref Info: Link nesting OFF on input line 6385.
-Package hyperref Info: Hyper index ON on input line 6388.
-Package hyperref Info: backreferencing OFF on input line 6395.
-Package hyperref Info: Link coloring OFF on input line 6400.
-Package hyperref Info: Link coloring with OCG OFF on input line 6405.
-Package hyperref Info: PDF/A mode OFF on input line 6410.
-LaTeX Info: Redefining \ref on input line 6450.
-LaTeX Info: Redefining \pageref on input line 6454.
+Package hyperref Info: Hyper figures OFF on input line 6411.
+Package hyperref Info: Link nesting OFF on input line 6416.
+Package hyperref Info: Hyper index ON on input line 6419.
+Package hyperref Info: backreferencing OFF on input line 6426.
+Package hyperref Info: Link coloring OFF on input line 6431.
+Package hyperref Info: Link coloring with OCG OFF on input line 6436.
+Package hyperref Info: PDF/A mode OFF on input line 6441.
+LaTeX Info: Redefining \ref on input line 6481.
+LaTeX Info: Redefining \pageref on input line 6485.
 \Hy@abspage=\count124
 \c@Item=\count125
 \c@Hfootnote=\count126
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2018/11/30 v6.88e Hyperref driver for pdfTeX
+File: hpdftex.def 2019/09/12 v6.88i Hyperref driver for pdfTeX
 \Fld@listcount=\count127
 \c@bookmark@seq@number=\count128
 (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
@@ -585,15 +584,9 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip69
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/bkm-pdftex.def
-File: bkm-pdftex.def 2016/05/17 v1.26 bookmark driver for pdfTeX (HO)
+File: bkm-pdftex.def 2019/06/04 v1.27 bookmark driver for pdfTeX (HO)
 \BKM@id=\count129
-)) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/grffile.sty
-Package: grffile 2017/06/30 v1.18 Extended file name support for graphics (HO)
-Package grffile Info: Option `multidot' is set to `true'.
-Package grffile Info: Option `extendedchars' is set to `false'.
-Package grffile Info: Option `space' is set to `true'.
-Package grffile Info: \Gin@ii of package `graphicx' fixed on input line 494.
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/was/upgreek.sty
+)) (/usr/local/texlive/2019/texmf-dist/tex/latex/was/upgreek.sty
 Package: upgreek 2003/02/12 v2.0 (WaS)
 Package upgreek Info: Using Euler Roman for upright Greek on input line 31.
 \symugrf@m=\mathgroup9
@@ -615,11 +608,11 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)+ FMi change
 \LT@rows=\count132
 \c@LT@tables=\count133
 \c@LT@chunks=\count134
-\LT@p@ftn=\toks27
+\LT@p@ftn=\toks26
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/multirow/multirow.sty
-Package: multirow 2019/01/01 v2.4 Span multiple rows of a table
+Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
 \multirow@colwidth=\skip74
 \multirow@cntb=\count135
 \multirow@dima=\skip75
@@ -631,7 +624,7 @@ Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
 \col@sep=\dimen149
 \ar@mcellbox=\box37
 \extrarowheight=\dimen150
-\NC@list=\toks28
+\NC@list=\toks27
 \extratabsurround=\skip76
 \backup@length=\skip77
 \ar@cellbox=\box38
@@ -642,7 +635,7 @@ Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
 \TX@target=\dimen154
 \TX@delta=\dimen155
 \TX@cols=\count136
-\TX@ftn=\toks29
+\TX@ftn=\toks28
 )
 (/usr/local/texlive/2019/texmf-dist/tex/latex/threeparttablex/threeparttablex.s
 ty
@@ -658,7 +651,7 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 (/usr/local/texlive/2019/texmf-dist/tex/latex/lineno/lineno.sty
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
 \linenopenalty=\count137
-\output=\toks30
+\output=\toks29
 \linenoprevgraf=\count138
 \linenumbersep=\dimen156
 \linenumberwidth=\dimen157
@@ -673,16 +666,16 @@ Package: lineno 2005/11/02 line numbers on paragraphs v4.41
 \bframebox=\box39
 LaTeX Info: Redefining \\ on input line 3056.
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/csquotes/csquotes.sty
-Package: csquotes 2018/04/13 v5.2d context-sensitive quotations (JAW)
+Package: csquotes 2019/05/10 v5.2e context-sensitive quotations (JAW)
 \csq@reset=\count144
 \csq@gtype=\count145
 \csq@glevel=\count146
 \csq@qlevel=\count147
 \csq@maxlvl=\count148
 \csq@tshold=\count149
-\csq@ltx@everypar=\toks31
+\csq@ltx@everypar=\toks30
 (/usr/local/texlive/2019/texmf-dist/tex/latex/csquotes/csquotes.def
-File: csquotes.def 2018/04/13 v5.2d csquotes generic definitions (JAW)
+File: csquotes.def 2019/05/10 v5.2e csquotes generic definitions (JAW)
 )
 Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
@@ -691,13 +684,13 @@ File: csquotes.cfg
 )) (/usr/local/texlive/2019/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 ) (/usr/local/texlive/2019/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2019/05/04 3.31 The Babel package
+Package: babel 2019/09/27 3.34 The Babel package
 (/usr/local/texlive/2019/texmf-dist/tex/generic/babel/switch.def
-File: switch.def 2019/05/04 3.31 Babel switching mechanism
+File: switch.def 2019/09/27 3.34 Babel switching mechanism
 ) (/usr/local/texlive/2019/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
 (/usr/local/texlive/2019/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2019/05/04 3.31 Babel common definitions
+File: babel.def 2019/09/27 3.34 Babel common definitions
 \babel@savecnt=\count150
 \U@D=\dimen161
 (/usr/local/texlive/2019/texmf-dist/tex/generic/babel/txtbabel.def)
@@ -709,6 +702,21 @@ File: babel.def 2019/05/04 3.31 Babel common definitions
 ) (/usr/local/texlive/2019/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
 ))
+\cslhangindent=\skip80
+\csllabelwidth=\skip81
+(/usr/local/texlive/2019/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count152
+\calc@Bcount=\count153
+\calc@Adimen=\dimen162
+\calc@Bdimen=\dimen163
+\calc@Askip=\skip82
+\calc@Bskip=\skip83
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count154
+\calc@Cskip=\skip84
+)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
@@ -716,30 +724,30 @@ Package csquotes Info: Redefining alias 'default' -> 'english'.
 (./z_deepeye.aux)
 \openout1 = `z_deepeye.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 146.
-LaTeX Font Info:    ... okay on input line 146.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 146.
-LaTeX Font Info:    ... okay on input line 146.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 146.
-LaTeX Font Info:    ... okay on input line 146.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 146.
-LaTeX Font Info:    ... okay on input line 146.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 146.
-LaTeX Font Info:    ... okay on input line 146.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 146.
-LaTeX Font Info:    ... okay on input line 146.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 146.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 146.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 182.
+LaTeX Font Info:    ... okay on input line 182.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 182.
+LaTeX Font Info:    ... okay on input line 182.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 182.
+LaTeX Font Info:    ... okay on input line 182.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 182.
+LaTeX Font Info:    ... okay on input line 182.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 182.
+LaTeX Font Info:    ... okay on input line 182.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 182.
+LaTeX Font Info:    ... okay on input line 182.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 182.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 182.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 146.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 146.
-LaTeX Font Info:    ... okay on input line 146.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 146.
-LaTeX Font Info:    ... okay on input line 146.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 146.
+LaTeX Font Info:    ... okay on input line 182.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 182.
+LaTeX Font Info:    ... okay on input line 182.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 182.
+LaTeX Font Info:    ... okay on input line 182.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 182.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -779,17 +787,17 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 
 (/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count152
-\scratchdimen=\dimen162
+\scratchcounter=\count155
+\scratchdimen=\dimen164
 \scratchbox=\box40
-\nofMPsegments=\count153
-\nofMParguments=\count154
-\everyMPshowfont=\toks32
-\MPscratchCnt=\count155
-\MPscratchDim=\dimen163
-\MPnumerator=\count156
-\makeMPintoPDFobject=\count157
-\everyMPtoPDFconversion=\toks33
+\nofMPsegments=\count156
+\nofMParguments=\count157
+\everyMPshowfont=\toks31
+\MPscratchCnt=\count158
+\MPscratchDim=\dimen165
+\MPnumerator=\count159
+\makeMPintoPDFobject=\count160
+\everyMPtoPDFconversion=\toks32
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/grfext.sty
@@ -812,10 +820,10 @@ Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: longtable package is loaded.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/caption/ltcaption.sty
-Package: ltcaption 2018/08/26 v1.4-95 longtable captions (AR)
+Package: ltcaption 2018/08/26 v1.4a longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \microtypecontext on input line 146.
+LaTeX Info: Redefining \microtypecontext on input line 182.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using protrusion set `basicmath'.
@@ -830,55 +838,55 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 (RS)
 )
 \AtBeginShipoutBox=\box41
-Package hyperref Info: Link coloring OFF on input line 146.
+Package hyperref Info: Link coloring OFF on input line 182.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+Package: nameref 2019/09/12 v2.45 Cross-referencing by name of section
 (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count158
+\c@section@level=\count161
 )
-LaTeX Info: Redefining \ref on input line 146.
-LaTeX Info: Redefining \pageref on input line 146.
-LaTeX Info: Redefining \nameref on input line 146.
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 148.
+LaTeX Info: Redefining \ref on input line 182.
+LaTeX Info: Redefining \pageref on input line 182.
+LaTeX Info: Redefining \nameref on input line 182.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 184.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 148.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 184.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 148.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 184.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 148
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 184
 .
 (/usr/local/texlive/2019/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 148
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 184
 .
 (/usr/local/texlive/2019/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 148.
+(Font)              <12> on input line 184.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 148.
+(Font)              <8> on input line 184.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 148.
-LaTeX Font Info:    Try loading font information for U+msa on input line 148.
+(Font)              <6> on input line 184.
+LaTeX Font Info:    Try loading font information for U+msa on input line 184.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 148.
+LaTeX Font Info:    Try loading font information for U+msb on input line 184.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/microtype/mt-msb.cfg
@@ -888,7 +896,7 @@ File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
 ) [1{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ] [2] [3] [4] [5]
-Overfull \hbox (59.23741pt too wide) in paragraph at lines 167--181
+Overfull \hbox (59.23741pt too wide) in paragraph at lines 203--217
  [][] 
  []
 
@@ -896,102 +904,110 @@ Overfull \hbox (59.23741pt too wide) in paragraph at lines 167--181
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [6] [7] [8] [9] [10] [11]
-<figures/cond_imgs.png, id=69, 991.705pt x 280.04625pt>
-File: figures/cond_imgs.png Graphic file (type png)
-<use figures/cond_imgs.png>
-Package pdftex.def Info: figures/cond_imgs.png  used on input line 214.
-(pdftex.def)             Requested size: 469.74828pt x 132.65157pt.
-[12 <./figures/cond_imgs.png>]
-<figures/subset_imgs.pdf, id=80, 1033.8625pt x 627.34375pt>
+<figures/cond_imgs.pdf, id=70, 993.7125pt x 281.05pt>
+File: figures/cond_imgs.pdf Graphic file (type pdf)
+<use figures/cond_imgs.pdf>
+Package pdftex.def Info: figures/cond_imgs.pdf  used on input line 249.
+(pdftex.def)             Requested size: 476.26393pt x 134.7009pt.
+
+Overfull \hbox (6.50891pt too wide) in paragraph at lines 249--249
+[][] 
+ []
+
+[12 <./figures/cond_imgs.pdf>]
+<figures/subset_imgs.pdf, id=95, 1033.8625pt x 627.34375pt>
 File: figures/subset_imgs.pdf Graphic file (type pdf)
 <use figures/subset_imgs.pdf>
-Package pdftex.def Info: figures/subset_imgs.pdf  used on input line 226.
+Package pdftex.def Info: figures/subset_imgs.pdf  used on input line 260.
 (pdftex.def)             Requested size: 469.76138pt x 285.04938pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 227.
+(Font)              <5> on input line 261.
 [13 <./figures/subset_imgs.pdf>] [14]
-<figures/models.pdf, id=136, 728.7225pt x 1525.7pt>
+<figures/models.pdf, id=153, 728.7225pt x 1525.7pt>
 File: figures/models.pdf Graphic file (type pdf)
 <use figures/models.pdf>
-Package pdftex.def Info: figures/models.pdf  used on input line 242.
+Package pdftex.def Info: figures/models.pdf  used on input line 276.
 (pdftex.def)             Requested size: 310.6648pt x 650.42767pt.
 
-LaTeX Warning: Float too large for page by 47.99765pt on input line 244.
+LaTeX Warning: Float too large for page by 47.99765pt on input line 278.
 
 [15] [16 <./figures/models.pdf>]
-<figures/r_code/timeline_subset_chance.pdf, id=544, 469.755pt x 346.29375pt>
+<figures/r_code/timeline_subset_chance.pdf, id=560, 469.755pt x 346.29375pt>
 File: figures/r_code/timeline_subset_chance.pdf Graphic file (type pdf)
 <use figures/r_code/timeline_subset_chance.pdf>
 Package pdftex.def Info: figures/r_code/timeline_subset_chance.pdf  used on inp
-ut line 260.
+ut line 294.
 (pdftex.def)             Requested size: 469.75386pt x 346.2929pt.
-<figures/timeline_conf_matrices.pdf, id=545, 1330.9725pt x 858.20625pt>
+<figures/timeline_conf_matrices.pdf, id=561, 1330.9725pt x 858.20625pt>
 File: figures/timeline_conf_matrices.pdf Graphic file (type pdf)
 <use figures/timeline_conf_matrices.pdf>
 Package pdftex.def Info: figures/timeline_conf_matrices.pdf  used on input line
- 266.
+ 300.
 (pdftex.def)             Requested size: 469.74667pt x 302.89096pt.
-[17 <./figures/r_code/timeline_subset_chance.pdf>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[18 <./figures/timeline_conf_matrices.pdf>] [19]
-<figures/r_code/img_subset_chance.pdf, id=622, 469.755pt x 346.29375pt>
+[17] [18 <./figures/r_code/timeline_subset_chance.pdf>] [19 <./figures/timeline
+_conf_matrices.pdf>]
+<figures/r_code/img_subset_chance.pdf, id=638, 469.755pt x 346.29375pt>
 File: figures/r_code/img_subset_chance.pdf Graphic file (type pdf)
 <use figures/r_code/img_subset_chance.pdf>
 Package pdftex.def Info: figures/r_code/img_subset_chance.pdf  used on input li
-ne 306.
+ne 340.
 (pdftex.def)             Requested size: 469.75386pt x 346.2929pt.
-<figures/img_conf_matrices.pdf, id=623, 1330.9725pt x 857.2025pt>
+<figures/img_conf_matrices.pdf, id=639, 1330.9725pt x 857.2025pt>
 File: figures/img_conf_matrices.pdf Graphic file (type pdf)
 <use figures/img_conf_matrices.pdf>
-Package pdftex.def Info: figures/img_conf_matrices.pdf  used on input line 312.
+Package pdftex.def Info: figures/img_conf_matrices.pdf  used on input line 346.
 
 (pdftex.def)             Requested size: 469.74667pt x 302.5367pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 [20] [21 <./figures/r_code/img_subset_chance.pdf>] [22 <./figures/img_conf_matr
-ices.pdf>] [23] [24] [25] [26] [27] [28] [29] [30] [31]
-<figures/supp_analysis/supp_subset_chance.pdf, id=790, 648.4225pt x 374.39874pt
+ices.pdf>] [23] [24] [25] [26] [27] [28] [29] [30] [31] [32]
+<figures/supp_analysis/supp_subset_chance.pdf, id=810, 648.4225pt x 374.39874pt
 >
 File: figures/supp_analysis/supp_subset_chance.pdf Graphic file (type pdf)
 <use figures/supp_analysis/supp_subset_chance.pdf>
 Package pdftex.def Info: figures/supp_analysis/supp_subset_chance.pdf  used on 
-input line 457.
+input line 494.
 (pdftex.def)             Requested size: 469.76282pt x 271.24075pt.
-<figures/supp_analysis/confusion_matrices/supp_conf_matrices.pdf, id=791, 1022.
+<figures/supp_analysis/confusion_matrices/supp_conf_matrices.pdf, id=811, 1022.
 82124pt x 650.43pt>
 File: figures/supp_analysis/confusion_matrices/supp_conf_matrices.pdf Graphic f
 ile (type pdf)
 <use figures/supp_analysis/confusion_matrices/supp_conf_matrices.pdf>
 Package pdftex.def Info: figures/supp_analysis/confusion_matrices/supp_conf_mat
-rices.pdf  used on input line 479.
+rices.pdf  used on input line 516.
 (pdftex.def)             Requested size: 469.75435pt x 298.72504pt.
-[32] [33 <./figures/supp_analysis/supp_subset_chance.pdf>]
+[33] [34 <./figures/supp_analysis/supp_subset_chance.pdf>]
 <figures/supp_analysis/recalculations/confusion_matrices/recalc_conf_matrices.p
-df, id=838, 1023.825pt x 650.43pt>
+df, id=858, 1023.825pt x 650.43pt>
 File: figures/supp_analysis/recalculations/confusion_matrices/recalc_conf_matri
 ces.pdf Graphic file (type pdf)
 <use figures/supp_analysis/recalculations/confusion_matrices/recalc_conf_matric
 es.pdf>
 Package pdftex.def Info: figures/supp_analysis/recalculations/confusion_matrice
-s/recalc_conf_matrices.pdf  used on input line 489.
+s/recalc_conf_matrices.pdf  used on input line 526.
 (pdftex.def)             Requested size: 469.74667pt x 298.42729pt.
-AED endfloat: Processing end Figures and Tables [34 <./figures/supp_analysis/co
-nfusion_matrices/supp_conf_matrices.pdf>] [35 <./figures/supp_analysis/recalcul
+AED endfloat: Processing end Figures and Tables [35 <./figures/supp_analysis/co
+nfusion_matrices/supp_conf_matrices.pdf>] [36 <./figures/supp_analysis/recalcul
 ations/confusion_matrices/recalc_conf_matrices.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 493.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 493.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 531.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 531.
 (./z_deepeye.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 493.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 493.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 531.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 531.
  ) 
 Here is how much of TeX's memory you used:
- 16809 strings out of 492616
- 250416 string characters out of 6129482
- 397339 words of memory out of 5000000
- 20261 multiletter control sequences out of 15000+600000
- 63001 words of font info for 92 fonts, out of 8000000 for 9000
+ 16897 strings out of 492609
+ 251615 string characters out of 6129048
+ 398776 words of memory out of 5000000
+ 20340 multiletter control sequences out of 15000+600000
+ 62743 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,11n,47p,2248b,475s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,11n,47p,2362b,481s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/lo
 cal/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/20
 19/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/texmf-dist/
@@ -1006,10 +1022,10 @@ ype1/public/lm/lmri8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public
 /lm/lmss8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy8.p
 fb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm
 10.pfb>
-Output written on z_deepeye.pdf (35 pages, 5595725 bytes).
+Output written on z_deepeye.pdf (36 pages, 5555836 bytes).
 PDF statistics:
- 1018 PDF objects out of 1200 (max. 8388607)
- 688 compressed objects within 7 object streams
- 95 named destinations out of 1000 (max. 500000)
+ 1039 PDF objects out of 1200 (max. 8388607)
+ 703 compressed objects within 8 object streams
+ 96 named destinations out of 1000 (max. 500000)
  6339 words of extra memory for PDF output out of 10000 (max. 10000000)
 
